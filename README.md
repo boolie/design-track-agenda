@@ -46,15 +46,15 @@ Very much list based:
 
 ## Initial Ideas
 
-Solid HTML structure (should each day be an "article"?
-Service workers - offline support in case connections are unreliable.
-Smooth transitions
-[CSS only filters](https://csswizardry.com/2016/10/pure-css-content-filter/)
-[CSS Grid](https://caniuse.com/#feat=css-grid)
-Flexbox
-BEM
-PWA support for offline caching homescreen shortcut
-Each scheduled item should form a list
-[viewport units](https://caniuse.com/#feat=viewport-units) for height
-Work without Javascript enabled ++
-"js-*" prefix for javascript hook classes
+- Solid HTML structure (should each day be an "article"?
+- Service workers - offline support in case connections are unreliable.
+- Smooth transitions
+- [CSS only filters](https://csswizardry.com/2016/10/pure-css-content-filter/)
+- [CSS Grid](https://caniuse.com/#feat=css-grid)
+- Flexbox
+- BEM
+- PWA support for offline caching homescreen shortcut
+- Each scheduled item should form a list
+- [viewport units](https://caniuse.com/#feat=viewport-units) for height
+- Work without Javascript enabled ++
+- "js-*" prefix for javascript hook classes
