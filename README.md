@@ -58,3 +58,5 @@ Very much list based:
 - [viewport units](https://caniuse.com/#feat=viewport-units) for height
 - Work without Javascript enabled ++
 - "js-*" prefix for javascript hook classes
+- transform - need to specify z-index
+- sprite map for icons
