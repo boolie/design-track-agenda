@@ -44,7 +44,7 @@ Very much list based:
 
 [Pega Digital Design System](https://patterns-dev.pega.com/)
 
-## Initial Ideas
+## Initial Ideas / notes
 
 - Solid HTML structure (should each day be an "article"?
 - Service workers - offline support in case connections are unreliable.
@@ -60,3 +60,4 @@ Very much list based:
 - "js-*" prefix for javascript hook classes
 - transform - need to specify z-index
 - sprite map for icons
+- Use of Moqups for wireframming
