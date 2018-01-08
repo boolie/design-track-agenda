@@ -62,3 +62,5 @@ Very much list based:
 - sprite map for icons
 - Use of Moqups for wireframming
 - Rapid prototyping with jQuery - [codepen](https://codepen.io/ianovenden/pen/NXvQgr)
+- ability to add to calendar
+- time and location micro formats
