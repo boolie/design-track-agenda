@@ -118,10 +118,11 @@ li {
 }
 
 .agenda {
+	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 1fr;
 	grid-gap: 1rem;
-	-ms-grid-rows: 1;
+	-ms-grid-rows: auto;
 	grid-template-columns: 1fr;
 	width: 100%;
 }
@@ -177,22 +178,81 @@ li {
 /* IE Fix for column assignment */
 #sunday {
 	-ms-grid-column: 1;
+	-ms-grid-row: 1;
 }
 
 #monday {
-	-ms-grid-column: 2;
+	-ms-grid-column: 1;
+	-ms-grid-row: 2;
 }
 
 #tuesday {
-	-ms-grid-column: 3;
+	-ms-grid-column: 1;
+	-ms-grid-row: 3;
 }
 
 #wednesday {
-	-ms-grid-column: 4;
+	-ms-grid-column: 1;
+	-ms-grid-row: 4;
 }
 
 #thursday {
-	-ms-grid-column: 5;
+	-ms-grid-column: 1;
+	-ms-grid-row: 5;
+}
+
+@media ( min-width: 600px ) {
+	#sunday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
+	}
+
+	#monday {
+		-ms-grid-column: 2;
+		-ms-grid-row: 1;
+	}
+
+	#tuesday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 2;
+	}
+
+	#wednesday {
+		-ms-grid-column: 2;
+		-ms-grid-row: 2;
+	}
+
+	#thursday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 3;
+	}
+}
+
+@media ( min-width: 768px ) {
+	#sunday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
+	}
+
+	#monday {
+		-ms-grid-column: 2;
+		-ms-grid-row: 1;
+	}
+
+	#tuesday {
+		-ms-grid-column: 3;
+		-ms-grid-row: 1;
+	}
+
+	#wednesday {
+		-ms-grid-column: 4;
+		-ms-grid-row: 1;
+	}
+
+	#thursday {
+		-ms-grid-column: 5;
+		-ms-grid-row: 1;
+	}
 }
 
 .js-sunday #sunday,
