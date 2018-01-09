@@ -2,3 +2,297 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+a {
+	color: #ffffff;
+}
+
+h2 {
+	background-color: #0000ff;
+	color: #ffffff;
+	display: inline-block;
+	float: left;
+	margin-top: 0;
+	position: relative;
+	top: 0;
+	width: 100px;
+}
+
+ul {
+	border: 1px solid #cccccc;
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+	list-style: none;
+	margin-left: 100px;
+	margin-top: 0;
+	padding: 0;
+}
+
+li {
+	border-bottom: 1px solid #cccccc;
+	padding: 10px;
+}
+
+#wrap {
+	border: 1px solid #cccccc;
+	height: 100vh;
+	overflow: auto;
+	position: relative;
+}
+
+.fix-header {
+	position: fixed;
+}
+
+.agenda {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	grid-gap: 1rem;
+	-ms-grid-rows: 1;
+	grid-template-columns: 1fr;
+	width: 100%;
+}
+
+@media ( min-width: 600px ) {
+	.agenda {
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: repeat( 2, 1fr );
+	}
+
+	h2 {
+		float: initial;
+		width: 100%;
+	}
+
+	ul {
+		margin-left: 0;
+	}
+
+	.fix-header {
+		position: relative;
+	}
+}
+
+@media ( min-width: 768px ) {
+	.agenda {
+		-ms-grid-columns: 1fr 1fr 1fr 2fr 1fr;
+		grid-template-columns: repeat( 3, 1fr ) 2fr 1fr;
+	}
+
+	h2 {
+		float: initial;
+		width: 100%;
+	}
+
+	ul {
+		margin-left: 0;
+	}
+}
+
+/* Day View - mobile */
+.js-dayview .day {
+	display: none;
+}
+
+.js-sunday #sunday,
+.js-monday #monday,
+.js-tuesday #tuesday,
+.js-wednesday #wednesday,
+.js-thursday #thursday {
+	display: inline;
+}
+
+.js-dayview h2 {
+	float: initial;
+	width: 100%;
+}
+
+.js-dayview ul {
+	margin-left: 0;
+}
+
+@media ( min-width: 600px ) {
+	.day {
+		-webkit-transform: initial;
+		transform: initial;
+		transition: transform 0.5s;
+	}
+
+	.js-dayview .day {
+		display: initial;
+		opacity: 0.25;
+		z-index: -1;
+	}
+
+	.js-sunday #sunday,
+	.js-monday #monday,
+	.js-tuesday #tuesday,
+	.js-wednesday #wednesday,
+	.js-thursday #thursday {
+		background-color: #ffffff;
+		left: 50%;
+		opacity: 1;
+		position: absolute;
+		-webkit-transform: translateX( -50% ) scale( 1.1 );
+		transform: translateX( -50% ) scale( 1.1 );
+		transition: all 0.5s;
+		width: 80%;
+		z-index: 1;
+	}
+}
+
+/* Day View - desktop */
+@media ( min-width: 768px ) {
+	.js-dayview {
+		grid-template-columns: repeat( 4, 1fr );
+	}
+
+	.js-sunday #sunday,
+	.js-monday #monday,
+	.js-tuesday #tuesday,
+	.js-wednesday #wednesday,
+	.js-thursday #thursday {
+		width: 40%;
+	}
+}
+
+.day-selector {
+	background-color: #5f9ea0;
+	bottom: 0;
+	padding: 10px;
+	width: 100%;
+	z-index: 10;
+}
+
+  .icon-close {
+	float: right;
+  }
+  
+  /* session filter */
+  
+  .day {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .agenda > * {
+	flex: 0 0 auto;
+	margin-left: 10px;
+  }
+  
+  .session {
+	opacity: 1;
+	flex: auto;
+	transition: opacity 1s;
+  }
+  
+  .js-filter-session-active .session {
+	opacity: 0.2;
+	transition: opacity 1s;
+  }
+  
+  .js-session-conf .session--conf,
+  .js-session-travel .session--travel {
+	opacity: 1;  
+	transition: opacity 1s;
+  }
+  
+  .session--travel {
+	background-color: red;
+  }
+  
+  .session--other {
+	background-color: orange;
+  }
+  
+  .session--conf {
+	background-color: yellow;
+  }
+  
+  .session--break {
+	background-color: green;
+  }
+  
+  .session--cust {
+	background-color: indigo;
+	color: white;
+  }
+  
+  .btn {
+	width: 150px;
+	height: 20px;
+  }
+  
+  /* Multi track */
+  
+  .track-head {
+	color: red;
+	cursor: pointer;
+  }
+  
+  .multi-track {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 50%;
+	border: none;
+  }
+  
+  .multi-track li {
+	width: 100%;  
+	box-sizing: border-box;
+  }
+  
+  .multi-container {
+	padding: 0;
+	margin: 0;
+	display: flex;
+  }
+  
+  .multi-container ul:first-child {
+	border-right: 1px solid #CCC;
+  }
+  
+  .js-track-grow {
+	width: 80%;
+	transition: all 0.5s;
+  }
+  
+  .js-track-shrink {
+	width: 0;
+	border: 0;
+  }
+  
+  .js-track-shrink li {
+	transition: all 0.5s;
+	overflow: hidden;
+	white-space: nowrap;
+	opacity: 0.1;
+  }
+  
+  .js-btn-track--active {
+	background-color: yellow;
+  }
+  
+  /* IE Fix for column assignment */
+  #sunday {
+	-ms-grid-column: 1;
+  }
+  
+  #monday {
+	-ms-grid-column: 2;
+  }
+  
+  #tuesday {
+	-ms-grid-column: 3;
+  }
+  
+  #wednesday {
+	-ms-grid-column: 4;
+  }
+  
+  #thursday {
+	-ms-grid-column: 5;
+  }

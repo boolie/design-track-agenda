@@ -31,20 +31,6 @@ module.exports = {
 						}
 					}]
 				})
-
-				// test: /\.css$/,
-				// use: ExtractTextPlugin.extract({
-				// 	fallback: 'style-loader',
-				// 	use: [
-				// 		{
-				// 			loader: 'css-loader',
-				// 			options: {
-				// 				minimize: true,
-				// 				sourceMap: true
-				// 			}
-				// 		}
-				// 	]
-				// })
 			}
 		]
 	},
@@ -54,9 +40,7 @@ module.exports = {
 		historyApiFallback: true
 	},
 	plugins: [
-		new StyleLintPlugin({
-			files: './src/**/*.css'
-		}),
+
 		new WebpackCleanupPlugin({
 			exclude: ['*.html'],
 			quiet: true
