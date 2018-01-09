@@ -293,7 +293,7 @@ li {
 	}
 
 	.js-dayview .day {
-		display: initial;
+		display: flex;
 		opacity: 0.25;
 		z-index: -1;
 	}
