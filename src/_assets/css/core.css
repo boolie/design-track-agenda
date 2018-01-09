@@ -108,7 +108,7 @@ li {
 
 #wrap {
 	border: 1px solid #cccccc;
-	height: 100vh;
+	height: 99vh;
 	overflow: auto;
 	position: relative;
 }
@@ -118,7 +118,6 @@ li {
 }
 
 .agenda {
-	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 1fr;
 	grid-gap: 1rem;
@@ -148,7 +147,9 @@ li {
 }
 
 @media ( min-width: 768px ) {
+
 	.agenda {
+		display: -ms-grid;
 		-ms-grid-columns: 1fr 1fr 1fr 2fr 1fr;
 		grid-template-columns: repeat( 3, 1fr ) 2fr 1fr;
 	}
