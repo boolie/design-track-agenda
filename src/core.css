@@ -91,9 +91,35 @@ li {
 	}
 }
 
+.day {
+	display: flex;
+	flex-direction: column;
+}
+
 /* Day View - mobile */
 .js-dayview .day {
 	display: none;
+}
+
+/* IE Fix for column assignment */
+#sunday {
+	-ms-grid-column: 1;
+}
+
+#monday {
+	-ms-grid-column: 2;
+}
+
+#tuesday {
+	-ms-grid-column: 3;
+}
+
+#wednesday {
+	-ms-grid-column: 4;
+}
+
+#thursday {
+	-ms-grid-column: 5;
 }
 
 .js-sunday #sunday,
@@ -166,133 +192,107 @@ li {
 	z-index: 10;
 }
 
-  .icon-close {
+.icon--close {
 	float: right;
-  }
-  
-  /* session filter */
-  
-  .day {
-	display: flex;
-	flex-direction: column;
-  }
-  
-  .agenda > * {
+}
+
+/* session filter */
+
+.agenda > * {
 	flex: 0 0 auto;
 	margin-left: 10px;
-  }
-  
-  .session {
-	opacity: 1;
+}
+
+.session {
 	flex: auto;
+	opacity: 1;
 	transition: opacity 1s;
-  }
-  
-  .js-filter-session-active .session {
+}
+
+.js-filter-session-active .session {
 	opacity: 0.2;
 	transition: opacity 1s;
-  }
-  
-  .js-session-conf .session--conf,
-  .js-session-travel .session--travel {
-	opacity: 1;  
+}
+
+.session--other {
+	background-color: #ffa500;
+}
+
+.session--conf {
+	background-color: #ffff00;
+}
+
+.session--break {
+	background-color: #008000;
+}
+
+.session--cust {
+	background-color: #4b0082;
+	color: #ffffff;
+}
+
+.session--travel {
+	background-color: #ff0000;
+}
+
+.js-session-conf .session--conf,
+.js-session-travel .session--travel {
+	opacity: 1;
 	transition: opacity 1s;
-  }
-  
-  .session--travel {
-	background-color: red;
-  }
-  
-  .session--other {
-	background-color: orange;
-  }
-  
-  .session--conf {
-	background-color: yellow;
-  }
-  
-  .session--break {
-	background-color: green;
-  }
-  
-  .session--cust {
-	background-color: indigo;
-	color: white;
-  }
-  
-  .btn {
-	width: 150px;
+}
+
+.btn {
 	height: 20px;
-  }
-  
-  /* Multi track */
-  
-  .track-head {
-	color: red;
+	width: 150px;
+}
+
+/* Multi track */
+
+.track-head {
+	color: #ff0000;
 	cursor: pointer;
-  }
-  
-  .multi-track {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	width: 50%;
+}
+
+.multi-track {
 	border: none;
-  }
-  
-  .multi-track li {
-	width: 100%;  
 	box-sizing: border-box;
-  }
-  
-  .multi-container {
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+
+.multi-track li {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.multi-container {
 	display: flex;
-  }
-  
-  .multi-container ul:first-child {
-	border-right: 1px solid #CCC;
-  }
-  
-  .js-track-grow {
+	margin: 0;
+	padding: 0;
+}
+
+.multi-container ul:first-child {
+	border-right: 1px solid #cccccc;
+}
+
+.js-track-grow {
+	transition: all 0.5s;
 	width: 80%;
-	transition: all 0.5s;
-  }
-  
-  .js-track-shrink {
-	width: 0;
+}
+
+.js-track-shrink {
 	border: 0;
-  }
-  
-  .js-track-shrink li {
-	transition: all 0.5s;
-	overflow: hidden;
-	white-space: nowrap;
+	width: 0;
+}
+
+.js-track-shrink li {
 	opacity: 0.1;
-  }
-  
-  .js-btn-track--active {
-	background-color: yellow;
-  }
-  
-  /* IE Fix for column assignment */
-  #sunday {
-	-ms-grid-column: 1;
-  }
-  
-  #monday {
-	-ms-grid-column: 2;
-  }
-  
-  #tuesday {
-	-ms-grid-column: 3;
-  }
-  
-  #wednesday {
-	-ms-grid-column: 4;
-  }
-  
-  #thursday {
-	-ms-grid-column: 5;
-  }
+	overflow: hidden;
+	transition: all 0.5s;
+	white-space: nowrap;
+}
+
+.js-btn-track--active {
+	background-color: #ffff00;
+}

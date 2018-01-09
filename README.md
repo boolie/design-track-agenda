@@ -58,9 +58,11 @@ Very much list based:
 - [viewport units](https://caniuse.com/#feat=viewport-units) for height
 - Work without Javascript enabled ++
 - "js-*" prefix for javascript hook classes
-- transform - need to specify z-index
-- sprite map for icons
+- Transform - need to specify z-index
+- Sprite map for icons
 - Use of Moqups for wireframming
 - Rapid prototyping with jQuery - [codepen](https://codepen.io/ianovenden/pen/NXvQgr)
-- ability to add to calendar
-- time and location micro formats
+- Ability to add to calendar
+- Time and location micro formats
+- Discuss technical aspects
+- CSS variables
