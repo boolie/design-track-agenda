@@ -66,3 +66,8 @@ Very much list based:
 - Time and location micro formats
 - Discuss technical aspects
 - CSS variables
+- encorporate accessibility checking into build process
+
+## TODO
+
+- Font loading strategy - most performant

@@ -23,13 +23,19 @@ module.exports = {
 				}],
 				test: /\.css$/,
 				use: ExtractTextPlugin.extract({
-					use: [{
-						loader: 'css-loader?sourceMap&importLoaders=1!postcss-loader',
-						options: {
-							minimize: true,
-							sourceMap: true
-						}
-					}]
+					fallback: 'style-loader',
+					use: [
+						{ loader: 'css-loader', options: { importLoaders: 1 } },
+						'postcss-loader'
+					]
+
+					// use: [{
+					// 	loader: 'css-loader?sourceMap&importLoaders=1!postcss-loader',
+					// 	options: {
+					// 		minimize: true,
+					// 		sourceMap: true
+					// 	}
+					// }]
 				})
 			}
 		]

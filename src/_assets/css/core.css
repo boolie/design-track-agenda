@@ -1,15 +1,87 @@
+/* Baseline */
+@import 'lib/reset.css';
+
+/* Shared */
+@import 'variables/media.css';
+@import 'variables/brand.css';
+@import 'variables/typography.css';
+
 html, body {
-	margin: 0;
-	padding: 0;
+	font-family: var( --font-text );
+	font-size: var( --font-base-size );
 }
 
 a {
-	color: #ffffff;
+	color: var( --color-link );
+	font-size: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: var( --color-header );
+}
+
+h1{
+	font-size: 1.6rem;
+	opacity: 0.75;
+	padding: 1rem;
+}
+
+h2, h2 a{
+	font-size: 1.4rem;
+}
+
+h3{
+	font-size: 1.3rem;
+}
+
+h4{
+	font-size: 1.2rem;
+}
+
+h5{
+	font-size: 1.1rem;
+}
+
+h6{
+	font-size: 1rem;
+}
+
+@media ( --medium-screen ) {
+	h1{
+		font-size: 2rem;
+	}
+}
+
+@media ( --large-screen ) {
+
+	h1{
+		font-size: 2.6rem;
+		opacity: 0.75;
+		padding: 1rem;
+	}
+
+	h2, h2 a{
+		font-size: 1.6rem;
+	}
+
+	h3{
+		font-size: 1.4rem;
+	}
+
+	h4{
+		font-size: 1.2rem;
+	}
+
+	h5{
+		font-size: 1.1rem;
+	}
+
+	h6{
+		font-size: 1rem;
+	}
 }
 
 h2 {
-	background-color: #0000ff;
-	color: #ffffff;
 	display: inline-block;
 	float: left;
 	margin-top: 0;
@@ -182,14 +254,6 @@ li {
 	.js-thursday #thursday {
 		width: 40%;
 	}
-}
-
-.day-selector {
-	background-color: #5f9ea0;
-	bottom: 0;
-	padding: 10px;
-	width: 100%;
-	z-index: 10;
 }
 
 .icon--close {
