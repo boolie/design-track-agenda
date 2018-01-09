@@ -108,9 +108,21 @@ li {
 
 #wrap {
 	border: 1px solid #cccccc;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	grid-gap: 1rem;
+	-ms-grid-rows: 30px auto 30px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 30px auto 30px;
 	height: 99vh;
 	overflow: auto;
 	position: relative;
+}
+
+#wrap header {
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
 }
 
 .fix-header {
@@ -122,6 +134,7 @@ li {
 	display: grid;
 	-ms-grid-columns: 1fr;
 	grid-gap: 1rem;
+	-ms-grid-row: 2;
 	-ms-grid-rows: auto;
 	grid-template-columns: 1fr;
 	width: 100%;
