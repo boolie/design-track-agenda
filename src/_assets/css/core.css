@@ -182,12 +182,12 @@ li {
 		margin-left: 0;
 	}
 
-	.day:first-child {
-		margin-left: 0;
-	}
-
 	.day:nth-child( odd ) {
 		margin-left: 10px;
+	}
+
+	.day:first-child {
+		margin-left: 0;
 	}
 }
 
