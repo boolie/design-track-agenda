@@ -25,17 +25,9 @@ module.exports = {
 				use: ExtractTextPlugin.extract({
 					fallback: 'style-loader',
 					use: [
-						{ loader: 'css-loader', options: { importLoaders: 1 } },
+						{ loader: 'css-loader', options: { importLoaders: 1, minimize: true } },
 						'postcss-loader'
 					]
-
-					// use: [{
-					// 	loader: 'css-loader?sourceMap&importLoaders=1!postcss-loader',
-					// 	options: {
-					// 		minimize: true,
-					// 		sourceMap: true
-					// 	}
-					// }]
 				})
 			}
 		]
@@ -46,7 +38,9 @@ module.exports = {
 		historyApiFallback: true
 	},
 	plugins: [
-
+		new StyleLintPlugin({
+			files: './src/**/*.css'
+		}),
 		new WebpackCleanupPlugin({
 			exclude: ['*.html'],
 			quiet: true
