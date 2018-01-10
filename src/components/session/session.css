@@ -3,10 +3,10 @@
 	/* Session Colours */
 	--color-travel: #f9f0d2;
 	--color-cust: #b2dfdb;
-	--color-break: #310202;
+	--color-break: #dcd8d4;
 	--color-conf: #00796b;
 	--color-other: #474f68;
-	--color-mobile: #9d0606;
+	--color-mobile: #f5e6e6;
 	--color-user: #ddae25;
 }
 
@@ -20,7 +20,7 @@
 	color: #ffffff;
 }
 
-.session--user h3, .session--cust h3, .session--travel h3  {
+.session--user h3, .session--cust h3, .session--travel h3, .session--mobile h3, .session--break h3  {
 	color: #292f32;
 }
 

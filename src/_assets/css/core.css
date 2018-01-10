@@ -9,6 +9,11 @@ a {
 	text-decoration: none;
 }
 
+p {
+	font-size: 1.3rem;
+	margin-top: 5px;
+}
+
 .link--darker {
 	color: var( --color-link-darker );
 }
@@ -345,9 +350,12 @@ li {
 	.js-wednesday #wednesday,
 	.js-thursday #thursday {
 		background-color: #ffffff;
+		border: 1px solid #000000;
 		left: 50%;
 		opacity: 1;
+		padding: 10px;
 		position: absolute;
+		top: 60px;
 		-webkit-transform: translateX( -50% ) scale( 1.1 );
 		transform: translateX( -50% ) scale( 1.1 );
 		transition: all 0.5s;
@@ -379,55 +387,4 @@ li {
 
 .agenda > * {
 	flex: 0 0 auto;
-}
-
-/* Multi track */
-
-.track-head {
-	color: #000000;
-	cursor: pointer;
-}
-
-.multi-track {
-	border: none;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	width: 50%;
-}
-
-.multi-track li {
-	box-sizing: border-box;
-	width: 100%;
-}
-
-.multi-container {
-	display: flex;
-	margin: 0;
-	padding: 0;
-}
-
-.multi-container .day-sessions:first-child {
-	border-right: 1px solid #cccccc;
-}
-
-.js-track-grow {
-	transition: all 0.5s;
-	width: 80%;
-}
-
-.js-track-shrink {
-	border: 0;
-	width: 0;
-}
-
-.js-track-shrink li {
-	opacity: 0.1;
-	overflow: hidden;
-	transition: all 0.5s;
-	white-space: nowrap;
-}
-
-.js-btn-track--active {
-	background-color: #ffff00;
 }

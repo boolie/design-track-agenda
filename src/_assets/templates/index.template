@@ -135,14 +135,16 @@
 					</h2>
 					<ul class="day-sessions">
 						<li class="multi-container">
-							<ul class="day-sessions mutli-track">
+							<ul class="day-sessions multi-track">
 								<li class="track-head" data-track="1">
 									<p>Track 1</p>
+									<span class="arrow"></span>
 							  	</li>
 							</ul>
-							<ul class="day-sessions mutli-track">
+							<ul class="day-sessions multi-track">
 							  	<li class="track-head" data-track="2">
 									<p>Track 2</p>
+									<span class="arrow"></span>
 							  </li>
 							</ul>
 						</li>
