@@ -1,11 +1,3 @@
-/* Baseline */
-@import 'lib/reset.css';
-
-/* Shared */
-@import 'variables/media.css';
-@import 'variables/brand.css';
-@import 'variables/typography.css';
-
 html, body {
 	font-family: var( --font-text );
 	font-size: var( --font-base-size );
@@ -14,67 +6,72 @@ html, body {
 a {
 	color: var( --color-link );
 	font-size: inherit;
+	text-decoration: none;
+}
+
+.link--darker {
+	color: var( --color-link-darker );
 }
 
 h1, h2, h3, h4, h5, h6{
 	color: var( --color-header );
 }
 
-h1{
+h1 {
 	font-size: 1.8rem;
 	opacity: 0.75;
 }
 
-h2, h2 a{
+h2, h2 a {
 	font-size: 1.6rem;
 }
 
-h3{
+h3 {
 	font-size: 1.4rem;
 }
 
-h4{
+h4 {
 	font-size: 1.3rem;
 }
 
-h5{
+h5 {
 	font-size: 1.2rem;
 }
 
-h6{
+h6 {
 	font-size: 1rem;
 }
 
 @media ( --medium-screen ) {
-	h1{
+	h1 {
 		font-size: 2rem;
 	}
 }
 
 @media ( --large-screen ) {
 
-	h1{
+	h1 {
 		font-size: 2.6rem;
 		opacity: 0.75;
 	}
 
-	h2, h2 a{
+	h2, h2 a {
 		font-size: 1.8rem;
 	}
 
-	h3{
+	h3 {
 		font-size: 1.4rem;
 	}
 
-	h4{
+	h4 {
 		font-size: 1.3rem;
 	}
 
-	h5{
+	h5 {
 		font-size: 1.2rem;
 	}
 
-	h6{
+	h6 {
 		font-size: 1rem;
 	}
 }
@@ -384,53 +381,10 @@ li {
 	flex: 0 0 auto;
 }
 
-.session {
-	flex: auto;
-	opacity: 1;
-	transition: opacity 1s;
-}
-
-.js-filter-session-active .session {
-	opacity: 0.2;
-	transition: opacity 1s;
-}
-
-.session--other {
-	background-color: #ffa500;
-}
-
-.session--conf {
-	background-color: #ffff00;
-}
-
-.session--break {
-	background-color: #008000;
-}
-
-.session--cust {
-	background-color: #4b0082;
-	color: #ffffff;
-}
-
-.session--travel {
-	background-color: #ff0000;
-}
-
-.js-session-conf .session--conf,
-.js-session-travel .session--travel {
-	opacity: 1;
-	transition: opacity 1s;
-}
-
-.btn {
-	height: 20px;
-	width: 150px;
-}
-
 /* Multi track */
 
 .track-head {
-	color: #ff0000;
+	color: #000000;
 	cursor: pointer;
 }
 
