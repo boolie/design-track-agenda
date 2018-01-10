@@ -60,7 +60,7 @@ Very much list based:
 - "js-*" prefix for javascript hook classes
 - Transform - need to specify z-index
 - Sprite map for icons
-- Use of Moqups for wireframming
+- Use of [Moqups](https://app.moqups.com/iovenden/NF5q9N8spb/edit/page/ae80896a8) for wireframming
 - Rapid prototyping with jQuery - [codepen](https://codepen.io/ianovenden/pen/NXvQgr)
 - Ability to add to calendar
 - Time and location micro formats
@@ -71,3 +71,5 @@ Very much list based:
 ## TODO
 
 - Font loading strategy - most performant
+- Automated documentation
+- Testing

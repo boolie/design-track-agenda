@@ -23,7 +23,6 @@ h1, h2, h3, h4, h5, h6{
 h1{
 	font-size: 1.6rem;
 	opacity: 0.75;
-	padding: 1rem;
 }
 
 h2, h2 a{
@@ -57,7 +56,6 @@ h6{
 	h1{
 		font-size: 2.6rem;
 		opacity: 0.75;
-		padding: 1rem;
 	}
 
 	h2, h2 a{
@@ -107,7 +105,7 @@ li {
 }
 
 #wrap {
-	border: 1px solid #cccccc;
+	box-sizing: border-box;
 	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 1fr;
@@ -117,6 +115,7 @@ li {
 	grid-template-rows: 30px auto 30px;
 	height: 99vh;
 	overflow: auto;
+	padding: 10px;
 	position: relative;
 }
 
@@ -133,10 +132,12 @@ li {
 	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 1fr;
-	grid-gap: 1rem;
+
+	/* grid-gap: 1rem; */
 	-ms-grid-row: 2;
 	-ms-grid-rows: auto;
 	grid-template-columns: 1fr;
+	padding-bottom: 40px;
 	width: 100%;
 }
 
@@ -158,6 +159,10 @@ li {
 	.fix-header {
 		position: relative;
 	}
+
+	.day:nth-child( odd ) {
+		margin-left: 0;
+	}
 }
 
 @media ( min-width: 768px ) {
@@ -176,11 +181,20 @@ li {
 	ul {
 		margin-left: 0;
 	}
+
+	.day:first-child {
+		margin-left: 0;
+	}
+
+	.day:nth-child( odd ) {
+		margin-left: 10px;
+	}
 }
 
 .day {
 	display: flex;
 	flex-direction: column;
+	margin-left: 10px;
 }
 
 /* Day View - mobile */
@@ -338,7 +352,6 @@ li {
 
 .agenda > * {
 	flex: 0 0 auto;
-	margin-left: 10px;
 }
 
 .session {
