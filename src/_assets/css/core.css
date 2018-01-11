@@ -1,6 +1,7 @@
 html, body {
 	font-family: var( --font-text );
 	font-size: var( --font-base-size );
+	min-width: 320px;
 }
 
 a {
@@ -22,12 +23,21 @@ label {
 	margin-right: 10px;
 }
 
+.logo {
+	height: 100%;
+}
+
+.title {
+	display: inline-block;
+	margin-left: 5px;
+}
+
 h1, h2, h3, h4, h5, h6{
 	color: var( --color-header );
 }
 
 h1 {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	opacity: 0.75;
 }
 
@@ -218,6 +228,11 @@ li {
 }
 
 @media ( min-width: 768px ) {
+
+	#wrap {
+		-ms-grid-rows: 50px auto 30px;
+		grid-template-rows: 50px auto 30px;
+	}
 
 	.agenda {
 		display: -ms-grid;
