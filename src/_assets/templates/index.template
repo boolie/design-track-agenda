@@ -135,13 +135,13 @@
 					</h2>
 					<ul class="day-sessions">
 						<li class="multi-container">
-							<ul class="day-sessions multi-track">
+							<ul class="day-sessions multi-track track-head-container">
 								<li class="track-head" data-track="1">
 									<p>Track 1</p>
 									<span class="arrow"></span>
 							  	</li>
 							</ul>
-							<ul class="day-sessions multi-track">
+							<ul class="day-sessions multi-track track-head-container">
 							  	<li class="track-head" data-track="2">
 									<p>Track 2</p>
 									<span class="arrow"></span>
@@ -377,21 +377,41 @@
 					</ul>
 				</article>
 			</div>
-			<div class="day-selector">
-				<label for="js-day-selector">Day:</label>
-				<select id="js-day-selector" class="js-day-selector">
-					<option value="all">All</option>
-					<option value="sunday">Sunday</option>
-					<option value="monday">Monday</option>
-					<option value="tuesday">Tuesday</option>
-					<option value="wednesday">Wednesday</option>
-					<option value="thursday">Thursday</option>
-				</select>
-				<a href="#" class="btn btn--session_filter js-session-filter" data-session="mobile">
-					<span class="icon icon--mobile">Mobile</span>
-				</a>
-				<button class="btn btn--session_filter js-session-filter" data-session="conf">Conference</button>
-				<button class="btn btn--session_filter js-session-filter" data-session="travel">Travel</button>
+			<div class="filter">
+				<div class="filter-day_selector">
+					<label for="js-day-selector">Day:</label>
+					<select id="js-day-selector" class="js-day-selector">
+						<option value="all">All</option>
+						<option value="sunday">Sunday</option>
+						<option value="monday">Monday</option>
+						<option value="tuesday">Tuesday</option>
+						<option value="wednesday">Wednesday</option>
+						<option value="thursday">Thursday</option>
+					</select>
+				</div>
+				<div class="filter-options">
+					<a href="#" class="link--filter js-session-filter" data-session="conf">
+						<span class="icon icon--conf">Conf</span>
+					</a>
+					<a href="#" class="link--filter js-session-filter" data-session="cust">
+						<span class="icon icon--cust">Cust</span>
+					</a>
+					<a href="#" class="link--filter js-session-filter" data-session="mobile">
+						<span class="icon icon--mobile">Mobile</span>
+					</a>
+					<a href="#" class="link--filter js-session-filter" data-session="user">
+						<span class="icon icon--user">User</span>
+					</a>
+					<a href="#" class="link--filter js-session-filter" data-session="break">
+						<span class="icon icon--break">User</span>
+					</a>
+					<a href="#" class="link--filter js-session-filter" data-session="travel">
+						<span class="icon icon--travel">Travel</span>
+					</a>
+					<a href="#" class="link--filter js-session-filter" data-session="other">
+						<span class="icon icon--other">Other</span>
+					</a>
+				</div>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

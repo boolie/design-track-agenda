@@ -9,13 +9,17 @@ a {
 	text-decoration: none;
 }
 
-p {
+.link--darker {
+	color: var( --color-link-darker );
+}
+
+p, label {
 	font-size: 1.3rem;
 	margin-top: 5px;
 }
 
-.link--darker {
-	color: var( --color-link-darker );
+label {
+	margin-right: 10px;
 }
 
 h1, h2, h3, h4, h5, h6{

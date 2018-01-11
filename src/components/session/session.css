@@ -58,8 +58,13 @@
 	background-color: var( --color-user );
 }
 
+.js-session-break .session--break,
 .js-session-conf .session--conf,
-.js-session-travel .session--travel {
+.js-session-cust .session--cust,
+.js-session-mobile .session--mobile,
+.js-session-other .session--other,
+.js-session-travel .session--travel,
+.js-session-user .session--user {
 	opacity: 1;
 	transition: opacity 1s;
 }

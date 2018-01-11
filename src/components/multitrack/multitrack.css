@@ -48,7 +48,12 @@
 
 .js-track-shrink {
 	border: 0;
+	overflow: hidden;
 	width: 0;
+}
+
+.track-head-container.js-track-shrink {
+	overflow: visible;
 }
 
 .js-btn-track--active {

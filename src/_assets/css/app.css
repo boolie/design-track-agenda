@@ -10,5 +10,6 @@
 @import 'core.css';
 
 /* Components */
+@import '../../components/filter/filter.css';
 @import '../../components/session/session.css';
 @import '../../components/multitrack/multitrack.css';
