@@ -42,7 +42,7 @@ module.exports = {
 			files: './src/**/*.css'
 		}),
 		new WebpackCleanupPlugin({
-			exclude: ['*.html'],
+			exclude: ['*.html', 'assets/gfx/icons/*.svg'],
 			quiet: true
 		}),
 		new HtmlWebpackPlugin({

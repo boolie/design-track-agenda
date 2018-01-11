@@ -387,6 +387,9 @@
 					<option value="wednesday">Wednesday</option>
 					<option value="thursday">Thursday</option>
 				</select>
+				<a href="#" class="btn btn--session_filter js-session-filter" data-session="mobile">
+					<span class="icon icon--mobile">Mobile</span>
+				</a>
 				<button class="btn btn--session_filter js-session-filter" data-session="conf">Conference</button>
 				<button class="btn btn--session_filter js-session-filter" data-session="travel">Travel</button>
 			</div>
