@@ -8,6 +8,7 @@
 
 /* Core */
 @import 'core.css';
+@import 'icons.css';
 
 /* Components */
 @import '../../components/filter/filter.css';
