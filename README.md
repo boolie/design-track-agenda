@@ -74,4 +74,5 @@ Very much list based:
 - Automated documentation
 - Testing
 - Asset copy config for webpack
-- Feature detection
+- CSS Feature detection
+- Modernizr for -no-js class to remove the filter

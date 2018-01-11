@@ -16,6 +16,12 @@
 	width: 50%;
 }
 
+@media ( min-width: 420px ) {
+	.js-dayview .multi-track {
+		margin-top: 0;
+	}
+}
+
 .multi-track li {
 	box-sizing: border-box;
 	width: 100%;

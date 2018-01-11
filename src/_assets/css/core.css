@@ -100,6 +100,12 @@ h6 {
 		margin-top: 10px;
 		width: 100px;
 	}
+
+	.js-dayview .day-header {
+		margin-top: 0;
+		width: 100%;
+	}
+
 	.day-sessions {
 		margin-left: 110px;
 	}
@@ -137,6 +143,12 @@ h6 {
 
 	.js-dayview .day-sessions {
 		margin-top: 45px;
+	}
+}
+
+@media ( --large-screen ) {
+	.js-dayview .day-sessions {
+		margin-top: 0;
 	}
 }
 
