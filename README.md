@@ -73,3 +73,5 @@ Very much list based:
 - Font loading strategy - most performant
 - Automated documentation
 - Testing
+- Asset copy config for webpack
+- Feature detection
