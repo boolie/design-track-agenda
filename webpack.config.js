@@ -43,7 +43,7 @@ module.exports = {
 			files: './src/**/*.css'
 		}),
 		new WebpackCleanupPlugin({
-			exclude: [ '*.html', 'assets/gfx/**/*.svg', 'sw.js', '*.ico', '*.json', 'assets/gfx/**/*.png' ],
+			exclude: [ '*.html', 'assets/gfx/**/*.svg', 'sw.js', '*.ico', '*.json', 'assets/gfx/**/*.png', 'assets/js/**/*.js' ],
 			quiet: true
 		}),
 		new HtmlWebpackPlugin({
@@ -61,7 +61,8 @@ module.exports = {
 			minify: true,
 			stripPrefix: 'dist',
 			staticFileGlobs: [
-				'dist/assets/**/*.svg'
+				'dist/assets/**/*.svg',
+				'dist/assets/js/lib/*.js'
 			],
 			staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/]
 		})
