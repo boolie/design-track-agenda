@@ -1,15 +1,3 @@
-:root {
-
-	/* Session Colours */
-	--color-travel: #f9f0d2;
-	--color-cust: #b2dfdb;
-	--color-break: #dcd8d4;
-	--color-conf: #00796b;
-	--color-other: #474f68;
-	--color-mobile: #f5e6e6;
-	--color-user: #ddae25;
-}
-
 .session {
 	border-bottom: 1px solid #cccccc;
 	flex: auto;

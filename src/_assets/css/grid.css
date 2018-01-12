@@ -89,10 +89,6 @@
 		margin-left: 0;
 	}
 
-	.fix-header {
-		position: relative;
-	}
-
 	.day:nth-child( odd ) {
 		margin-left: 0;
 	}

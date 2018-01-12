@@ -11,7 +11,12 @@
 	--color-link: #005c9c;
 	--color-link-darker: #005c9c;
 
-	/* Sessions */
-	--color-session-default: #000000;
-	--color-session-default: #efc94c;
+	/* Session Colours */
+	--color-travel: #f9f0d2;
+	--color-cust: #b2dfdb;
+	--color-break: #dcd8d4;
+	--color-conf: #00796b;
+	--color-other: #474f68;
+	--color-mobile: #f5e6e6;
+	--color-user: #ddae25;
 }
