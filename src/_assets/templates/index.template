@@ -4,6 +4,14 @@
         <title>Pegaworld Design Agenda</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/gfx/pwa/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/gfx/pwa/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/gfx/pwa/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-title" content="Pegaworld">
+        <meta name="application-name" content="Pegaworld">
+        <meta name="msapplication-TileColor" content="#603cba">
+        <meta name="msapplication-TileImage" content="/assets/pwa/favicons/mstile-144x144.png">
 		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 	</head>
 	<body>
@@ -401,6 +409,16 @@
 				</div>
 			</div>
 		</div>
+		<noscript>
+            Please enable Javascript to view this page
+        </noscript>
+        <script>
+            if( 'serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register( '/sw.js' )
+                    .then( function() { console.log( 'Service Worker Registered' ); });
+            }
+        </script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	</body>
 </html>

@@ -4,6 +4,7 @@ const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 const StyleLintPlugin = require( 'stylelint-webpack-plugin' );
 const MinifyPlugin = require( 'babel-minify-webpack-plugin' );
+const SWPrecacheWebpackPlugin = require( 'sw-precache-webpack-plugin' );
 
 module.exports = {
 	entry: './src/index.js',
@@ -42,7 +43,7 @@ module.exports = {
 			files: './src/**/*.css'
 		}),
 		new WebpackCleanupPlugin({
-			exclude: ['*.html', 'assets/gfx/**/*.svg'],
+			exclude: [ '*.html', 'assets/gfx/**/*.svg', 'sw.js', '*.ico', '*.json', 'assets/gfx/**/*.png' ],
 			quiet: true
 		}),
 		new HtmlWebpackPlugin({
@@ -51,6 +52,18 @@ module.exports = {
 			inject: 'body'
 		}),
 		new ExtractTextPlugin( '[name].[hash].styles.css' ),
-		new MinifyPlugin()
+		new MinifyPlugin(),
+		new SWPrecacheWebpackPlugin({
+			cacheId: 'pegaworld',
+			dontCacheBustUrlsMatching: /\.\w{8}\./,
+			filename: 'sw.js',
+			mergeStaticsConfig: true,
+			minify: true,
+			stripPrefix: 'dist',
+			staticFileGlobs: [
+				'dist/assets/**/*.svg'
+			],
+			staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/]
+		})
 	]
 };

@@ -1,0 +1,15 @@
+{
+    "name": "Pegaworld",
+    "short_name": "Pegaworld",
+    "icons": [
+        {
+            "src": "/assets/gfx/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
