@@ -14,7 +14,7 @@ daySelector.on( 'change', function( e ) {
 	$( this ).changeDay( this.value );
 });
 
-var daySelectorLink = $( '.day-filter' );
+var daySelectorLink = $( '.js-day-filter' );
 
 daySelectorLink.on( 'click', function( e ) {
 	$( this ).changeDay( $( this ).data( 'day' ) );

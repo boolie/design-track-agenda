@@ -44,7 +44,7 @@
 	padding: 0;
 }
 
-.multi-container .day-sessions:first-child {
+.multi-container .day_sessions:first-child {
 	border-right: 1px solid #cccccc;
 }
 

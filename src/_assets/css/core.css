@@ -96,7 +96,7 @@ h6 {
 	}
 }
 
-.day-header {
+.day_header {
 	background-color: #ffffff;
 	display: inline-block;
 	margin-top: 0;
@@ -106,7 +106,7 @@ h6 {
 	width: 100%;
 }
 
-.day-sessions {
+.day_sessions {
 	border: 1px solid #cccccc;
 	display: flex;
 	flex: auto;
@@ -118,26 +118,26 @@ h6 {
 }
 
 @media ( --small-screen ) {
-	.day-header {
+	.day_header {
 		margin-top: 10px;
 		width: 100px;
 	}
 
-	.day-sessions {
+	.day_sessions {
 		margin-left: 110px;
 		margin-top: 10px;
 	}
 }
 
 @media ( --large-screen ) {
-	.day-header {
+	.day_header {
 		position: relative;
 		width: 100%;
 	}
 }
 
 @media ( --x-large-screen ) {
-	.day-header {
+	.day_header {
 		min-height: 35px;
 		padding: 5px 0 0;
 	}

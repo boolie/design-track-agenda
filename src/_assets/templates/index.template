@@ -14,12 +14,12 @@
 			</header>
 			<div class="agenda">
 				<article class="day" id="sunday">
-					<h2 class="day-header js-head-sunday">
-						<a href="#" class="day-filter" data-day="sunday">Sunday 3rd June</a>
-						<a href="#" class="day-filter-close icon icon--close">Close Sunday</a>
+					<h2 class="day_header js-head-sunday">
+						<a href="#" class="day_header-link js-day-filter" data-day="sunday">Sunday 3rd June</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Sunday</a>
 					</h2>
-					<ul class="day-sessions">
-						<li class="session session--travel">
+					<ul class="day_sessions">
+						<li class="day_sessions-session day_sessions-session--travel">
 							<h3>
 								<time datetime="2018-06-03T12:00">12:00</time> Check-in &amp; Registration
 								<p>
@@ -27,7 +27,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--other">
+						<li class="day_sessions-session day_sessions-session--other">
 							<h3>
 								<time datetime="2018-06-03T13:00">1:00</time>-<time datetime="2018-06-03T13:30">1:30</time> Opening Remarks
 								<p>
@@ -35,7 +35,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--conf">
+						<li class="day_sessions-session day_sessions-session--conf">
 							<h3>
 								<time datetime="2018-06-03T13:30">1:30</time>-<time datetime="2018-06-03T15:00">3:00</time> Strategic Applications and Competitive Intelligence
 								<p>
@@ -43,12 +43,12 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-03T15:00">3:00</time>-<time datetime="2018-06-03T15:30">3:30</time> Break
 							</h3>
 						</li>
-						<li class="session session--cust">
+						<li class="day_sessions-session day_sessions-session--cust">
 							<h3>
 								<time datetime="2018-06-03T15:30">3:30</time>-<time datetime="2018-06-03T16:30">4:30</time> Customer Centricity &amp; Consulting
 								<p>
@@ -56,7 +56,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--cust">
+						<li class="day_sessions-session day_sessions-session--cust">
 							<h3>
 								<time datetime="2018-06-03T16:30">4:30</time>-<time datetime="2018-06-03T17:15">5:15</time> Customer Centricity &amp; Consulting
 								<p>
@@ -64,7 +64,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--conf">
+						<li class="day_sessions-session day_sessions-session--conf">
 							<h3>
 								<time datetime="2018-06-03T17:15">5:15</time>-<time datetime="2018-06-03T17:45">5.45</time> Customer Experience
 								<p>
@@ -72,7 +72,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--travel">
+						<li class="day_sessions-session day_sessions-session--travel">
 							<h3>
 								30 Mins Travel Buses from Marriot
 								<p>
@@ -80,7 +80,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-03T18:30">6:30</time> PegaWORLD
 								<p>
@@ -91,17 +91,17 @@
 					</ul>
 				</article>
 				<article class="day" id="monday">
-					<h2 class="day-header js-head-monday">
-						<a href="#" class="day-filter" data-day="monday">Monday 4th June</a>
-						<a href="#" class="day-filter-close icon icon--close">Close Monday</a>
+					<h2 class="day_header js-head-monday">
+						<a href="#" class="day_header-link js-day-filter" data-day="monday">Monday 4th June</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Monday</a>
 					</h2>
-					<ul class="day-sessions">
-						<li class="session session--other">
+					<ul class="day_sessions">
+						<li class="day_sessions-session day_sessions-session--other">
 							<h3>
 								<time datetime="2018-06-04T08:00">8:00</time> PegaWORLD
 							</h3>
 						</li>
-						<li class="session session--other">
+						<li class="day_sessions-session day_sessions-session--other">
 							<h3>
 								<time datetime="2018-06-04T18:00">6:00</time> Customer Appreciation Event - Universal Studios, Orlando
 							</h3>
@@ -109,17 +109,17 @@
 					</ul>
 				</article>
 				<article class="day" id="tuesday">
-					<h2 class="day-header js-head-tuesday">
-						<a href="#" class="day-filter" data-day="tuesday">Tuesday 5th June</a>
-						<a href="#" class="day-filter-close icon icon--close">Close Tuesday</a>
+					<h2 class="day_header js-head-tuesday">
+						<a href="#" class="day_header-link js-day-filter" data-day="tuesday">Tuesday 5th June</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Tuesday</a>
 					</h2>
-					<ul class="day-sessions">
-						<li class="session session--other">
+					<ul class="day_sessions">
+						<li class="day_sessions-session day_sessions-session--other">
 							<h3>
 								<time datetime="2018-06-05T08:00">8:00</time> PegaWORLD
 							</h3>
 						</li>
-						<li class="session session--other">
+						<li class="day_sessions-session day_sessions-session--other">
 							<h3>
 								<time datetime="2018-06-05T18:00">6:00</time> Design Track Event
 								<p>
@@ -130,34 +130,34 @@
 					</ul>
 				</article>
 				<article class="day" id="wednesday">
-					<h2 class="day-header js-head-wednesday">
-						<a href="#" class="day-filter" data-day="wednesday">Wednesday 6th June</a>
-						<a href="#" class="day-filter-close icon icon--close">Close Wednesday</a>
+					<h2 class="day_header js-head-wednesday">
+						<a href="#" class="day_header-link js-day-filter" data-day="wednesday">Wednesday 6th June</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Wednesday</a>
 					</h2>
-					<ul class="day-sessions">
+					<ul class="day_sessions">
 						<li class="multi-container">
-							<ul class="day-sessions multi-track track-head-container">
+							<ul class="day_sessions multi-track track-head-container">
 								<li class="track-head" data-track="1">
 									<p>Track 1</p>
 									<span class="arrow"></span>
 							  	</li>
 							</ul>
-							<ul class="day-sessions multi-track track-head-container">
+							<ul class="day_sessions multi-track track-head-container">
 							  	<li class="track-head" data-track="2">
 									<p>Track 2</p>
 									<span class="arrow"></span>
 							  </li>
 							</ul>
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-06T07:00">7:00</time>-<time datetime="2018-06-06T08:00">8:00</time> Breakfast
 							</h3>
 						</li>
 						<li class="multi-container">
 				  			<!-- Track 1 -->
-							<ul class="day-sessions multi-track js-track-1">
-							  	<li class="session session--mobile">
+							<ul class="day_sessions multi-track js-track-1">
+							  	<li class="day_sessions-session day_sessions-session--mobile">
 									<h3>
 										<time datetime="2018-06-06T08:15">8:15</time>-<time datetime="2018-06-06T08:45">8:45</time> Mobile
 										<p>
@@ -165,7 +165,7 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--user">
+								<li class="day_sessions-session day_sessions-session--user">
 									<h3>
 										<time datetime="2018-06-06T08:45">8:45</time>-<time datetime="2018-06-06T09:15">9:15</time> User Centered Design
 										<p>
@@ -173,7 +173,7 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--user">
+								<li class="day_sessions-session day_sessions-session--user">
 									<h3>
 										<time datetime="2018-06-06T09:15">9:15</time>-<time datetime="2018-06-06T10:35">10:35</time> User Centered Design
 										<p>
@@ -181,12 +181,12 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--break">
+								<li class="day_sessions-session day_sessions-session--break">
 									<h3>
 										<time datetime="2018-06-06T10:35">10:35</time>-<time datetime="2018-06-06T1050">10:50</time> Break
 									</h3>
 								</li>
-								<li class="session session--user">
+								<li class="day_sessions-session day_sessions-session--user">
 									<h3>
 										<time datetime="2018-06-06T10:50">10:50</time>-<time datetime="2018-06-06T12:20">12:20</time> User Centered Design
 										<p>
@@ -196,8 +196,8 @@
 								</li>
 							</ul>
 							<!-- Track 2 -->
-							<ul class="day-sessions multi-track js-track-2">
-								<li class="session session--user">
+							<ul class="day_sessions multi-track js-track-2">
+								<li class="day_sessions-session day_sessions-session--user">
 									<h3>
 										<time datetime="2018-06-06T08:15">8:15</time>-<time datetime="2018-06-06T08:45">8:45</time> User Centered Design
 										<p>
@@ -205,7 +205,7 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--mobile">
+								<li class="day_sessions-session day_sessions-session--mobile">
 									<h3>
 										<time datetime="2018-06-06T08:45">8:45</time>-<time datetime="2018-06-06T09:15">9:15</time> Mobile
 										<p>
@@ -213,7 +213,7 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--mobile">
+								<li class="day_sessions-session day_sessions-session--mobile">
 									<h3>
 										<time datetime="2018-06-06T09:15">9:15</time>-<time datetime="2018-06-06T10:45">10:45</time> Mobile
 										<p>
@@ -221,12 +221,12 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--break">
+								<li class="day_sessions-session day_sessions-session--break">
 									<h3>
 										<time datetime="2018-06-06T10:45">10:45</time>-<time datetime="2018-06-06T11:00">11:00</time> Break
 									</h3>
 								</li>
-								<li class="session session--mobile">
+								<li class="day_sessions-session day_sessions-session--mobile">
 									<h3>
 										<time datetime="2018-06-06T11:00">11:00</time>-<time datetime="2018-06-06T12:20">12:20</time> Mobile
 										<p>
@@ -237,15 +237,15 @@
 							</ul>
 							<!-- End Separate Tracks -->
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-06T12:20">12:20</time>-<time datetime="2018-06-06T13:05">1:05</time> Lunch
 							</h3>
 						</li>
 						<li class="multi-container">
 							<!-- Track 1 -->
-							<ul class="day-sessions multi-track js-track-1">
-								<li class="session session--mobile">
+							<ul class="day_sessions multi-track js-track-1">
+								<li class="day_sessions-session day_sessions-session--mobile">
 									<h3>
 										<time datetime="2018-06-06T13:05">1:05</time>-<time datetime="2018-06-06T14:35">2:35</time> Mobile
 										<p>
@@ -253,7 +253,7 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--mobile">
+								<li class="day_sessions-session day_sessions-session--mobile">
 									<h3>
 										<time datetime="2018-06-06T14:35">2:35</time>-<time datetime="2018-06-06T15:55">3:55</time> Mobile
 										<p>
@@ -263,8 +263,8 @@
 								</li>
 							</ul>
 							<!-- Track 2 -->
-							<ul class="day-sessions multi-track js-track-2">
-								<li class="session session--user">
+							<ul class="day_sessions multi-track js-track-2">
+								<li class="day_sessions-session day_sessions-session--user">
 									<h3>
 										<time datetime="2018-06-06T13:05">1:05</time>-<time datetime="2018-06-06T14:35">2:35</time> User Centered Design
 										<p>
@@ -272,7 +272,7 @@
 										</p>
 									</h3>
 								</li>
-								<li class="session session--user">
+								<li class="day_sessions-session day_sessions-session--user">
 									<h3>
 										<time datetime="2018-06-06T14:35">2:35</time>-<time datetime="2018-06-06T15:55">3:55</time> User Centered Design
 										<p>
@@ -283,12 +283,12 @@
 							</ul>
 							<!-- End Separate Tracks -->
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-06T15:55">3:55</time>-<time datetime="2018-06-06T16:15">4:15</time> Break
 							</h3>
 						</li>
-						<li class="session session--conf">
+						<li class="day_sessions-session day_sessions-session--conf">
 							<h3>
 								<time datetime="2018-06-06T16:15">4:15</time>-<time datetime="2018-06-06T17:30">5:30</time> Upgrade Information
 								<p>
@@ -296,7 +296,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--cust">
+						<li class="day_sessions-session day_sessions-session--cust">
 							<h3>
 								<time datetime="2018-06-06T17:30">5:30</time>-<time datetime="2018-06-06T18:30">6:30</time> Customer Centricity
 								<p>
@@ -304,7 +304,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-06T19:30">7:30</time> Design Track Event
 								<p>
@@ -315,17 +315,17 @@
 					</ul>
 				</article>
 				<article class="day" id="thursday">
-					<h2 class="day-header js-head-thursday">
-						<a href="#" class="day-filter" data-day="thursday">Thursday 7th June</a>
-						<a href="#" class="day-filter-close icon icon--close">Close Thursday</a>
+					<h2 class="day_header js-head-thursday">
+						<a href="#" class="day_header-link js-day-filter" data-day="thursday">Thursday 7th June</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Thursday</a>
 					</h2>
-					<ul class="day-sessions">
-						<li class="session session--break">
+					<ul class="day_sessions">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-07T07:00">7:00</time>-<time datetime="2018-06-07T08:00">8:00</time> Breakfast
 							</h3>
 						</li>
-						<li class="session session--cust">
+						<li class="day_sessions-session day_sessions-session--cust">
 							<h3>
 								<time datetime="2018-06-07T08:15">8:15</time>-<time datetime="2018-06-07T10:15">10:15</time> Customer Centricity
 								<p>
@@ -333,12 +333,12 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-07T10:15">10:15</time>-<time datetime="2018-06-07T10:45">10:45</time> Break
 							</h3>
 						</li>
-						<li class="session session--cust">
+						<li class="day_sessions-session day_sessions-session--cust">
 							<h3>
 								<time datetime="2018-06-07T10:45">10:45</time>-<time datetime="2018-06-07T12:45">12:45</time> Customer Centricity
 								<p>
@@ -346,12 +346,12 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--break">
+						<li class="day_sessions-session day_sessions-session--break">
 							<h3>
 								<time datetime="2018-06-07T12:45">12:45</time>-<time datetime="2018-06-07T13:45">1:45</time> Lunch
 							</h3>
 						</li>
-						<li class="session session--cust">
+						<li class="day_sessions-session day_sessions-session--cust">
 							<h3>
 								<time datetime="2018-06-07T13:45">1:45</time>-<time datetime="2018-06-07T14:30">2:30</time> Customer Centricity
 								<p>
@@ -359,7 +359,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--other">
+						<li class="day_sessions-session day_sessions-session--other">
 							<h3>
 								<time datetime="2018-06-07T14:30">2:30</time>-<time datetime="2018-06-07T14:45">2:45</time> Closing Remarks
 								<p>
@@ -367,7 +367,7 @@
 								</p>
 							</h3>
 						</li>
-						<li class="session session--travel">
+						<li class="day_sessions-session day_sessions-session--travel">
 							<h3>
 								<From time datetime="2018-06-07T15:00">3:00</time> travel from PegaWorld
 								<p>

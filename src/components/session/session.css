@@ -1,4 +1,4 @@
-.session {
+.day_sessions-session {
 	border-bottom: 1px solid #cccccc;
 	flex: auto;
 	opacity: 1;
@@ -6,55 +6,55 @@
 	transition: opacity 1s;
 }
 
-.session h3 {
+.day_sessions-session h3 {
 	color: #ffffff;
 }
 
-.session--user h3, .session--cust h3, .session--travel h3, .session--mobile h3, .session--break h3  {
+.day_sessions-session--user h3, .day_sessions-session--cust h3, .day_sessions-session--travel h3, .day_sessions-session--mobile h3, .day_sessions-session--break h3  {
 	color: #292f32;
 }
 
-.js-filter-session-active .session {
+.js-filter-session-active .day_sessions-session {
 	opacity: 0.2;
 	transition: opacity 1s;
 }
 
-.session--break {
+.day_sessions-session--break {
 	background-color: var( --color-break );
 }
 
-.session--conf {
+.day_sessions-session--conf {
 	background-color: var( --color-conf );
 }
 
-.session--cust {
+.day_sessions-session--cust {
 	background-color: var( --color-cust );
 	color: #ffffff;
 }
 
-.session--mobile {
+.day_sessions-session--mobile {
 	background-color: var( --color-mobile );
 }
 
-.session--other {
+.day_sessions-session--other {
 	background-color: var( --color-other );
 }
 
-.session--travel {
+.day_sessions-session--travel {
 	background-color: var( --color-travel );
 }
 
-.session--user {
+.day_sessions-session--user {
 	background-color: var( --color-user );
 }
 
-.js-session-break .session--break,
-.js-session-conf .session--conf,
-.js-session-cust .session--cust,
-.js-session-mobile .session--mobile,
-.js-session-other .session--other,
-.js-session-travel .session--travel,
-.js-session-user .session--user {
+.js-session-break .day_sessions-session--break,
+.js-session-conf .day_sessions-session--conf,
+.js-session-cust .day_sessions-session--cust,
+.js-session-mobile .day_sessions-session--mobile,
+.js-session-other .day_sessions-session--other,
+.js-session-travel .day_sessions-session--travel,
+.js-session-user .day_sessions-session--user {
 	opacity: 1;
 	transition: opacity 1s;
 }

@@ -1,8 +1,8 @@
-a.day-filter-close {
+a.day_header-link--close {
 	display: none;
 }
 
-.js-dayview a.day-filter-close {
+.js-dayview a.day_header-link--close {
 	display: inline;
 }
 
@@ -16,7 +16,7 @@ a.day-filter-close {
 	width: 100%;
 }
 
-.js-dayview .day-sessions {
+.js-dayview .day_sessions {
 	margin-left: 0;
 }
 
@@ -30,12 +30,12 @@ a.day-filter-close {
 
 @media ( --small-screen ) {
 
-	.js-dayview .day-header {
+	.js-dayview .day_header {
 		margin-top: 0;
 		width: 100%;
 	}
 
-	.js-dayview .day-sessions {
+	.js-dayview .day_sessions {
 		margin-top: 45px;
 	}
 }
@@ -61,7 +61,7 @@ a.day-filter-close {
 		z-index: 1;
 	}
 
-	.js-dayview .day-sessions {
+	.js-dayview .day_sessions {
 		margin-top: 0;
 	}
 
