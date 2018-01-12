@@ -1,0 +1,88 @@
+a.day-filter-close {
+	display: none;
+}
+
+.js-dayview a.day-filter-close {
+	display: inline;
+}
+
+.js-dayview .day {
+	display: none;
+}
+
+.js-dayview h2 {
+	float: initial;
+	min-width: 300px;
+	width: 100%;
+}
+
+.js-dayview .day-sessions {
+	margin-left: 0;
+}
+
+.js-sunday #sunday,
+.js-monday #monday,
+.js-tuesday #tuesday,
+.js-wednesday #wednesday,
+.js-thursday #thursday {
+	display: inline;
+}
+
+@media ( --small-screen ) {
+
+	.js-dayview .day-header {
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.js-dayview .day-sessions {
+		margin-top: 45px;
+	}
+}
+
+@media ( --large-screen ) {
+
+	.js-sunday #sunday,
+	.js-monday #monday,
+	.js-tuesday #tuesday,
+	.js-wednesday #wednesday,
+	.js-thursday #thursday {
+		background-color: #ffffff;
+		border: 1px solid #000000;
+		left: 50%;
+		opacity: 1;
+		padding: 10px;
+		position: absolute;
+		top: 60px;
+		-webkit-transform: translateX( -50% ) scale( 1.1 );
+		transform: translateX( -50% ) scale( 1.1 );
+		transition: all 0.5s;
+		width: 80%;
+		z-index: 1;
+	}
+
+	.js-dayview .day-sessions {
+		margin-top: 0;
+	}
+
+	.js-dayview .day {
+		display: flex;
+		opacity: 0.25;
+		z-index: -1;
+	}
+}
+
+@media ( --x-large-screen ) {
+
+	.js-dayview {
+		grid-template-columns: repeat( 4, 1fr );
+	}
+
+	.js-sunday #sunday,
+	.js-monday #monday,
+	.js-tuesday #tuesday,
+	.js-wednesday #wednesday,
+	.js-thursday #thursday {
+		width: 40%;
+	}
+}

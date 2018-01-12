@@ -32,6 +32,7 @@ label {
 	margin-left: 5px;
 }
 
+/* Headers */
 h1, h2, h3, h4, h5, h6{
 	color: var( --color-header );
 }
@@ -105,19 +106,26 @@ h6 {
 	width: 100%;
 }
 
+.day-sessions {
+	border: 1px solid #cccccc;
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+	list-style: none;
+	margin-bottom: 15px;
+	margin-top: 35px;
+	padding: 0;
+}
+
 @media ( --small-screen ) {
 	.day-header {
 		margin-top: 10px;
 		width: 100px;
 	}
 
-	.js-dayview .day-header {
-		margin-top: 0;
-		width: 100%;
-	}
-
 	.day-sessions {
 		margin-left: 110px;
+		margin-top: 10px;
 	}
 }
 
@@ -133,301 +141,4 @@ h6 {
 		min-height: 35px;
 		padding: 5px 0 0;
 	}
-}
-
-.day-sessions {
-	border: 1px solid #cccccc;
-	display: flex;
-	flex: auto;
-	flex-direction: column;
-	list-style: none;
-	margin-bottom: 15px;
-	margin-top: 35px;
-	padding: 0;
-}
-
-@media ( --small-screen ) {
-	.day-sessions {
-		margin-top: 10px;
-	}
-
-	.js-dayview .day-sessions {
-		margin-top: 45px;
-	}
-}
-
-@media ( --large-screen ) {
-	.js-dayview .day-sessions {
-		margin-top: 0;
-	}
-}
-
-li {
-	border-bottom: 1px solid #cccccc;
-	padding: 10px;
-}
-
-#wrap {
-	box-sizing: border-box;
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr;
-	grid-gap: 1rem;
-	-ms-grid-rows: 30px auto 30px;
-	grid-template-columns: 1fr;
-	grid-template-rows: 30px auto 30px;
-	height: 99vh;
-	overflow: auto;
-	padding: 10px;
-	position: relative;
-}
-
-#wrap header {
-	-ms-grid-column: 1;
-	-ms-grid-row: 1;
-}
-
-.fix-header {
-	position: fixed;
-}
-
-.agenda {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr;
-	-ms-grid-row: 2;
-	-ms-grid-rows: auto;
-	grid-template-columns: 1fr;
-	padding-bottom: 80px;
-	width: 100%;
-}
-
-@media ( min-width: 600px ) {
-	.agenda {
-		-ms-grid-columns: 1fr 1fr;
-		grid-template-columns: repeat( 2, 1fr );
-		padding-bottom: 40px;
-	}
-
-	h2 {
-		float: initial;
-		width: 100%;
-	}
-
-	.day-sessions {
-		margin-left: 0;
-	}
-
-	.fix-header {
-		position: relative;
-	}
-
-	.day:nth-child( odd ) {
-		margin-left: 0;
-	}
-}
-
-@media ( min-width: 768px ) {
-
-	#wrap {
-		-ms-grid-rows: 50px auto 30px;
-		grid-template-rows: 50px auto 30px;
-	}
-
-	.agenda {
-		display: -ms-grid;
-		-ms-grid-columns: 1fr 1fr 1fr 2fr 1fr;
-		grid-template-columns: repeat( 3, 1fr ) 2fr 1fr;
-	}
-
-	h2 {
-		float: initial;
-		width: 100%;
-	}
-
-	.day-sessions {
-		margin-left: 0;
-	}
-
-	.day:nth-child( odd ) {
-		margin-left: 10px;
-	}
-
-	.day:first-child {
-		margin-left: 0;
-	}
-}
-
-.day {
-	display: flex;
-	flex-direction: column;
-	margin-left: 0;
-	position: relative;
-}
-
-/* Day View - mobile */
-
-a.day-filter-close {
-	display: none;
-}
-
-.js-dayview a.day-filter-close {
-	display: inline;
-}
-
-.js-dayview .day {
-	display: none;
-}
-
-/* IE Fix for column assignment */
-#sunday {
-	-ms-grid-column: 1;
-	-ms-grid-row: 1;
-}
-
-#monday {
-	-ms-grid-column: 1;
-	-ms-grid-row: 2;
-}
-
-#tuesday {
-	-ms-grid-column: 1;
-	-ms-grid-row: 3;
-}
-
-#wednesday {
-	-ms-grid-column: 1;
-	-ms-grid-row: 4;
-}
-
-#thursday {
-	-ms-grid-column: 1;
-	-ms-grid-row: 5;
-}
-
-@media ( min-width: 600px ) {
-	#sunday {
-		-ms-grid-column: 1;
-		-ms-grid-row: 1;
-	}
-
-	#monday {
-		-ms-grid-column: 2;
-		-ms-grid-row: 1;
-	}
-
-	#tuesday {
-		-ms-grid-column: 1;
-		-ms-grid-row: 2;
-	}
-
-	#wednesday {
-		-ms-grid-column: 2;
-		-ms-grid-row: 2;
-	}
-
-	#thursday {
-		-ms-grid-column: 1;
-		-ms-grid-row: 3;
-	}
-}
-
-@media ( min-width: 768px ) {
-	#sunday {
-		-ms-grid-column: 1;
-		-ms-grid-row: 1;
-	}
-
-	#monday {
-		-ms-grid-column: 2;
-		-ms-grid-row: 1;
-	}
-
-	#tuesday {
-		-ms-grid-column: 3;
-		-ms-grid-row: 1;
-	}
-
-	#wednesday {
-		-ms-grid-column: 4;
-		-ms-grid-row: 1;
-	}
-
-	#thursday {
-		-ms-grid-column: 5;
-		-ms-grid-row: 1;
-	}
-}
-
-.js-sunday #sunday,
-.js-monday #monday,
-.js-tuesday #tuesday,
-.js-wednesday #wednesday,
-.js-thursday #thursday {
-	display: inline;
-}
-
-.js-dayview h2 {
-	float: initial;
-	min-width: 300px;
-	width: 100%;
-}
-
-.js-dayview .day-sessions {
-	margin-left: 0;
-}
-
-@media ( min-width: 600px ) {
-	.day {
-		margin-left: 10px;
-		-webkit-transform: initial;
-		transform: initial;
-		transition: transform 0.5s;
-	}
-
-	.js-dayview .day {
-		display: flex;
-		opacity: 0.25;
-		z-index: -1;
-	}
-
-	.js-sunday #sunday,
-	.js-monday #monday,
-	.js-tuesday #tuesday,
-	.js-wednesday #wednesday,
-	.js-thursday #thursday {
-		background-color: #ffffff;
-		border: 1px solid #000000;
-		left: 50%;
-		opacity: 1;
-		padding: 10px;
-		position: absolute;
-		top: 60px;
-		-webkit-transform: translateX( -50% ) scale( 1.1 );
-		transform: translateX( -50% ) scale( 1.1 );
-		transition: all 0.5s;
-		width: 80%;
-		z-index: 1;
-	}
-}
-
-/* Day View - desktop */
-@media ( min-width: 768px ) {
-	.js-dayview {
-		grid-template-columns: repeat( 4, 1fr );
-	}
-
-	.js-sunday #sunday,
-	.js-monday #monday,
-	.js-tuesday #tuesday,
-	.js-wednesday #wednesday,
-	.js-thursday #thursday {
-		width: 40%;
-	}
-}
-
-/* session filter */
-
-.agenda > * {
-	flex: 0 0 auto;
 }

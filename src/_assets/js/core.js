@@ -15,9 +15,9 @@ wrap.on( 'scroll', function( e ) {
 	$( '.day' ).each( function() {
 		var activeDay = $( this ).attr( 'id' );
 		if ( $( this ).isInViewport() ) {
-			$( '.js-head-' + activeDay ).addClass( 'fix-header' );
+			$( '.js-head-' + activeDay ).addClass( '-u-fixed' );
 		} else {
-			$( '.js-head-' + activeDay ).removeClass( 'fix-header' );
+			$( '.js-head-' + activeDay ).removeClass( '-u-fixed' );
 		}
 	});
 });

@@ -11,8 +11,10 @@
 }
 
 .session {
+	border-bottom: 1px solid #cccccc;
 	flex: auto;
 	opacity: 1;
+	padding: 10px;
 	transition: opacity 1s;
 }
 
