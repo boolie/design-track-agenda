@@ -26,7 +26,7 @@
 	vertical-align: top;
 }
 
-.js-btn-filter--active span {
+.js-btn-filter--active {
 	opacity: 1;
 	transition: opacity 1s;
 }

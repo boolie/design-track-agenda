@@ -1,8 +1,16 @@
 a.day_header-link--close {
 	display: none;
 }
+.-u-fixed .day_header-link--close {
+	position: absolute;
+	right: 10px;
+}
 
-.js-dayview a.day_header-link--close {
+.js-sunday #sunday .day_header-link--close,
+.js-monday #monday .day_header-link--close,
+.js-tuesday #tuesday .day_header-link--close,
+.js-wednesday #wednesday .day_header-link--close,
+.js-thursday #thursday .day_header-link--close {
 	display: inline;
 }
 
@@ -28,10 +36,13 @@ a.day_header-link--close {
 	display: inline;
 }
 
+.js-dayview .day_header {
+	margin-top: 0;
+}
+
 @media ( --small-screen ) {
 
 	.js-dayview .day_header {
-		margin-top: 0;
 		width: 100%;
 	}
 
@@ -41,6 +52,10 @@ a.day_header-link--close {
 }
 
 @media ( --large-screen ) {
+
+	.js-dayview .day_header {
+		margin-top: 10px;
+	}
 
 	.js-sunday #sunday,
 	.js-monday #monday,

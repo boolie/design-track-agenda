@@ -16,7 +16,7 @@
 				<article class="day" id="sunday">
 					<h2 class="day_header js-head-sunday">
 						<a href="#" class="day_header-link js-day-filter" data-day="sunday">Sunday 3rd June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Sunday</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Sunday Track"></a>
 					</h2>
 					<ul class="day_sessions">
 						<li class="day_sessions-session day_sessions-session--travel">
@@ -93,7 +93,7 @@
 				<article class="day" id="monday">
 					<h2 class="day_header js-head-monday">
 						<a href="#" class="day_header-link js-day-filter" data-day="monday">Monday 4th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Monday</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Monday Track"></a>
 					</h2>
 					<ul class="day_sessions">
 						<li class="day_sessions-session day_sessions-session--other">
@@ -111,7 +111,7 @@
 				<article class="day" id="tuesday">
 					<h2 class="day_header js-head-tuesday">
 						<a href="#" class="day_header-link js-day-filter" data-day="tuesday">Tuesday 5th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Tuesday</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Tuesday Track"></a>
 					</h2>
 					<ul class="day_sessions">
 						<li class="day_sessions-session day_sessions-session--other">
@@ -132,7 +132,7 @@
 				<article class="day" id="wednesday">
 					<h2 class="day_header js-head-wednesday">
 						<a href="#" class="day_header-link js-day-filter" data-day="wednesday">Wednesday 6th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Wednesday</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Wednesday Track"></a>
 					</h2>
 					<ul class="day_sessions">
 						<li class="multi-container">
@@ -317,7 +317,7 @@
 				<article class="day" id="thursday">
 					<h2 class="day_header js-head-thursday">
 						<a href="#" class="day_header-link js-day-filter" data-day="thursday">Thursday 7th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close">Close Thursday</a>
+						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Sunday Track"></a>
 					</h2>
 					<ul class="day_sessions">
 						<li class="day_sessions-session day_sessions-session--break">
@@ -391,27 +391,13 @@
 					</select>
 				</div>
 				<div class="filter-options">
-					<a href="#" class="link--filter js-session-filter" data-session="conf">
-						<span class="icon icon--conf">Conf</span>
-					</a>
-					<a href="#" class="link--filter js-session-filter" data-session="cust">
-						<span class="icon icon--cust">Cust</span>
-					</a>
-					<a href="#" class="link--filter js-session-filter" data-session="mobile">
-						<span class="icon icon--mobile">Mobile</span>
-					</a>
-					<a href="#" class="link--filter js-session-filter" data-session="user">
-						<span class="icon icon--user">User</span>
-					</a>
-					<a href="#" class="link--filter js-session-filter" data-session="break">
-						<span class="icon icon--break">User</span>
-					</a>
-					<a href="#" class="link--filter js-session-filter" data-session="travel">
-						<span class="icon icon--travel">Travel</span>
-					</a>
-					<a href="#" class="link--filter js-session-filter" data-session="other">
-						<span class="icon icon--other">Other</span>
-					</a>
+					<span role="button" aria-pressed="false" class="js-session-filter icon icon--conf" data-session="conf">Main Conference</span>
+					<span role="button" aria-pressed="false" class="js-session-filter icon icon--cust" data-session="cust">Customer</span>
+					<span role="button" aria-pressed="false" class="js-session-filter icon icon--mobile" data-session="mobile">Mobile</span>
+					<span role="button" aria-pressed="false" class="js-session-filter icon icon--user" data-session="user">User Centered Design</span>
+					<span role="button" aria-pressed="false" class="js-session-filter icon icon--break" data-session="break">Breaks and Meals</span>
+					<span role="button" aria-pressed="false" class="js-session-filter icon icon--travel" data-session="travel">Travel</span>
+					<span role="button" aria-pressed="false" class="js-session-filter icon icon--other" data-session="other">Other</span>
 				</div>
 			</div>
 		</div>

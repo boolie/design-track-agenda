@@ -1,17 +1,10 @@
 .day_sessions-session {
 	border-bottom: 1px solid #cccccc;
+	border-left: 10px solid #ffffff;
 	flex: auto;
 	opacity: 1;
 	padding: 10px;
 	transition: opacity 1s;
-}
-
-.day_sessions-session h3 {
-	color: #ffffff;
-}
-
-.day_sessions-session--user h3, .day_sessions-session--cust h3, .day_sessions-session--travel h3, .day_sessions-session--mobile h3, .day_sessions-session--break h3  {
-	color: #292f32;
 }
 
 .js-filter-session-active .day_sessions-session {
@@ -20,32 +13,31 @@
 }
 
 .day_sessions-session--break {
-	background-color: var( --color-break );
+	border-left-color: var( --color-break );
 }
 
 .day_sessions-session--conf {
-	background-color: var( --color-conf );
+	border-left-color: var( --color-conf );
 }
 
 .day_sessions-session--cust {
-	background-color: var( --color-cust );
-	color: #ffffff;
+	border-left-color: var( --color-cust );
 }
 
 .day_sessions-session--mobile {
-	background-color: var( --color-mobile );
+	border-left-color: var( --color-mobile );
 }
 
 .day_sessions-session--other {
-	background-color: var( --color-other );
+	border-left-color: var( --color-other );
 }
 
 .day_sessions-session--travel {
-	background-color: var( --color-travel );
+	border-left-color: var( --color-travel );
 }
 
 .day_sessions-session--user {
-	background-color: var( --color-user );
+	border-left-color: var( --color-user );
 }
 
 .js-session-break .day_sessions-session--break,

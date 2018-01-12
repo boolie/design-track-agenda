@@ -11,6 +11,7 @@ var sessionFilterBtn = $( '.js-session-filter' );
 sessionFilterBtn.on( 'click', function( e ) {
 	if ( $( this ).hasClass( 'js-btn-filter--active' ) ) {
 		$( this ).removeClass( 'js-btn-filter--active' );
+		$( this ).attr( 'aria-pressed', 'false' );
 		$( '.agenda' ).removeClass( 'js-session-' + $( this ).data( 'session' ) );
 
 		if ( $( '.agenda' ).attr( 'class' ).indexOf( 'js-session-' ) === -1 ) {
@@ -19,5 +20,6 @@ sessionFilterBtn.on( 'click', function( e ) {
 	} else {
 		$( this ).sessionFilter( $( this ).data( 'session' ) );
 		$( this ).addClass( 'js-btn-filter--active' );
+		$( this ).attr( 'aria-pressed', 'true' );
 	}
 });
