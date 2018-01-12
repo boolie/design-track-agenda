@@ -17,7 +17,7 @@
 	<body>
 		<div id="wrap">
 			<header>
-				<img src="/assets/gfx/pega-logo.svg" class="logo" alt="Pega Systems">
+				<img src="assets/gfx/pega-logo.svg" class="logo" alt="Pega Systems">
 				<h1 class="title">WORLD Design Track June 3-7 2018</h1>
 			</header>
 			<div class="agenda">
@@ -415,7 +415,7 @@
         <script>
             if( 'serviceWorker' in navigator) {
                 navigator.serviceWorker
-                    .register( '/sw.js' )
+                    .register( 'sw.js' )
                     .then( function() { console.log( 'Service Worker Registered' ); });
             }
         </script>
