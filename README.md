@@ -59,14 +59,12 @@ Very much list based:
 - Work without Javascript enabled ++
 - "js-*" prefix for javascript hook classes
 - Transform - need to specify z-index
-- Sprite map for icons
 - Use of [Moqups](https://app.moqups.com/iovenden/NF5q9N8spb/edit/page/ae80896a8) for wireframming
 - Rapid prototyping with jQuery - [codepen](https://codepen.io/ianovenden/pen/NXvQgr)
 - Ability to add to calendar
 - Time and location micro formats
 - Discuss technical aspects
 - CSS variables
-- encorporate accessibility checking into build process
 
 ## TODO
 
@@ -76,3 +74,6 @@ Very much list based:
 - Asset copy config for webpack
 - CSS Feature detection
 - Modernizr for -no-js class to remove the filter
+- Sprite map for icons
+- Push notifications - session reminders
+- Encorporate accessibility checking into build process
