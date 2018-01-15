@@ -14,6 +14,10 @@ a {
 	color: var( --color-link-darker );
 }
 
+p, label, time {
+	background-color: var( --color-header-background );
+}
+
 p, label {
 	font-size: 1.3rem;
 	margin-top: 5px;
@@ -34,6 +38,7 @@ label {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6{
+	background-color: var( --color-header-background );
 	color: var( --color-header );
 }
 

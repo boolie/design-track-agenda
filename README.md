@@ -77,3 +77,4 @@ Very much list based:
 - Sprite map for icons
 - Push notifications - session reminders
 - Encorporate accessibility checking into build process
+- Split build process into dev and prod
