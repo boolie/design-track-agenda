@@ -15,7 +15,7 @@ a {
 }
 
 p, label, time {
-	background-color: var( --color-header-background );
+	background-color: inherit;
 }
 
 p, label {
