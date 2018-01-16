@@ -1,0 +1,4589 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head>
+		<title>https://ianovenden.github.io/design-track-agenda/dist/index.html - WCAG 2.0 AA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+				<base href="http://www.cynthiasays.com/report.aspx" />
+		<style>
+a:focus, input:focus, select:focus, button:focus, textarea:focus {
+    outline: 2px solid orange !important;
+}
+
+
+@media print {
+	.report
+	{
+		margin: 0em;
+	}
+	.report h1
+	{
+		font-size: medium;
+	}
+	.dashReport body, table
+	{
+		font-size: 77%;
+		width: 100%;
+	}
+	.dashReport .chart img
+	{
+		width: 300;
+		height: 150;
+	}
+}
+:enabled {
+	    opacity: 1.6;
+}
+
+:disabled {
+	opacity: 0.6;
+}
+#checkpointTable label {
+    display: inline !important;
+}
+
+html, 
+body {
+    height: 100%;
+}
+form {
+  margin-bottom: 0em;
+}
+body {
+	margin: 0;
+	background: #F3F3F3;
+	font-family: Verdana !important;
+	color: black;
+	font-size: 13px;
+}
+
+input[type=checkbox], input[type=radio] {
+    height:13px;
+    background:none;
+    border:none;
+    box-shadow:none;
+    border-radius:0px !important;
+}
+
+table, button
+{
+    font-family: Verdana !important;
+	font-size: 13px !important;
+}
+button, select, input{
+    padding: 3px 12px;
+    font-size: 13px !important;
+    font-family: Verdana !important;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+textarea {
+    font-family: Verdana !important;
+	font-size: 13px !important;
+    padding: 3px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+button[disabled], button[disabled]:hover {
+	background: #efefef;
+	color: #808080;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+input:focus, button:focus, select:focus, textarea:focus {
+	outline: 2px solid orange;
+}
+input:active, button:active, select:active, textarea:active {
+	outline: 2px solid orange;
+}
+input[disabled="disabled"] {
+	color: #808080;
+}
+img {
+	border: none;
+}
+.header {
+	height: 82px;
+	top: 0;
+    position: absolute;
+    margin-top: 20px;
+}
+.header a {
+	color: #666666;
+}
+.header a img {
+	padding: 8px 0 0 25px;
+    width: 24em;
+}
+.topLinks {
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+.topLinks a, .topLinks a:visited {
+	display: block;
+	float: left;
+	padding: 13px 20px;
+	border-left: 1px solid #dfdfdf;
+	color: #666666;
+}
+.topLinks a:hover, .topLinks a:visited:hover {
+	color: #666666;
+	text-decoration: none;
+}
+.topLinks a:focus {
+	outline: 2px solid orange;
+}
+.skipNav a {
+	position: absolute;
+	left: -10000px;
+}
+.skipNav a:focus {
+	position: relative;
+	left: 0;
+}
+.skipNav a:active {
+	position: relative;
+	left: 0;
+}
+.Tabs {
+	background: #007DE4;
+	overflow: hidden;
+	height: 37px;
+}
+.Tabs a
+{    
+	color: #F3F3F3;
+	float: left;
+	display: block;
+	padding: 11px 17px 0 17px;
+	height: 26px;
+}
+.Tabs a:hover
+{
+	color: white;
+	text-decoration: none;
+    background-color:#434D56;
+}
+.Tabs a:focus
+{
+	outline: 2px solid orange;
+}
+.tabsel
+{
+	color: #21262a;
+	float: left;
+	display: block;
+	padding: 0 17px;
+	background: #F3F3F3;
+	padding: 11px 17px 13px 17px\9;
+	padding: 11px 17px 0 17px;
+	height: 26px;
+}
+.tabSelLeft
+{
+	display: none;
+}
+.tabSelRight
+{
+	display: none;
+}
+.tabDiv
+{
+	display: none;
+}
+.leftFloat
+{
+	float: left;
+}
+.signon
+{
+	color: #cccccc;
+	float: right;
+	display: block;
+	padding: 11px 17px 0 17px;
+	height: 26px;
+}
+
+button, input[type=button] {
+	border: none;
+}
+
+.groupDropdownDiv{
+    padding-right: 25px;
+    padding-top: 11px;
+    float: right;
+    display: inline-flex;
+}
+.groupDropdownDiv span {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.moduleEditDropdownDiv{
+    float: right;
+    display: inline-flex;
+}
+.moduleEditDropdownDiv span {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+th, .rgPager {
+	background: #b0e0ff; 
+}
+
+.buttonGroup button:hover, button:hover, input[type=button]:hover {
+	color: #eeeeee;
+}
+
+th {
+	font-weight: normal;
+}
+
+#addView
+{
+	white-space: nowrap;
+}
+.closeButton
+{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.closeButton a:hover
+{
+	position:absolute;
+	top:0;
+	right:0;
+	color:White;
+}
+select
+{
+	background: #FFFFFF !important;
+}
+.tabBody
+{
+	
+}
+
+.tabBodyNoSubNav
+{	
+	/*height:46px;*/
+	/*height:8px;*/
+	height:16px;
+	background: #F3F3F3;
+}
+
+.tabBody button
+{
+	padding: 5px 8px 4px 8px;
+	color: #333333; /*	text-shadow:1px 0 0 white;*/
+	xbackground: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#efefef));
+	xbackground: -moz-linear-gradient(top,  #fdfdfd,  #efefef);
+	xbackground-image: linear-gradient(to bottom,  #fdfdfd,  #efefef);
+	xbackground: #efefef;
+	xborder: 1px solid #e1e1e1;
+	margin: 15px 0 14px 0;
+}
+
+.relative
+{
+	position: relative;
+}
+
+.tabBody form
+{
+	display: inline;
+}
+.views
+{
+    height: 100vh;
+	table-layout: fixed;
+}
+.viewTable
+{
+	height: 100%;
+	width: 100%;
+	table-layout: fixed;
+}
+.viewTitleBar
+{
+	border: #999999 1px solid;
+	background: #dbe1eb;
+	height: 2.7em;
+	cursor: hand;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.viewTitleBar table
+{
+	/*border-top: 1px #ffffff solid;
+	border-left: 1px #ffffff solid;
+	border-right: 1px #bdbdbd solid;*/
+	height: 100%;
+	width: 100%;
+}
+.viewTitle
+{
+	text-align: center;
+	/*padding: 0.6em;*/
+	width:90%;
+}
+.viewTitle td
+{
+	border: none;
+	background: none;
+	padding: .3em;
+}
+.viewBody
+{
+	padding: .6em;
+	border-left: 1px #b7b7b7 solid;
+	border-right: 1px #b7b7b7 solid;
+	border-bottom: 1px #b7b7b7 solid;
+	height: 100%;
+}
+.viewBottomShadow
+{
+	background: #e1e1e1;
+	height: 2px;
+	position: relative;
+	left: 2px;
+}
+.viewClose
+{
+	/*background: url(../images/tabclose.gif) no-repeat;*/
+	background: url('../images/delete.png') no-repeat; 
+	/*background-position: -32px -16px;*/
+	border-color: transparent;
+	width: 15px;
+	display: inline-block;
+	padding: 0;
+	text-decoration: none;
+	/*vertical-align: middle;*/
+	height: 12px;	
+	margin-right: 5px;
+}
+.viewClose a
+{
+    text-decoration:none;
+}
+
+.viewEdit a
+{
+    text-decoration:none;
+}
+
+.viewEdit
+{
+	/*background: url(../images/1.png) no-repeat;*/
+	background: url('../images/edit.png') no-repeat; 
+	/*background-position: -32px 0;*/
+	border-color: transparent;
+	width: 15px;
+	display: inline-block;
+	padding: 0;
+	text-decoration: none;
+	/*vertical-align: middle;*/
+	height: 12px;
+    margin-top: 5px;
+}
+
+.viewEdit:hover
+{
+    opacity: 1;
+    text-decoration:none;
+}
+
+.viewClose:hover
+{
+	opacity: 1;
+	text-decoration:none;
+}
+
+#closeButton:hover
+{
+	opacity: 1;
+	text-decoration:none;
+	background: url('../images/cancel-icon.png') no-repeat;
+    /*background-position: -32px -16px;*/
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.quickStartDiv
+{
+    overflow: hidden;
+    /* padding: 5px; */
+    width: 99.2%;
+    /* align-items: center; */
+    /* align-content: center; */
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+#imageDivLink
+{
+   float: left;
+    padding: 0px 10px 0px 5px;
+}
+
+
+#tdStep1
+{
+    width: 30%; 
+    height: 150px; 
+    vertical-align: top; 
+    float: left; 
+    background-image: url('../images/Step1Background.png'); 
+    background-attachment: scroll; 
+    background-repeat: repeat; 
+    background-position-x: left; 
+    background-position-y: top; 
+    background-size: auto; 
+    background-origin: padding-box; 
+    background-clip: border-box; 
+    background-color: transparent;
+}
+#tdStep2
+{
+    width: 30%; 
+    height: 150px; 
+    vertical-align: top; 
+    float: left; 
+    background-image: url("../images/Step2Background.png"); 
+    background-attachment: scroll; 
+    background-repeat: repeat; 
+    background-position-x: left; 
+    background-position-y: top; 
+    background-size: auto; 
+    background-origin: padding-box; 
+    background-clip: border-box; 
+    background-color: transparent;
+}
+#tdStep3
+{
+    width: 30%; 
+    height: 150px; 
+    vertical-align: top; 
+    float: left; 
+    background-image: url("../images/Step3Background.png"); 
+    background-attachment: scroll; 
+    background-repeat: repeat; 
+    background-position-x: left; 
+    background-position-y: top; 
+    background-size: auto; 
+    background-origin: padding-box; 
+    background-clip: border-box; 
+    background-color: transparent;
+}
+
+.StepsIconImg
+{
+    max-width:20%;
+    max-height:100%;
+}
+
+.stepDetails
+{
+    overflow:hidden;
+    position:relative;
+}
+
+.stepDescription
+{
+    padding-left: 10em;
+    margin-top:-40px;
+    font-size: 1vw;
+}
+
+.stepArrow
+{
+    height: 100%; 
+    float: left; 
+    display: block; 
+    margin-left: 0px;
+}
+
+
+.viewCloseAddview
+{
+	    /* background: url(../images/tabclose.gif) no-repeat; */
+    background: url('../images/cancel-icon.png') no-repeat; 
+    /*background-position: -32px -16px;*/
+    border-color: transparent;
+    width: 17px;
+    display: inline-block;
+    padding-right: 4px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-top: 10px;
+    text-decoration: none;
+    /* vertical-align: middle; */
+    height: auto;
+    margin-right: 5px;
+    margin-top: 7px;
+    margin-right: 8px; 
+}
+
+.linksAddview
+{
+    border: #c8ccc2 1px outset;
+    height: 264px;
+    border-top: transparent;
+    border-style: solid;
+    overflow-y: auto;
+}
+
+#DashBoardForm{
+    margin: 0; 
+    padding: 0; 
+    height:100%;
+}
+
+#dashboardScanTableControl{
+    margin: 0px;  
+    padding:0px;
+}
+
+.showHideQuickStartDiv{
+    float:left; 
+    width: 100%;
+}
+
+.quickStartHeader{
+    height: 2.7em; 
+    width:100%
+}
+
+#quickScanFrame{
+    width:100%; 
+    border: 0px solid black; 
+}
+
+.dashboardAddViewMenu
+{
+	/*border: #c8ccc2 1px outset;*/
+	background: #fafaf4;
+	padding: 0px;
+    background-color:#ffffff;
+    overflow:hidden;
+    position:absolute; 
+    z-index:1;
+    width:300px;
+    height: 302px; 
+    right: 0; 
+}
+.dashboardAddViewMenu a
+{
+	text-decoration: none;
+	display: block;
+	color: #000000;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dashboardAddViewMenu a:hover
+{
+	background: #007ee5;
+	color: #ffffff;
+	text-decoration: none;
+}
+.main
+{
+	padding: 0 0 45px 0;
+    min-width: 750px;
+}
+
+.editmain
+{
+	padding: 0 0 45px 0;
+    background-color: #EEEEEE;
+}
+/*.editIEScanMain
+{
+    padding: 0 0 45px 0;
+    background-color: #EEEEEE;
+    max-width:1250px;
+}*/
+.transferButton
+{
+	width: 75px;
+	padding: 5px 0 4px 0;
+	margin: 0px 1px 0 1px;
+	display: block; /*	text-shadow:1px 0 0 white;*/
+	background: #0f5b98;
+    color: #fff;
+    border: none;
+}
+.miscButton
+{
+	padding: 5px 5px 4px 5px;
+	margin: 0px 1px 0 1px;
+	display: inline; /*	text-shadow:1px 0 0 white;*/
+	background: #0f5b98;
+    color: #fff;
+    border: none;
+}
+.buttonGroup
+{
+	overflow: auto;
+	margin: 0 25px 0 25px;
+	padding: 0px 0 0 0;
+}
+.buttonGroup button, .buttonGroup input
+{
+	min-width: 7em;
+	margin: 15px 1px 2px 2px;
+    background: #0f5b98;
+    color: #fff;
+    border: none;
+}
+.buttonGroup button:hover, .buttonGroup input:hover, .buttonGroup select:hover
+{
+    cursor: pointer;
+    xborder-color: Gray;
+}
+.buttonGroup select
+{
+	padding: 0px;
+    background: white;
+}
+.buttonGroup input[disabled="disabled"], button[disabled="disabled"]
+{
+	color: #808080
+}
+.buttonScanNew, .buttonScanDelete, .buttonScanGroupNew, .buttonScanGroupDelete
+{
+	float: left;
+	display: block;
+}
+.viewsSearch
+{
+	margin-left: 3em;
+	margin-top: 15px;
+	float: left;
+}
+.buttonGroup table
+{
+	padding: 15px 22px 0 50px;
+	width: 80%;
+}
+
+.scanHeaderRowInfoCount
+{
+	color: #666666;
+	float: left;
+	padding: 4px 0 0 0;
+	margin: 17px 0 0 40px;
+	width: 17%;
+}
+.scanHeaderRowInfoSearch
+{
+	float: left;
+	margin: 15px 0 0 0;
+	text-align: center;
+	width: 32%;
+    min-width: 300px;
+}
+
+.scanHeaderRowInfoSearch input#searchBox,.scanHeaderRowInfoSearch input#groupSearchBox, .viewsSearch input#searchbox
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #666666;
+	border: 1px solid #ccc;
+	padding: 4px 5px;
+	margin: 0 3px 0 0;
+	background: none;
+	width: 150px;
+}
+
+.scanHeaderRowInfoFilter
+{
+	float: right;
+	margin: 17px 0 0 0;
+}
+
+.scanHeaderRowInfoFilter select
+{
+	color: #333333;
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+	margin-right: 2px;
+}
+
+
+#searchBox
+{
+	font-style: italic;
+	color: #666666;
+	border: 1px solid #ccc;
+	padding: 4px 5px;
+	margin: 0 3px 0 0;
+    background: white;
+    background-position: 125px 4px !important;
+}
+
+#searchColumns,#groupSearchColumns
+{
+	color: #333333;
+	padding: 3px 5px;
+}
+
+.scansTableControl, .checkpointsTableControl, .checkpointGroupsTableControl, .notificationsTableControl, 
+    #ContentPlaceHolder1_ScanSummary_panelScanSummary, #ContentPlaceHolder1_ScoreCard_RadGrid
+{
+	padding: 0 25px 0 25px;
+	margin-top: 10px;
+}
+.editTableControl
+{
+    padding: 10px 25px 0 25px;
+}
+
+.editTableControl span, .editTableControl a{
+    white-space: initial !important;
+}
+
+#ctl00_ContentPlaceHolder1_ScoreCard_RadGrid
+{
+    padding: 0 25px;
+}
+.itemTable, .ScanGroupsTable
+{
+	border-collapse: collapse;
+	background: white;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+.itemTable > table {
+    border-style: none;
+    border-bottom: #eeeeee 1px solid;
+}
+.itemTable th
+{
+	padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    font-weight: normal;
+    color: white;
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    background-color: #232e32 !important;
+    padding-left: 10px;
+}
+.itemTable #ckbox
+{
+	text-align: center;
+	padding: 0px;
+}
+
+.itemTable th a
+{
+    color: white;
+}
+.itemTable th a:hover
+{
+	text-decoration: none;
+}
+.itemTable th img
+{
+	border: none;
+}
+.itemTable td
+{
+	border-right: 1px solid #e3e3e3;
+	border-bottom: 1px solid #eeeeee;
+	font-family: Verdana, Sans-Serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.itemTable tr td a, .itemTable tr td a:visited
+{
+	color: #191919;
+}
+.itemTable tr:hover td, .itemTable tr:hover td a
+{
+	
+}
+.itemTable tr:hover td a, .itemTable tr:hover td a:visited
+{
+	text-decoration: underline;
+}
+.itemTable tr:hover .healthRedCell a, .itemTable tr:hover .healthRedCell a:visited, .itemTable tr:hover .healthYellowCell a, .itemTable tr:hover .healthYellowCell a:visited, .itemTable tr:hover .healthGreenCell a, .itemTable tr:hover .healthGreenCell a:visited
+{
+	color: white;
+}
+.healthRedCell a, .healthYellowCell a, .healthGreenCell a
+{
+	display: block;
+	color: white !important;
+}
+.itemTable td a:hover
+{
+	text-decoration: underline;
+}
+.itemTable tr:hover
+{
+	
+}
+.itemTable form
+{
+	display: inline;
+}
+.itemTable .tinyCell
+{
+	padding-left: 0;
+	_padding-right: 0;
+	text-align: center;
+	width: .5em;
+}
+
+.itemTable td.ScheduleTD, .itemTable td.RunTD
+{
+	padding: 0 9px;
+	text-align: center;
+}
+.itemTable thead tr
+{
+    vertical-align: middle; 
+}
+.logTable tbody tr
+{
+    vertical-align: top; 
+}
+.sortUp
+{
+	background: url(../images/sortup.png) no-repeat;
+	width: 8px;
+	margin-left: 4px;
+	float: left; 
+	width: 10px;
+}
+.sortDown
+{
+	background: url(../images/sortdn.png) no-repeat;
+	width: 8px;
+	margin-left: 4px;
+	float: left; 
+	width: 10px;
+}
+.itemTable tr td img
+{
+	/*position: relative;*/
+	top: 5px;
+}
+.itemTable button, .itemTable #import
+{
+    background: #0f5b98;
+    color: #fff;
+    border: none;
+}
+.itemTable a
+{
+	color: Black;
+}
+.itemTable a:hover
+{
+	text-decoration: underline;
+}
+.ITabScroller
+{
+	overflow: auto; /*	overflow-x: auto;*/
+	width: 100%;
+}
+.ITabs a {
+    border-right: 3px white Solid;
+}
+.ITabs
+{
+	background: #F3F3F3;
+	overflow: auto;
+	margin: 0 0 0 0;
+    height:40px;
+    text-align:center;
+}
+a.ITab, a.ITab:visited
+{
+	background: #F3F3F3;
+	color: #808080;
+	display: block;
+	float: left;
+	height: 40px;
+	padding: 10px 15px 0 15px;
+    min-width: 15%;
+}
+
+.ITab:hover
+{
+	text-decoration: none;
+	color: #333333;
+}
+
+.ITabSel
+{
+	background: white;
+	color: #171a1d;
+	display: block;
+	float: left;
+	height: 40px;
+    min-width: 15%;
+	padding: 10px 15px 0 15px;
+    text-decoration: none !important;
+    border-top: 3px solid transparent;
+    border-top-color: #f89c00;
+    border-right: 3px white Solid;
+}
+.ITabLeft
+{
+	display: none;
+}
+.ITabRight
+{
+	display: none;
+}
+.ITabSelLeft
+{
+	display: none;
+}
+.ITabSelRight
+{
+	display: none;
+}
+
+.summaryMenuPanel .ITabs
+{
+    overflow:hidden;
+}
+
+.summaryMenuPanel a, .summaryMenuPanel a:hover
+{
+    text-decoration:none;
+}
+
+.summaryMenuPanel a.ITabSel
+{
+    background: white;
+	color: #171a1d;
+	display: block;
+	float: left;
+	height: 36px;
+	padding: 8px 15px 0 15px;
+    text-decoration: none !important;
+    border-top: 3px solid transparent;
+    border-top-color: #f89c00;
+}
+
+.summaryMenuPanel a.ITab
+{
+    background: #F3F3F3;
+	overflow: auto;
+	margin: 0 0 0 0;
+    height:30px;
+    text-align:center;
+}
+
+a.DashboardTab, a.DashboardTab:visited
+{
+	background: #F3F3F3;
+	overflow: auto;
+	margin: 0 0 0 0;
+    height:30px;
+    text-align:center;
+}
+
+.summaryMenuPanel a.ITabSel:focus, .summaryMenuPanel a.ITab:focus
+{
+    height:40px;
+    border: 2px orange Solid !important;
+    outline: none !important;
+}
+
+.DashboardTabs
+{
+	background: #F3F3F3;
+	overflow: auto;
+	margin: 0 0 0 0;
+    height:35px;
+    text-align:center;
+}
+a.DashboardTab, a.DashboardTab:visited
+{
+	background: #F3F3F3;
+	color: #808080;
+	display: block;
+	float: left;
+	height: 35px;
+	padding: 8px 15px 0 15px;
+}
+
+.DashboardTab:hover
+{
+	text-decoration: none;
+	color: #333333;
+}
+.DashboardTab:focus, .DashboardTabSel:focus
+{
+    outline: none;
+}
+.DashboardTabSel
+{
+	background: white;
+	color: #171a1d;
+	display: block;
+	float: left;
+	height: 35px;
+	padding: 8px 15px 0 15px;
+    text-decoration: none !important;
+    border-top: 3px solid transparent;
+    border-top-color: #f89c00;
+}
+.DashboardTabLeft
+{
+	display: none;
+}
+.DashboardTabRight
+{
+	display: none;
+}
+.DashboardTabSelLeft
+{
+	display: none;
+}
+.DashboardTabSelRight
+{
+	display: none;
+}
+
+.ITabBody
+{
+	background: #FFFFFF; /*min-height: 100%;*/
+}
+
+#Scans
+{
+	background: white;
+}
+
+.Monitors
+{
+	background: white;
+	margin: 16px 0 0 0;
+}
+
+.viewBackground, .viewBody
+{
+	background: #ffffff;
+}
+.EditBody
+{
+	background: white;
+}
+.wide
+{
+	width: 100%;
+}
+.wideSelect
+{
+	width: 40em;
+}
+a.shortLink
+{
+	color: #6a86ae;
+	text-decoration: underline;
+}
+a.shortLink:hover
+{
+	color: #c5cfe0;
+}
+a.link
+{
+	color: #666666;
+	text-decoration: none;
+}
+a.link:hover
+{
+	color: #333333;
+	text-decoration: underline;
+}
+.AltRow
+{
+	background: #f9f9f9;
+}
+.shiftDown
+{
+	margin-top: 0.75em;
+}
+.shiftDown label select
+{
+	margin-bottom: .25em;
+}
+.rulesArea
+{
+	border: 1px solid ButtonShadow;
+	background: white;
+	padding: 2px;
+	height: auto !important;
+	height: 100%; /* IE */
+}
+.rulesArea INPUT, .rulesArea TEXTAREA, .rulesArea SELECT
+{
+	background: #f8f8fa;
+}
+.rulesArea SELECT, .rulesArea INPUT
+{
+	margin-right: 2px;
+	border: 1px #e0e0f0 solid;
+	color: #000060;
+}
+.rulesArea SPAN
+{
+	margin-left: 2px;
+	margin-right: 2px;
+	color: #000060;
+}
+.rulesArea INPUT
+{
+	width: 17em;
+	color: #000000;
+}
+.Narrow
+{
+	width: auto;
+}
+.Guide
+{
+	color: #808080;
+}
+.Indent
+{
+	margin-left: 2em;
+}
+textarea
+{
+	background: white;
+}
+.selected
+{
+	background: #f1f3f8;
+}
+.editList
+{
+	border-bottom: none;
+}
+.editList td
+{
+	border-bottom: 1px solid;
+}
+.editList td input
+{
+	border: 1px #e0e0f0 solid;
+}
+.resultsTable
+{
+	margin-top: 1em;
+	width: 100%;
+	table-layout: auto;
+}
+.fixedLayout
+{
+}
+.resultsTable td
+{
+	overflow: visible;
+}
+.resultsTable thead th
+{
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	background: #f8f8f8;
+	white-space: nowrap;
+	text-align: left;
+}
+.resultsTable .wideTotal
+{
+	text-align: right;
+	width: 5em;
+}
+.resultsTable .wideTotal div
+{
+	position: relative;
+	left: -4.5em;
+	white-space: nowrap;
+}
+.resultsTable .total
+{
+	text-align: right;
+	width: 6em;
+}
+.resultsTable .wlTotal
+{
+	text-align: left;
+	width: 8em;
+	white-space: nowrap;
+}
+.resultsTable .vwTotal
+{
+	text-align: right;
+	width: 13em;
+}
+.resultsTable .vwlTotal
+{
+	text-align: left;
+	width: 14em;
+}
+
+.resultsTable tbody
+{
+	padding-bottom: 5px;
+}
+.resultsTable tbody tr
+{
+	vertical-align: top;
+}
+.resultsTable tfoot th
+{
+	border: none;
+	background-color: #f8f8f8;
+	text-align: left;
+}
+.simpleForm2 label
+{
+	display: inline-block;
+	margin-right: .3em;
+	margin-top: .2em;
+	padding-bottom:4px;
+}
+.blockLabel
+{
+	display: block;
+	margin-bottom: 6px;
+	margin-top: 8px;
+}
+.simpleForm label
+{
+	display: inherit;
+	margin-left: .3em;
+	margin-right: .3em;
+	margin-top: .2em;
+    font-weight: normal;
+    font-size: 13px;
+}
+.simpleForm label span
+{
+	display: inline-block;
+	width: 13em;
+    font-family: verdana;
+}
+.simpleForm label span.alignRight
+{
+	text-align: right;
+	padding-right: .5em;
+	width: 10em;
+	-moz-box-direction: reverse;
+}
+.simpleForm label span.wide
+{
+	width: 16em;
+}
+
+.includeFlags
+{
+	margin-left: .5em;
+	padding-bottom: .3em;
+}
+.includeFlags label
+{
+	display: inline;
+	margin: 0;
+}
+.inlineForm label
+{
+	display: inline;
+}
+.chkboxGroup
+{
+	margin-bottom: 4px;
+}
+.chkboxGroup label
+{
+	display: inline;
+}
+.percent
+{
+	text-align: right;
+	vertical-align: top;
+	width: 1;
+	font-size: .9em;
+}
+.summary
+{
+	margin-top: .5em;
+	border: 1px ridge;
+	padding: .25em;
+}
+.preview
+{
+	background: #ffffff;
+	margin: 0px;
+	text-align: left;
+	width:99%;
+}
+ul.expandable
+{
+	margin: 0;
+	padding: 0;
+}
+ul.expandable li
+{
+	list-style: none;
+	margin: 0;
+}
+ul.expandable ul, ul.expandable ul li
+{
+	margin-left: 10px;
+	padding: 0;
+}
+ul.expandable li .hotspot
+{
+	padding-left: 15px;
+}
+ul.expandable li.open .hotspot
+{
+	cursor: hand;
+	background: url(../images/minus.gif) no-repeat;
+	_height: 16px;
+	font-size: 16px;
+	vertical-align: top;
+	_vertical-align: middle;
+}
+ul.expandable li.closed .hotspot
+{
+	cursor: hand;
+	background: url(../images/plus.gif) no-repeat;
+	_height: 16px;
+	font-size: 16px;
+	vertical-align: top;
+	_vertical-align: middle;
+}
+ul.expandable li.bullet .hotspot
+{
+	background: url(../images/bullet.gif) center left no-repeat;
+}
+ul.expandable li.open ul
+{
+	display: block;
+}
+ul.expandable li.closed ul
+{
+	display: none;
+	white-space: nowrap;
+}
+ul.expandable li ul li
+{
+	font-size: .95em;
+}
+ul.resultsTree
+{
+	margin: 0;
+}
+label select
+{
+	top: 2px;
+}
+label input
+{
+	top: 2px;
+}
+.report
+{
+	background: #ffffff;
+	padding: 2.5em;
+	width: auto;
+}
+h1
+{
+	text-align: center;
+	padding-bottom: .2em;
+}
+.report h1
+{
+	font-size: large;
+}
+.chart
+{
+	text-align: center;
+    margin:auto;
+	width: 100%;
+    display: block;
+}
+.chart svg {
+    /*margin: auto;*/
+}
+.chartFigure
+{
+    width: 50%; margin-left: 30%;
+}
+
+svg text {
+    font-family: Verdana, Sans-Serif !important;
+}
+.tooltip
+{
+	background: #F3F3F3;
+	border: solid 1px #808080;
+	padding: 2px;
+	margin: 2px;
+	width: 80%;
+}
+.login
+{
+	border-top: 1px solid black;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.centered
+{
+	text-align: center;
+}
+.small
+{
+	font-size: 85%;
+}
+.subGroup
+{
+	background: url(../images/folder.gif) no-repeat;
+	padding-left: 20px;
+}
+.subGroupEntry
+{
+	cursor: default;
+}
+.HL
+{
+	background-color: #F3F3F3;
+}
+.groupEntry
+{
+	font-weight: normal;
+	cursor: default;
+}
+.showResults
+{
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: hand;
+}
+.fixedHeight
+{
+	overflow: auto;
+	height: 19.5em;
+}
+.fixedHeightSmall
+{
+	overflow: auto;
+	height: 10em;
+}
+.noborder
+{
+	border: none;
+}
+fieldset
+{
+	display: block;
+	margin-top: .5em;
+}
+fieldset.simpleForm, .autoWidth
+{
+	width: auto;
+	padding-bottom: .5em;
+}
+.autoWidth table
+{
+	width: 100%;
+}
+.autoWidth td
+{
+	white-space: nowrap;
+	padding: 0;
+}
+.usageTable
+{
+	width: 40em;
+	border: 1px solid #E3E3E3;
+    border-collapse: collapse;
+}
+.usageTable td, th
+{
+	padding: 4px;
+}
+.purgeDiv form
+{
+	display: inline;
+}
+h6
+{
+	display: none;
+}
+.adminTabs div, fieldset
+{
+	/*_width:80%; 	max-width:80%;*/
+}
+.veryWide, .permissionItems
+{
+	width: 50em;
+}
+.noscript
+{
+	font-size: 120%;
+	border: black 1px solid;
+	background: #fafa00;
+	padding: 1em;
+	margin: 1em;
+}
+.resultsTable ul
+{
+	margin-bottom: 0;
+}
+
+.resultsTable ul li ul.static
+{
+	margin-left: 0;
+}
+.resultsTable ul li ul.static li
+{
+	margin-left: 4em;
+}
+.expandableTable
+{
+	table-layout: auto;
+}
+.expandableTable .grouping
+{
+	width: 15em;
+}
+.expandableTable .status
+{
+	width: 10em;
+}
+.expandableTable .total
+{
+	white-space: nowrap;
+}
+.expandableTable .hotspot
+{
+	cursor: hand;
+	width: 16px;
+	padding-left: 15px;
+	vertical-align: top;
+	font-size: 16px;
+}
+.expandableTable .closed .hotspot
+{
+	background: url(../images/plus.gif) no-repeat;
+}
+.expandableTable .open .hotspot
+{
+	background: url(../images/minus.gif) no-repeat;
+}
+.expandableTable tbody.closed
+{
+	display: none;
+}
+tbody.closed ul.expandable
+{
+	margin-left: 2em;
+}
+tbody.open ul.expandable
+{
+	margin-left: 2em;
+}
+ul.expandable li ul.static
+{
+	margin-left: 2em;
+}
+ul.expandable li ul.static li
+{
+	list-style: disc;
+	margin-left: 3em;
+}
+.selectionTableOpts
+{
+	float: right;
+}
+.selectionTableOpts input
+{
+	vertical-align: middle;
+	margin-bottom: 1em;
+	_margin-bottom: auto;
+}
+.selectionTable
+{
+	width: 46%;
+	height: 18em;
+	overflow: auto;
+}
+.selectionTable table
+{
+	width: 99%;
+}
+.configList
+{
+	text-align: left;
+}
+.configList li
+{
+	list-style: url(../images/settings.gif);
+}
+.configList a
+{
+	position: relative;
+	top: 1em;
+	vertical-align: top;
+}
+li .badLink a
+{
+	color: #ff0000;
+}
+.radioLabel
+{
+	width: 30em;
+}
+.wideRadioLabels label
+{
+	width: 40em;
+}
+.dashReport table.layout td
+{
+	vertical-align: top;
+}
+.layoutTd{
+    width:50%;
+}
+.dashReport h2
+{
+	text-align: center;
+	font-size: 140%;
+	border-top: 1px ridge;
+	padding: 2px;
+	border-bottom: thin outset;
+}
+#loginButton
+{
+	margin-top: 4px;
+}
+.editCol
+{
+	width: 30em;
+}
+.editContentCol
+{
+	width: 50%;
+}
+.imgPreview
+{
+	width: 6em;
+	overflow: hidden;
+}
+.imgPreview img
+{
+	height: 32px;
+}
+small
+{
+	font-size: 90%;
+}
+h5
+{
+	margin-bottom: .5em;
+}
+
+.statsum
+{
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 100%;
+}
+.statsum div
+{
+	width: 48%;
+}
+.statsum h2, .legacySinglePage h2
+{
+	font-size: 125%;
+}
+.statsum h3
+{
+	font-size: 110%;
+}
+.statsum th
+{
+	border: none;
+}
+.statsum th
+{
+	text-align: left;
+}
+.msg
+{
+	border: #f0e0c0 1px outset;
+	padding: .4em;
+	display: inline-block;
+	margin-bottom: .4em;
+}
+.regForm
+{
+	margin: 0em auto 1em auto;
+	width: 50em;
+}
+.regForm .simpleForm .alignRight
+{
+	width: 48%;
+}
+.regForm .simpleForm label input
+{
+	width: 49%;
+}
+.regForm .simpleForm label select
+{
+	width: 49.8%;
+	_width: 44.2%; /* IE6 */
+}
+.exportForm select, textarea
+{
+	vertical-align: top;
+	width: 46em;
+}
+.abortError
+{
+	border: 1px black solid;
+	background-color: White;
+	font-weight: bold;
+	padding: .5em;
+	color: Red;
+}
+.errorText
+{
+	color: Red;
+	font-weight: bold;
+}
+.errorTextLite
+{
+	color: Red;
+	font-weight: bold;
+}
+.simplifiedLegacyReport
+{
+	background: #999999;
+	page-break-inside: auto;
+	width: 95%;
+	border: none;
+}
+.simplifiedLegacyReport th.acc_la
+{
+	background: #CCCCCC;
+	border: none;
+}
+.simplifiedLegacyReport th.acc_la2
+{
+	background: #e9e9e9;
+	border: none;
+}
+.simplifiedLegacyReport td.acc_la
+{
+	background: #ffffff;
+}
+
+.csrpExpanded
+{
+	height: 150px;
+	overflow: auto;
+}
+
+.healthRedCell a, .healthRedCell a:visited, .healthYellowCell a, .healthYellowCell a:visited, .healthGreenCell a, .healthGreenCell a:visited
+{
+	color: white;
+	display: inline;
+	font-weight: bold;
+	padding: 4px 0 5px 0;
+}
+.healthRedNH .trendPercentagePositive, .healthYellowNH .trendPercentagePositive, .healthGreenNH .trendPercentagePositive
+{
+	color: black;
+}
+.healthRedCell, .resultFail
+{
+	background-color: #a21413;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c41617), to(#a21413));
+	background: -moz-linear-gradient(top, #c41617,  #a21413);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c41617', endColorstr='#a21413');
+	background-image: linear-gradient(to bottom, #c41617, #a21413);
+}
+.healthYellowCell, .resultWarn
+{
+	background-color: #d09000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e0a000), to(#d09000));
+	background: -moz-linear-gradient(top,  #e0a000,  #d09000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0a000', endColorstr='#d09000');
+	background-image: linear-gradient(to bottom, #e0a000, #d09000);
+}
+.healthGreenCell, .resultPass
+{
+	background-color: #639500;
+	background: -webkit-gradient(linear, left top, left bottom, from(#639500), to(#527c00));
+	background: -moz-linear-gradient(top,  #639500,  #527c00);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#639500', endColorstr='#527c00');
+	background-image: linear-gradient(to bottom, #639500, #527c00);
+}
+.resultVisual
+{
+	background-color: #216cb7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#216cb7), to(#16487a));
+	background: -moz-linear-gradient(top, #216cb7, #16487a);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#216cb7', endColorstr='#16487a');
+	background-image: linear-gradient(to bottom, #216cb7, #16487a);
+}
+.resultNA
+{
+	background-color: #707070;
+	background: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#5e5e5e));
+	background: -moz-linear-gradient(top, #707070, #5e5e5e);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070', endColorstr='#5e5e5e');
+	background-image: linear-gradient(to bottom, #707070, #5e5e5e);
+}
+
+.viewdetails
+{
+	color: #000000;
+	font-size: 9px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.viewdetails hover
+{
+	text-decoration: underline;
+}
+.healthValue
+{
+    color: #000000;
+	text-decoration: none;
+	font-size: smaller;
+    cursor:pointer;
+}
+.healthValue hover
+{
+	text-decoration: underline;
+}
+
+html form .RadGrid .rgMasterTable, .RadGrid .rgDetailTable
+{
+	border-collapse: collapse;
+    width: 100% !important;
+}
+
+#noRefresh
+{
+	margin: 15px 0 0 25px;
+}
+#ViewsTable
+{
+	margin: 0;
+}
+.view_div2
+{
+	width: 100%;
+}
+.view_div1
+{
+	width: 95%;
+	height: 500px;
+	padding-left: 10px;
+}
+.view_div1 label{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 400px;
+}
+.view_div2 td {
+    max-width: 300px;
+    min-width: 50px;
+}
+    
+#preview
+{
+	height: 500px;
+    border: 1px solid black;
+}
+#footer
+{
+	padding: 20px 0;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	background: #F3F3F3;
+	color: #666;
+	font-size:95%;
+    position: relative;
+    top: -10px;
+}
+
+.main-footer {
+    background:transparent;
+    margin-left: 0 !important;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#footer a, #footer a:visited
+{
+	color: #666;
+	text-decoration: none;
+}
+
+#footer a:hover, #footer a:visited:hover
+{
+	text-decoration: underline;
+}
+#footer a:focus
+{
+    outline: 2px solid orange;
+}
+
+.footerVersion
+{
+	color: #000;
+}
+
+.footerVersionNumber
+{
+	margin: 0 20px 0 0;
+	color: #000;
+}
+.showResultsLog
+{
+	margin-top: 0px;
+	margin-right: 25px;
+	margin-bottom: 0px;
+	margin-left: 25px;
+}
+.showResultsLog form
+{
+	display: inline;
+}
+
+/* ScoreCard */
+#lblDate
+{
+	margin: 10px 0 0 0;
+	display: block;
+}
+
+#lblDate, #ContentPlaceHolder1_ScoreCard1_PanelOccurrences
+{
+	margin: 0 0 0 25px;
+	color: #666666;
+}
+
+.loadingPanel
+{
+	background-color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+}
+.loadingText
+{
+	background-color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bolder;
+	display: block;
+	padding-top: 50px;
+	height: 26px;
+}
+.usage
+{
+	padding: 25px 25px 0 25px;
+}
+.breadcrumbPanel
+{
+	text-align: left;
+}
+.breadcrumbPanel a
+{
+	color: #000000;
+	text-decoration: none;
+}
+.breadcrumbPanel a:hover
+{
+	text-decoration: underline;
+}
+.breadcrumbPanel span
+{
+	color: #000000;
+}
+.reportTitle
+{
+	font-size: larger;
+}
+.reportDate
+{
+	color: #000000;
+}
+.scoreCardScanNameLink a
+{
+	font-size: smaller;
+	text-decoration: none;
+	color: #000000;
+}
+.scoreCardScanNameLink a:hover
+{
+	font-size: smaller;
+	text-decoration: underline;
+}
+#Panel1
+{
+	background: white;
+}
+.RowMouseOver td
+{
+	background: #ecf8fe;
+}
+
+.RowMouseOver td.healthRedCell
+{
+	background: #a21413;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c41617), to(#a21413));
+	background: -moz-linear-gradient(top,  #c41617,  #a21413);
+	background-image: linear-gradient(to bottom,  #c41617,  #a21413);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c41617', endColorstr='#a21413');
+}
+
+.RowMouseOver td.healthYellowCell
+{
+	background: #be3602;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e54303), to(#be3602));
+	background: -moz-linear-gradient(top,  #e54303,  #be3602);
+	background-image: linear-gradient(to bottom,  #e54303,  #be3602);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e54303', endColorstr='#be3602');
+}
+
+.RowMouseOver td.healthGreenCell
+{
+	background: #527c00;
+	background: -webkit-gradient(linear, left top, left bottom, from(#639500), to(#527c00));
+	background: -moz-linear-gradient(top,  #639500,  #527c00);
+	background-image: linear-gradient(to bottom,  #639500,  #527c00);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#639500', endColorstr='#527c00');
+}
+.RowMouseOver td.healthBlueCell
+{
+	background: #123d68;
+	background: -webkit-gradient(linear, left top, left bottom, from(#639500), to(#527c00));
+	background: -moz-linear-gradient(top,  #639500,  #527c00);
+	background-image: linear-gradient(to bottom,  #639500,  #527c00);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#639500', endColorstr='#527c00');
+}
+.RowMouseOver td.healthGrayCell
+{
+	background: #80a280;
+	background: -webkit-gradient(linear, left top, left bottom, from(#639500), to(#527c00));
+	background: -moz-linear-gradient(top,  #639500,  #527c00);
+	background-image: linear-gradient(to bottom,  #639500,  #527c00);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#639500', endColorstr='#527c00');
+}
+.RowMouseOut
+{
+	background: #ffffff;
+}
+.rgCollapse
+{
+	background-image: url('../images/collapse.png');
+}
+.rgExpand
+{
+	background-image: url('../images/expand.png');
+}
+.radGridHeader
+{
+	font-size: smaller;
+	color: #FFFFFF;
+}
+.radGridItem
+{
+}
+.radGridAltItem
+{
+	background-color: #FFFFFF;
+}
+.radGridMasterTableView
+{
+	border: 1px solid #E3E3E3;
+	width: 100%;
+	border-collapse: collapse;
+}
+.radGridMasterTableView td
+{
+	border-bottom: 1px solid #EEEEEE;
+	border-right: 1px solid #E3E3E3;
+}
+
+.radGridGridHyperlinkColumn
+{
+	color: #000000;
+	text-decoration: none;
+}
+.radGridGridHyperlinkColumn hover
+{
+	text-decoration: underline;
+}
+.scoreCardGridBoundColumn
+{
+	color: #1e1e1e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
+	background: -moz-linear-gradient(top,  #ffffff,  #ededed);
+	background-image: linear-gradient(to bottom,  #ffffff,  #ededed);
+	border-bottom: 1px solid #eaeaea;
+	border-right: 1px solid #d7d7d7;
+	text-decoration: none;
+	text-align: center;
+	font-size: 11px;
+	height: 52px;
+}
+#ContentPlaceHolder1_ScoreCard_checkShowTopIncreases
+{
+	margin: 0 5px 0 25px;
+}
+#ContentPlaceHolder1_ScoreCard_checkShowTopDecreases
+{
+	margin: 0 5px 0 20px;
+}
+.trendPercentagePositive
+{
+	color: #fff;
+	font-size: 9px;
+	padding: 0 0 5px 0;
+	display: inline;
+	font-style: italic;
+	margin: 0;
+}
+.trendPercentageNegative
+{
+	color: #000;
+	font-size: 9px;
+	padding: 0 0 5px 0;
+	display: inline;
+	font-style: italic;
+	margin: 0;
+}
+.exportButtons
+{
+	right: 25px;
+	top: 190px;
+	position: absolute;
+}
+
+.exportButtons input
+{
+	padding: 3px 8px 2px 8px;
+	font-size: 11px;
+	color: #333333; /*	text-shadow:1px 0 0 white;*/
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#efefef));
+	background: -moz-linear-gradient(top,  #fdfdfd,  #efefef);
+	background-image: linear-gradient(to bottom,  #fdfdfd,  #efefef);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#efefef');
+	border: 1px solid #e1e1e1;
+	margin: 22px 1px 0 0;
+}
+.scoreCardOptions
+{
+	text-align: center;
+}
+
+.RadGrid .rgDetailTable
+{
+    width:100%;
+}
+
+#ContentPlaceHolder1_ScoreCard_lblDate
+{
+	margin-right: 20px;
+}
+/* Scorecard END */
+
+/* ScanSummary START*/
+#ContentPlaceHolder1_ScanSummary_lblHealthText, #ctl02_lblHealthText
+{
+	font-size: 18px;
+	color: white;
+	font-style: italic;
+	display: block; /*	text-shadow:1px 1px #333S;*/
+    text-decoration:underline; 
+    cursor:pointer;
+}
+#ContentPlaceHolder1_ScanSummary_lblTrendValue, #ContentPlaceHolder1_ScanSummary_lblCompareText, #ContentPlaceHolder1_ScanSummary_lblTrendLastDate
+{
+	color: white;
+}
+.scanSummaryTable a:hover{
+    text-decoration:underline;
+}
+
+.scanSummaryHeaderTR
+{
+    height:40px;
+}
+.scanSummaryHeaderTD
+{
+	background-color: #0f5b98 !important;
+	overflow: hidden;
+	vertical-align: top;
+    border: 0;
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    padding: 8px !important;
+}
+.scanSummaryHeaderReportTD
+{
+	background-color: #0f5b98 !important;
+	overflow: hidden;
+	vertical-align: top;
+    border: 0;
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    padding: 8px !important;
+}
+.scanSummaryTD
+{
+	vertical-align: top;
+	text-align: left;
+}
+.scanSummaryOptions
+{
+	font-size: 12px;
+	color: #000000;
+	float: left;
+	display: block;
+}
+.scanSummaryHeaderText label{
+    color: white  !important;
+}
+.scanSummaryHeaderText span{
+    color: white  !important;
+}
+.scanSummaryHeaderText
+{
+	font-size: 13px;
+    display: block;
+    padding: 4px 17px 0 17px;
+    height: 20px;
+    text-align: left;
+    font-weight: normal;
+}
+.scanSummaryHeaderText * span, #ContentPlaceHolder1_ScanSummary_htmlLabelTopTenCheckpoints
+{
+	float: left;
+}
+.scanSummaryHeaderText select
+{
+	float: right;
+    margin-top: -4px;
+}
+
+.scanSummaryStatsTable
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#ContentPlaceHolder1_ScanSummary_panelHealthDetails
+{
+	height: 100%;
+	color: white;
+}
+.scanTitle
+{
+	font-size: 14px;
+	color: black;
+	height: 40px; /*	text-shadow:1px 1px #333S;*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDFDFD), to(#DADADA));
+	background: -moz-linear-gradient(top,  #fdfdfd,  #dadada);
+	background-image: linear-gradient(to bottom,  #fdfdfd,  #dadada);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#dadada');
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 25px;
+}
+.scanCompletedDate
+{
+	font-size: 12px;
+	text-align: right;
+}
+/* ScanSummary END */
+
+/* IE HACKS START */
+/* Start Showinstances button text bug */
+html*.scanHeaderRowInfoSearch
+{
+	]margin: 6px 0 0 0;
+}
+html*.dashboardaddviewmenu
+{
+    ]overflow-y:scroll;
+	]width: 320px;
+}
+
+html*.rcbScroll
+{
+    /*overflow: hidden !important;*/
+    overflow: hidden;
+}
+html*#PreviousResult
+{
+	]font-size:0px;
+	]text-indent:0px;
+	]line-height:0px;
+}
+html*#NextResult
+{
+	]font-size:0px;
+	]text-indent:0px;
+	]line-height:0px;
+}
+html*#PreviousOccurrence
+{
+	]font-size:0px;
+	]text-indent:0px;
+	]line-height:0px;
+}
+html*#NextOccurrence
+{
+	]font-size:0px;
+	]text-indent:0px;
+	]line-height:0px;
+}
+/* End Showinstances button text bug */
+html*#ContentPlaceHolder1_ScoreCard_RadGrid 
+{
+	]padding:0 25px;
+	]width:100%;
+}
+html*#ctl00_ContentPlaceHolder1_ScoreCard_RadGrid
+{
+    ]padding:0 25px;
+	]width:100%;
+}
+html*.checkpointsTableControl
+{
+	]padding:0 25px;
+	]width:100%;
+}
+html*.DivInRadAjaxPanel
+{
+    margin-top: -15px;
+}
+html*.checkpointGroupsTableControl 
+{
+	]padding:0 25px;
+	]width:100%;
+}
+
+html*.notificationsTableControl 
+{
+	]padding:0 25px;
+	]width:100%;
+}
+html*a:focus
+{
+   	outline: 2px solid orange;
+}
+html*.Tabs
+{
+	background: #1c2124;
+}
+html*.Tabs a
+{
+	]padding:11px 17px 13px 17px;
+}
+html*.Tabs a:hover
+{
+	background: #283233;
+}
+html*.Tabs a:focus
+{
+	outline: 2px solid orange;
+}
+html*.tabsel
+{
+	]padding:11px 17px 13px 17px;
+}
+html*.buttonGroup
+{
+    margin: 0;
+    padding: 0 25px;
+    width: 100%;
+}
+html*.settings
+{
+    width: 95%;
+}
+html*.buttonGroup button, .buttonGroup input
+{
+	background: #F9F9F9;
+	padding:5px 8px 4px 8px;
+}
+html*.transferButton
+{
+	background: #efefef;
+}
+html*.main
+{
+}
+html*.ITabs 
+{
+	]width:100%;
+	]padding:0 0 0 25px;
+}
+html*.a.ITab
+{
+	]padding:9px 15px 9px 15px;
+}
+html*.ITabSel
+{
+	]padding:9px 15px 9px 15px;
+}
+html*.scoreCardGridBoundColumn
+{
+	background:#F9F9F9;
+}
+html*.buttonGroup select 
+{
+	]margin-top: 16px;
+}
+/* IE HACKS END */
+
+/* ShowInstances */
+#iframe 
+{
+	bottom:0;
+	top:13em;
+}
+#logoWrapper 
+{
+	height: 75px;
+}
+#headerWrapper 
+{
+	/*padding: 1px 0;
+	border-top: 1px solid #e3e3e3;*/
+	border-bottom: 1px solid #e3e3e3;
+}
+#resultHeader 
+{
+    font-style: italic;
+    color: White;
+    padding: 0;
+    width: 100%;
+}
+#resultHeader 
+{
+	overflow: auto;
+	height: 60px;
+}
+		
+.headerFail
+{
+    background-color: #b20000; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#c20000), to(#a20000));
+    background: -moz-linear-gradient(top, #c20000, #a20000);
+    background-image: linear-gradient(to bottom, #c20000, #a20000);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c20000', endColorstr='#a20000');
+}
+		
+.headerWarn
+{
+    background-color: #c33b00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d54100), to(#b23600));
+    background: -moz-linear-gradient(top, #d54100, #b23600);
+    background-image: linear-gradient(to bottom, #d54100, #b23600);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d54100', endColorstr='#b23600');
+}
+		
+.headerVisual
+{
+	background-color: #123d68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#16487a), to(#0f3356));
+    background: -moz-linear-gradient(top, #16487a, #0f3356);
+    background-image: linear-gradient(to bottom, #16487a, #0f3356);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#16487a', endColorstr='#0f3356');
+}
+		
+.headerPass
+{
+	background-color: #5f8c01;
+    background: -webkit-gradient(linear, left top, left bottom, from(#689901), to(#578001));
+    background: -moz-linear-gradient(top, #689901, #578001);
+    background-image: linear-gradient(to bottom, #689901, #578001);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#689901', endColorstr='#578001');
+}
+		
+.headerNA 
+{
+	background-color: #80a280;
+    background: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#5e5e5e));
+    background: -moz-linear-gradient(top, #889960, #778060);
+    background-image: linear-gradient(to bottom, #889960, #778060);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070', endColorstr='#5e5e5e');
+}
+		
+.pageNumBlock
+{
+	height: 46px;
+	float: left;
+    background-color: #d1d1d1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#d1d1d1));
+    background: -moz-linear-gradient(top,  #efefef,  #d1d1d1);
+    background-image: linear-gradient(to bottom,  #efefef,  #d1d1d1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#d1d1d1');
+    color: #333333;
+	font-family: Georgia, Serif;
+	font-size: 20px;
+	text-shadow: 1px 1px 0px white;
+	border-right: 1px solid white;
+	text-align: center;
+	padding: 22px 0 0 0;
+}
+#PreviousResult 
+{
+	background: url("../images/arrowPreviousResult.png") no-repeat;
+	background-position:0 -3px;
+	text-indent: -10000000px; /* TODO remove '-' once image is supplied! */
+	border: none;
+	width: 8px;
+	height: 20px;
+	margin: 0 3px 0 2px;
+	
+}
+#PreviousResult:hover 
+{
+	cursor: pointer;
+	background: url("../images/arrowPreviousResult_hover.png") no-repeat;
+	background-position:0 -3px;
+}
+		
+#NextResult 
+{
+	background: url("../images/arrowNextResult.png") no-repeat;
+	background-position:0 -3px;
+	text-indent: -10000000px; /* TODO remove '-' once image is supplied! */
+	border: none;
+	width: 8px;
+	height: 20px;
+	margin: 0 0 0 8px;
+}
+#NextResult:hover 
+{
+	cursor: pointer;
+	background: url("../images/arrowNextResult_hover.png") no-repeat;
+	background-position:0 -3px;
+}
+
+#NextResult:active, #PreviousResult:active {
+	background-position:0 -2px;
+	outline:none;
+}
+.resultMessageBlock
+{
+	font-family: Georgia, Serif;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.buttons_right {
+	float: left;
+	overflow: auto;
+}
+#resultHeader .buttons {
+}
+#resultHeader input,label
+{
+    font: Calibri,Arial;
+}
+#resultHeader .buttons input
+{
+    color: white;
+    font-style: italic;
+	font-family: Calibri, Arial, Verdana, Sans-Serif;
+}
+		
+#PreviousOccurrence 
+{
+	width: 26px;
+	height: 24px;
+	display: block;
+	float: left;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	background-image:url("../images/arrowPreviousOccurrence.png");
+	text-indent: -100000px;
+}
+		
+#NextOccurrence 
+{
+	width: 26px;
+	height: 24px;
+	display: block;
+	float: left;
+	margin: 0 0 0 -1px;
+	text-indent: -100000px;
+	background-image:url("../images/arrowNextOccurrence.png");
+}
+				
+#HowToFix 
+{
+	height: 24px;
+	font-size: 12px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	float: left;
+	padding:0 7px;
+}
+#ToggleMode 
+{
+	height: 24px;
+	font-size: 12px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	float: left;
+	margin: 0 0 0 -1px;
+	padding:0 7px;
+	line-height:12px;
+	
+}	
+
+.buttons label {
+	font-family:Calibri, Arial;
+	font-size:11px;
+	font-style:normal;
+	border-right:none;
+	padding: 5px 7px 4px 7px;
+	float: left;
+	margin:0 0 0 -1px;
+}
+
+#OccurrenceList {
+	float:left;
+	color:#000000;
+	border-left:none;
+	font-family:Calibri, Arial;
+	font-size:11px;
+	font-style:normal;
+	margin:0 0 0 -4px;
+	padding: 4px 7px 3px 0;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+}	
+
+.buttonFail
+{
+    background-color: #a00505;
+    border: 1px solid #c20000;
+}
+.buttonFail:hover
+{
+	cursor:pointer;
+    background-color: #8d0404;
+}
+
+.buttonWarn
+{
+	background-color: #aa3101;
+    border: 1px solid #d65318;
+}
+.buttonWarn:hover
+{
+	cursor:pointer;
+	background-color: #982c01;
+}
+
+.buttonVisual
+{
+	background-color: #0a3257;
+    border: 1px solid #1b4e81;
+}
+.buttonVisual:hover 
+{
+	cursor:pointer;
+	background-color:#072542;
+}
+
+.buttonPass
+{
+	background-color: #547900;
+    border: 1px solid #719a17;
+}
+.buttonPass:hover {
+	cursor:pointer;
+	background-color:#476700;
+}
+
+.buttonNA
+{
+	background-color: #4c4c4c;
+    border: 1px solid #7b7b7b;
+}
+.buttonNA:hover 
+{
+	cursor:pointer;
+	background-color:#383838;
+}
+.headerURL
+{
+	text-align: left;
+	font-family: Verdana, Sans-Serif;
+	font-size:10px;
+}
+.logoWrapper table
+{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	border-spacing: 0px;
+}
+.radGridButton {
+    
+    background: #0f5b98;
+    color: #fff;
+    border: none;
+}
+.radGridButton:hover {
+    color: #eeeeee;
+}
+/* Paging */
+.itemTable .rgNumPart a
+{
+    margin:0 4px;
+    text-decoration: none !important;
+}
+.itemTable .rgNumPart a:hover
+{
+    text-decoration: underline !important;
+}
+.itemTable .rgNumPart .rgCurrentPage
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.itemTable .rgSorted input
+{
+}
+
+.itemTable .rgStatus div 
+{
+    background-image: url("../images/running.gif");
+    background-color: transparent;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 0 none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+}
+.itemTable tfoot img
+{
+    width: 15px;
+    height: 15px;
+}
+.rcbHovered
+{
+    background-color: #ecf8fe !important;
+}
+.rcbItem
+{
+    background-color: White;
+}
+.RadComboBoxDropDown
+{
+    border-color: #E3E3E3 !important;
+}
+.toggleText
+{
+    height: 25px;
+	font-family: Verdana, Sans-Serif;
+	font-size: 11px;
+	color: #444;
+	padding: 0 0 0 9px;
+}
+#dgFields
+{
+    background-color: #E8E8E8;   
+}
+.accessibility
+{
+    display: none;
+}
+caption
+{
+    display:none;
+}
+.permissionItems
+{
+    font-size: 12px; 
+    overflow: auto;
+    height: 13.5em;
+}
+.RadComboBoxWrapper
+{
+width:400px;    
+}
+.rgStatus+td img
+{
+    position:relative;
+}
+
+.rgPager thead, .rgPager caption {
+    display: none;
+}
+.rgPager div {
+    display: inline-block;
+}
+.rgNumPart {
+    margin-top: 0px;
+}
+.rgPager table tr td div img {
+    top: 2px;
+}
+.rgPager .rcbInputCell {
+    vertical-align:top !important;
+}
+.rgPager .rcbReadOnly {
+    border: #a0d0e0 1px solid;
+}
+.rcbArrowCell {
+    background: url("WebResource.axd?d=DEEuK0wt23ia6pGtPywG657tOPNwgitSn0pOA2mcgYDd-GX2fbvlX8lVQox060dp0s3IVC4PjMA7wCWQw53P0COKw7D4gxYRRYaDAF4TtCgmmvLskjuN4k5dUiGpY24mU9gJG1Vdbq-GhjD375LJ56ymCOmTrMBJ-3K1Q4SYMvw1&t=635791358600000000");
+}
+.scansTableControl .itemTable td {
+    overflow: hidden;
+   /* white-space: nowrap;*/
+}
+
+.chartFigCaption{
+    color:#FDFDFD; 
+    background-color:white;
+    height: 0px;
+    opacity: 0;
+}
+
+/* Telerik Styles*/
+.RadDock_Default .rdTitleWrapper {
+    background-image: none !important;
+    background-color:#0f5b98 !important;
+}
+
+.RadDock_Default .rdTitleWrapper .rdTitle, .RadDock_Default .rdContentWrapper {
+    color: white !important;
+    text-align:center !important;
+    font-weight:bold  !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.RadDock .rdCommandButton:before  {
+    content:"" !important;
+    font-family: "fontawasome";
+}
+
+.rdHorizontal .RadDock {
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.DockCloseButtonStyle
+{
+    background: url(../images/cancel-icon.png) center no-repeat !important;
+}
+
+.DockEditButtonStyle
+{
+    width: 15px !important;
+    background: url(../images/edit-pen-icon.png) center no-repeat !important;
+}
+
+.RadDock, .RadDock .rdTitleWrapper * {
+    text-align: center !important;
+}
+.RadDock_Default .rdTitleWrapper .rdTitle {
+    color: #333;
+    display:inline-block !important;
+}
+.EditDockCommand
+{
+    width: 15px !important;
+    background: url(../images/edit.png) !important;
+}
+
+.RadGrid_MetroTouch .rgFilterRow {
+    background: #eee;
+    display:none;
+}
+
+.RadGrid td a, .RadGrid td span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.viewWrap {
+    /*padding: 5px;
+    -moz-box-shadow: inset 0 0px 5px rgba(41,51,58,0.5);
+    -webkit-box-shadow: inset 0 0px 5px rgba(41,51,58,0.5);
+    box-shadow: inset 0 0px 5px rgba(41,51,58,0.5);*/
+}
+ 
+.RadTabStrip_Default .rtsLevel1 .rtsSelected .rtsLink {
+    border-top-color: #f89c00 !important;
+    border-width: 3px !important;
+    border-style: solid;
+    border-bottom-width: 0px !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-radius: 0px !important;
+}
+
+.RadTabStrip {
+    line-height: 0.42857 !important;
+    overflow: hidden;
+}
+
+.RadButton.rbButton.rbImageButton, .rbToggleButton {
+    margin-right: 5px;
+}
+
+.RadComboBox select {
+    height:25px !important;
+    padding: 2px 4px 2px 9px !important;
+    font-family: Verdana !important;
+	font-size: 13px !important;
+}
+
+.RadComboBox .rcbLabel {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    margin-top: 4px;
+}
+
+.RadComboBoxWithLabel table {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.horizontalListbox {
+    max-height:303px;
+}
+
+.horizontalListbox .rlbItem
+{
+    float:left !important;
+    width: 33%;
+    font-family: Verdana;
+    font-size: 13px;
+    min-width: 480px;
+}
+.horizontalListbox  .rlbGroup, .RadListBox
+{
+    width: 100% !important;
+    background: #f6f6f6 !important;
+}
+
+.RadListBox_Default {
+    font-size: 14px !important;
+    font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+}
+
+.RadListBox_Default .rlbGroup, .RadListBox_Default .rlbTemplateContainer {
+    max-height: 100% !important;
+    border: none !important;
+}
+
+.RadGrid .rgPager .RadComboBox {
+    width: 100px !important;
+}
+
+.RadGrid_MetroTouch,
+.RadTabStrip_MetroTouch,
+.RadTabStrip_Default
+{
+    font-family: Verdana !important;
+}
+
+.RadGrid_MetroTouch .rgMasterTable, 
+.RadGrid_MetroTouch .rgDetailTable, 
+.RadGrid_MetroTouch .rgGroupPanel table, 
+.RadGrid_MetroTouch .rgCommandRow table, 
+.RadGrid_MetroTouch .rgEditForm table, 
+.RadGrid_MetroTouch .rgPager table {
+    
+    font-size: 13px !important;
+    font-family: Verdana !important;
+    line-height: initial !important;
+}
+
+.RadGrid .rgHeader, .RadGrid th.rgResizeCol {
+    line-height: 34px !important;
+}
+
+.RadGrid_MetroTouch .rgHeader .rgSortAsc, .RadGrid_MetroTouch .rgHeader .rgSortDesc {
+    height: 10px !important;
+    float: right !important;
+    margin: 11px 2px 0 0 !important;
+}
+
+.RadGrid_MetroTouch .rgHeader, 
+.RadGrid_MetroTouch th.rgResizeCol, 
+.RadGrid_MetroTouch .rgHeaderWrapper {
+    background-color: #232e32 !important;
+}
+
+.RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
+    color: white !important;
+}
+
+.RadGrid_MetroTouch .rgHeader > a, 
+.RadGrid_MetroTouch th.rgResizeCol > a, 
+.RadGrid_MetroTouch .rgHeaderWrapper > a{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.RadGrid_MetroTouch .rgRow>td,
+.RadGrid_MetroTouch .rgAltRow>td {
+    border: none !important; 
+}
+
+.RadGrid_MetroTouch .rgMasterTable .rgSelectedCell, 
+.RadGrid_MetroTouch .rgSelectedRow{
+    color: #fff !important;
+    background: #0f5b98 !important;
+}
+
+.RadGrid_MetroTouch .rgMasterTable .rgSelectedCell, 
+.RadGrid_MetroTouch .rgSelectedRow, 
+.RadGrid_MetroTouch td.rgEditRow .rgSelectedRow, 
+.RadGrid_MetroTouch .rgSelectedRow td.rgSorted,
+.RadGrid_MetroTouch .rgSelectedRow td {
+    color: #fff;
+    background: #0f5b98 !important;
+}
+
+.RadGrid_MetroTouch .rgSelectedRow td {
+    color: #fff;
+    background: #0f5b98 !important;
+}
+
+.RadGrid .rgRow, .RadGrid .rgAltRow{
+    cursor: default;
+    background: #c6d0d2 !important;
+    line-height: 25px;
+}
+
+.rgPagerLabel, .rgInfoPart, .rgInfoPart strong{
+    color:#fff !important;
+}
+
+.RadGrid_MetroTouch .rgRow>td, .RadGrid_MetroTouch .rgAltRow>td {
+    border: 1px solid #f4f4f4 !important;
+}
+.RadGrid_MetroTouch td.rgSorted {
+    background-color: #c6d0d2  !important; 
+}
+.RadGrid_MetroTouch .rgHoveredRow td {
+    background: #0f5b98 !important;
+    color: #fff;
+}
+
+.RadGrid_MetroTouch .rgHoveredRow td > a {
+    color: #fff;
+}
+
+.RadGrid .rgPager{
+    background: #232e32;
+    line-height: 28px !important;
+}
+.RadGrid_MetroTouch .rgNumPart a
+{
+    background-color: #f9f9f9;
+    color: black !important;
+}
+
+.RadGrid_MetroTouch .rgNumPart a:hover {
+    color: black !important;
+}
+
+.RadGrid_MetroTouch .rgNumPart a.rgCurrentPage, .RadGrid_MetroTouch .rgNumPart a.rgCurrentPage:hover {
+    background-color: #0f5b98 !important;
+    border: 1px solid #0f5b98 !important;
+    color: #fff !important;
+}
+
+.RadGrid_MetroTouch .rgHeader a {
+    text-decoration: none !important;
+}
+
+.RadGrid .rgPagerCell .rgAdvPart {
+    line-height: 2.2857;
+}
+
+.RadListBox .rlbText
+{
+    white-space:nowrap !important;
+}
+
+.RadListBox_Default .rlbItem.rlbHovered {
+    /*background:none !important;
+     word-break: normal; */
+}
+
+.RadGrid_MetroTouch, .RadGrid_MetroTouch .rgMasterTable, .RadGrid_MetroTouch .rgDetailTable, .RadGrid_MetroTouch .rgGroupPanel table, .RadGrid_MetroTouch .rgCommandRow table, .RadGrid_MetroTouch .rgEditForm table, .RadGrid_MetroTouch .rgPager table {
+    
+    line-height: 20px !important;
+}
+
+.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected .rtsLink {
+    background: white !important;
+    color: #171a1d !important;
+    text-decoration: none !important;
+    border-top: 3px solid transparent;
+    border-top-color: #f89c00 !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+}
+.RadTabStrip.rtsTop .rtsLevel1 {
+    border: none !important;
+}
+
+.RadComboBox_MetroTouch .rcbReadOnly .rcbInput {
+    color: #000;
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+.RadListBox .rlbDisabled {
+    opacity: 0.9 !important;
+}
+.RadListBox label {
+}
+
+.MultiCol .RadListBox label  {
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    display: block;
+    white-space: nowrap;
+}
+
+.RadListBox_MetroTouch {
+    color: #333;
+    font-size: 13px !important;
+    font-family: Verdana !important;
+    font-weight: normal !important;
+}
+.GridRowSelector_MetroTouch{
+    background : none !important;
+}
+
+.RadWindow .rwWindowContent .radalert
+{ 
+    background:none !important; 
+    padding: 1px 0 25px 0px !important;
+}
+
+/*Edit Scan UI Changes*/
+
+.normalEditScanDiv label{
+    font-family: Verdana;
+    font-size: 13px;
+}
+
+.scanHeader
+{
+    margin-top:5px;
+    width: 99%;
+}
+.editScanHeaders{
+    margin-top: 0.5em;
+    display: inline-flex;
+    width: 99%;
+    margin-left: 0px;
+}
+.editScanHeaders label {
+    margin-left: 0px;
+}
+.editScanHeaders label span{
+    width: 13em;
+    font-family: Verdana;
+}
+
+.csLabel{
+    width: 13em;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0px 0px 0px;
+    font-family: Verdana;
+}
+
+.editScanHeaders label input
+{
+	top: 2px;
+}
+
+.mainDivEditScan{
+    display:inline-block;
+    width:100%;
+}
+
+.ListControlDiv
+{
+    border: 1px solid #c5c5c5;
+    width: 99%;
+}
+
+.normalEditScanDiv{
+    width:100%;
+    display:inline-block;
+}
+
+/*.normalEditIEScanDiv{
+    width:1400px;
+    display:inline-block;
+}*/
+
+.advancedEditScanDiv{
+    width:0%;
+    display:none;
+    float: right;
+    position: relative;
+    right: 5px;
+    left: 5px;
+}
+
+.advancedEditScanDiv td{
+    border-right: 5px solid #e3e3e3;
+    border-bottom: 0px solid #eeeeee;
+}
+
+#firstAdvancedDiv{
+    padding-right: 5px;
+    width: 22%;
+    display: inline-block;
+    float: left;
+    border:none;
+}
+
+#firstAdvancedDiv label, #secondAdvancedDiv label, #thirdAdvancedDiv label
+{
+    width: 98%;
+}
+
+
+#secondAdvancedDiv{
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 56%;
+    display: inline-block;
+    float: left;
+}
+
+#secondAdvancedDiv label input
+{
+	top: 2px;
+}
+
+#secondAdvancedDiv label {
+    width:99%;
+}
+
+#secondAdvancedDiv label span {
+    width:19em;
+}
+
+#thirdAdvancedDiv{
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 22%;
+    display: inline-block;
+    float: right;
+    border:none;
+}
+
+#fourthAdvancedDiv{
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 100%;
+    display: inline-block;
+}
+
+.monitorOptions{
+    float: left;
+    width: 99%;
+}
+
+.searchListBoxDiv{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background:#FFFFFF;
+    padding: 10px;
+    
+    width: 100%;
+}
+
+.searchInnerDiv{
+    margin-left : 10px;
+}
+
+.searchInnerDiv label{
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+
+
+.ListBoxDiv{
+    padding: 10px;
+    background: #f6f6f6 !important;
+}
+
+.gridTable{
+    width: 100%;
+}
+
+.gridTable th {
+   padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    font-weight: normal;
+    color: white;
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    background-color: #232e32 !important;
+}
+.gridTable th label{
+    padding-left:5px;
+}
+
+.gridTable tr {    
+    background: #c6d0d2 !important;
+    /*line-height: 30px;*/
+}
+
+/*Search with clear icon*/
+.clearable-input {
+  position: relative;
+  display: inline-block;
+}
+.clearable-input > input {
+  padding-right: 1.4em;
+  border: 1px #A9A9A9 solid;
+  height:25px;
+  background-position: 125px 4px !important;
+}
+.clearable-input >[data-clear-input] {
+     display: none;
+    position: absolute;
+    top: 0;
+    right: 0.2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.33em 0.15em;
+    line-height: 0em;
+    cursor: pointer;
+}
+.clearable-input > input::-ms-clear {
+  display: none;
+}
+
+.scansTableControl input:read-only {
+    color: #808080;
+}
+
+.scansTableControl fieldset label {
+    margin-left: 0.25em !important;
+    margin-right: 1em !important;
+}
+
+.scansTableControl fieldset {
+    padding: 0 0 0 0.5em !important;
+    margin-bottom: 0.5em;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+#ToolbarConfigGeneratorForm{
+    height: 350px;
+}
+
+.row{
+    text-align: left;
+    padding-top: 1em; 
+    margin: 0px !important;
+}
+
+.col-lg-4{
+    padding-right: 0px !important;
+    padding-left: 5px !important;
+}
+
+.col-lg-5
+{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.logViewerPre{
+    margin:0;
+    white-space: normal;
+}
+
+.configGeneratorSection{
+    padding-top:2px;
+}
+
+.loginLeftDiv
+{
+    width:20%;
+    min-width:350px;
+    height:100%;
+    background-color:#373a36;
+}
+
+.loginRightDiv
+{
+    width: 80%;
+    height:100%;
+    min-width:350px;
+    background-color:#007EFF;
+}
+
+.loginMainDiv{
+    width:100%;
+    height:100%;
+    min-width:800px;
+}
+
+.LoginText{
+    font-size:30px;
+    color:#373a36;
+    font-weight: 600;
+}
+
+.loginDiv{
+    top: 37%;
+    margin-left: 30%;
+    width: 300px;
+    height: 300px;
+}
+.changePwdDiv{
+    top: 37%;
+    margin-left: 30%;
+    width: 360px;
+    height: 300px;
+}
+.loginInput{
+    margin-bottom: 10px; 
+}
+
+		</style><script type = "text/javascript" src = "js/Kendo/jquery.min.js" ></script>
+                     <link href = "css/Kendo/kendo.common.min.css" rel = "stylesheet" />
+                     <link href = "css/Kendo/kendo.default.min.css" rel = "stylesheet" />
+                     <link href = "css/Kendo/kendo.dataviz.min.css" rel = "stylesheet" />
+                     <link href = "css/Kendo/kendo.dataviz.default.min.css" rel = "stylesheet" />
+                     <script src = "js/Kendo/kendo.all.min.js" ></script>
+                     </head>
+	    <body class="report">
+		    <h1>https://ianovenden.github.io/design-track-agenda/dist/index.html - WCAG 2.0 AA</h1>
+		    <div class="summary">
+<div><strong>Scan completed:</strong> 15/01/2018 06:13:50</div>
+</div>
+<table cellspacing="0" cellpadding="0" class="resultsTable fixedLayout">
+<thead>
+<tr>
+<th scope="col">Group</th><th class="total" scope="col">&nbsp;&nbsp;All issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul class="resultsTree">
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Compliance Level A
+<ul>
+<div class="tooltip">The priority set of WCAG 2.0 criteria. Generally these requirements are the most important and will have the widest impact on the accessibility of your site.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 1.1.1 [Non-text Content]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to make information conveyed by non-text content accessible through the use of a text alternative.  Text alternatives are a primary way for making information accessible because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech. A person who cannot hear an audio file can have the text alternative displayed so that he or she can read it. In the future, text alternatives will also allow information to be more easily translated into sign language or into a simpler form of the same language.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F3.html">F3</a> Failure of Success Criterion 1.1.1 due to using CSS to include images that co...
+<ul>
+<div class="tooltip">The CSS background-image property provides a way to include images in the document with CSS without any reference in the HTML code. The CSS background-image property was designed for decorative purposes and it is not possible to associate text alternatives with images that are included via CSS. Text alternatives are necessary for people who cannot see images that convey important information. Therefore, it is a failure to use this property to add images to convey important information.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Ensure that image used in background-url for element is not conveying information
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054585">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;27,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;104,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;122,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;143,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;328,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;402,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;403,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;404,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;405,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;406,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;407,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;408,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F30.html">F30</a> Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives t...
+<ul>
+<div class="tooltip">This describes a failure condition for all techniques involving text alternatives. If the text in the "text alternative" cannot be used in place of the non-text content without losing information or function then it fails because it is not, in fact, an alternative to the non-text content. For example the alt text is the same as the item image name is graph.jpg and the alt text is graph.jpg</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />Image has descriptive alt text
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054597">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H2">H2</a> Combine adjacent image and text links for the same resource
+<ul>
+<div class="tooltip">This objective of this technique is to avoid unnecessary duplication that occurs when adjacent text and iconic versions of a link are contained in a </div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />No adjacent links for same resource found
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054584">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H37.html">H37</a> Use alt attributes on img elements
+<ul>
+<div class="tooltip">When using the <code>img</code> element, specify a short text alternative with the            <code>alt</code> attribute. Note. The value of this attribute is referred to as "alt            text".</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />All IMG elements have valid ALT attributes.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054590">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H44.html">H44</a> Use label elements to associate text labels with form controls
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>label</code> element to explicitly            associate a form control with a label. A <code>label</code> is attached to a specific            form control through the use of the <code>for</code> attribute. The value of the              <code>for</code> attribute must be the same as the value of the <code>id</code>            attribute of the form control.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />LABEL element &#39;FOR&#39; attribute has unique ID&#39;s and matches all controls.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054591">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F67.html">F67</a> Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptio...
+<ul>
+<div class="tooltip">The objective of this technique is to describe the failure that occurs when the long deion for non-text content does not serve the same purpose or does not present the same information as the non-text content. This can cause problems for people who cannot interpret the non-text content because they rely on the long deion to provide the necessary information conveyed by the non-text content. Without a long deion that provides complete information, a person may not be able to comprehend or interact with the Web page. </div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Images were found; however none had a long description attribute.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054598">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G144.html">G144</a> Ensuring that the Web Page contains another CAPTCHA serving the same purpose ...
+<ul>
+<div class="tooltip">The purpose of this technique is to reduce occasions in which a user with a disability cannot complete a CAPTCHA task. Because there are alternate CAPTCHA tasks that use different modalities, a user is more likely to be able to complete one of the tasks successfully.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No CAPTCHA element found.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054599">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H24.html">H24</a> Provide text alternatives for the area elements of image maps
+<ul>
+<div class="tooltip">The objective of this technique is to provide text alternatives that serve the same            purpose as the selectable regions of an image map. An image map is an image divided into            selectable regions defined by <code>area</code> elements. Each area is a link to another            Web page or another part of the current Web page. The <code>alt</code> attribute of each              <code>area</code> element serves the same purpose as the selectable area of the          image.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page has no AREA elements.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054586">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H27.html">H27</a> Provide text and non-text alternatives for object
+<ul>
+<div class="tooltip">If <code>object</code> is used, provide a <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#text-altdef">text alternative</a> in the content of the element:</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No objects on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054587">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H35.html">H35</a> Provide text alternatives on applet elements
+<ul>
+<div class="tooltip">Provide a text alternative for an applet by using the alt attribute to label an applet            and providing the text alternative in the body of the applet element. Both mechanisms            are required due to the varying support of the alt attribute and applet body text by            user agents.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No APPLET elements found.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054588">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H36.html">H36</a> Use alt attributes on images used as submit buttons
+<ul>
+<div class="tooltip">For input elements of type 'image', the <code>alt</code> attribute of the            <code>input</code> element is used to provide a functional label. This label indicates            the button's function, but does not attempt to describe the image. The label is            especially important if there are multiple submit buttons on the page that each lead to            different results.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No INPUT image elements found in document.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054589">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H45.html">H45</a> Use longdesc
+<ul>
+<div class="tooltip">The objective of this technique is to provide information in a file designated by the<code>longdesc</code> attribute when a short text alternative does not adequately convey the function or information provided in the image. The <code>longdesc</code> attribute is a <abbr title="">URI</abbr>, the target of which contains a long deion of the non-text content.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No IMG elements with LONGDESC attribute found
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054592">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H46.html">H46</a> When EMBED elements are used, the NOEMBED element is required in the page
+<ul>
+<div class="tooltip">EMBED elements present functionality not available to all users.  The NOEMBED element can be used to provide a deion.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not have EMBED elements.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054593">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H53.html">H53</a> Use the body of the object element
+<ul>
+<div class="tooltip">The objective of this technique is to provide a text alternative for content rendered            using the object element. The body of the object element can be used to provide a            complete text alternative for the object or may contain additional non-text content with            text alternatives.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not have OBJECT elements.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054594">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H65.html">H65</a> Use the title attribute to identify form controls when the label element     ...
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>title</code> attribute to label            form controls when the visual design cannot accommodate the label (for example, if there            is no text on the screen that can be identified as a label) or where it might be            confusing to display a label. User agents, including assistive technology, can speak the              <code>title</code> attribute.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No controls found that require labels
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054595">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H67.html">H67</a> Use null alt text and no title attribute on img elements for images that AT s...
+<ul>
+<div class="tooltip">The purpose of this technique is to show how images can be marked so that they can be ignored by Assistive Technology.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain images from decorative image list.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054596">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 1.3.1 [Info and Relationships]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that information and relationships that are implied by visual or auditory formatting are preserved when the presentation format changes. For example, the presentation format changes when the content is read by a screen reader or when a user style sheet is substituted for the style sheet provided by the author.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H85.html">H85</a> Use OPTGROUP to group OPTION elements inside a SELECT
+<ul>
+<div class="tooltip">The objective of this technique is to group items in a selection list. A selection list is a set of allowed values for a form control such as a multi-select list or a combo box. Often, selection lists have groups of related options. Those groups should be semantically identified, rather than simply delimiting the groups with "dummy" list entries. This allows user agents to collapse the options by group to support quicker skimming of the options, and to indicate in what group an option of interest is located. It also helps to visually break up long lists so that users can more easily locate the option(s) they are interested in.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Examine set of options to determine if they should be arranged into logical groups.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054614">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;392,&nbsp;column&nbsp;6,&nbsp;select&nbsp;element</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H97.html">H97</a> Grouping related links using the nav element
+<ul>
+<div class="tooltip">The objective of this technique is to group navigation links using the HTML5 nav element. The nav element is one of several sectioning elements in HTML5. Use of this markup can make groups of links easier to locate and skip past by users of assistive technology such as screen readers. Using semantic structures allow custom style sheets to be used to change the presentation of groups of links while preserving their relationship. When the nav element is employed more than once on a page, distinguish the navigation groups by using an aria-label or aria-labelledby attribute.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Page doesn&#39;t have Nav element.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054615">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;1,&nbsp;column&nbsp;1,&nbsp;#document&nbsp;element,&nbsp;#content&nbsp;=&nbsp;"&lt;!doctype&nbsp;html&gt;"</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H42">H42</a> Use h1-h6 to identify headings
+<ul>
+<div class="tooltip">The objective of this technique is to use HTML and XHTML heading markup to convey the structure of the content.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />Page uses headers according to specification.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054610">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H44.html">H44</a> Use label elements to associate text labels with form controls
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>label</code> element to explicitly            associate a form control with a label. A <code>label</code> is attached to a specific            form control through the use of the <code>for</code> attribute. The value of the              <code>for</code> attribute must be the same as the value of the <code>id</code>            attribute of the form control.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />LABEL element &#39;FOR&#39; attribute has unique ID&#39;s and matches all controls.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054591">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H39.html">H39</a> Use caption elements to associate data table captions with data tables
+<ul>
+<div class="tooltip">The objective of this technique is to programmatically associate captions for data            tables where captions are provided in the presentation. The caption for a table is a            table identifier and acts like a title or heading for the table.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No tables on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054608">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H43">H43</a> Use id and headers attributes to associate data cells with header cells in   ...
+<ul>
+<div class="tooltip">The objective of this technique is to associate each data cell (in a data table) with
+            the appropriate headers. This technique adds a <code>headers</code> attribute to each
+            data cell (<code>td</code> element). It also adds an <code>id</code> attribute to any
+            cell used as a header for other cells. The <code>headers</code> attribute of a cell
+            contains a list of the <code>id</code> attributes of the associated header cells. If
+            there is more than one <code>id</code>, they are separated by spaces.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain complex data tables.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054613">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H51">H51</a> Use table markup to present tabular information
+<ul>
+<div class="tooltip">The objective of this technique is to present tabular information in a way that
+            preserves relationships within the information even when users cannot see the table or
+            the presentation format is changed. Information is considered tabular when logical
+            relationships among text, numbers, images, or other data exist in two dimensions
+            (vertical and horizontal). These relationships are represented in columns and rows, and
+            the columns and rows must be recognizable in order for the logical relationships to be
+            perceived.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No tables used on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054611">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H63">H63</a> Use the scope attribute to associate header cells and data cells in data     ...
+<ul>
+<div class="tooltip">The objective of this technique is to associate header cells with data cells using the
+              <code>scope</code> attribute. The <code>scope</code> attribute may be used to clarify
+            the scope of any cell used as a header. The scope identifies whether the cell is a
+            header for a row, column, or group of rows or columns. The values <code>row</code>,
+              <code>col</code>, <code>rowgroup</code>, and <code>colgroup</code> identify these
+            possible scopes respectively.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No tables used on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054612">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H65.html">H65</a> Use the title attribute to identify form controls when the label element     ...
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>title</code> attribute to label            form controls when the visual design cannot accommodate the label (for example, if there            is no text on the screen that can be identified as a label) or where it might be            confusing to display a label. User agents, including assistive technology, can speak the              <code>title</code> attribute.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No controls found that require labels
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054595">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H73.html">H73</a> Use the summary attribute of the table element to give an overview of data   ...
+<ul>
+<div class="tooltip">The objective of this technique is to provide a brief overview of how <span>data has been organized into a table                  </span> or a brief explanation of how to navigate the table. The <code>summary</code> attribute of the <code>table</code> element makes this information available to people who use screen readers; the information is not displayed visually.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Summary attribute is not supported in HTML5.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054609">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 1.3.2 [Meaningful Sequence]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to enable a user agent to provide an alternative presentation of content while preserving the reading order needed to <span>understand the</span> meaning. It is important that it be possible to programmatically determine at least one sequence of the content that makes sense. Content that does not meet this Success Criterion may confuse or disorient users when assistive technology reads the content in the wrong order, or when alternate style sheets or other formatting changes are applied.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/C27.html">C27</a> Making the DOM order match the visual order
+<ul>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Elements displayed with absolute positioning may be out of logical DOM order
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054616">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;25,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;102,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;120,&nbsp;column&nbsp;6,&nbsp;h2&nbsp;element</li><li>	Line&nbsp;141,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;326,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H56.html">H56</a> Use the dir attribute on an inline element to resolve problems          with ...
+<ul>
+<div class="tooltip">The objective of this technique is to identify changes in the text direction of text that includes nested directional runs by providing the <code>dir</code> attribute on            inline elements. A nested directional run is a run of text that includes mixed directional text, for example, a paragraph in English containing <span>a quoted Hebrew sentence which in turn includes an English phrase.</span> Use of the <code>dir</code> attribute on an enclosing <code>span</code> or other inline element may be necessary because the <a href="http://www.w3.org/International/articles/inline-bidi-markup/">Unicode bidirectional algorithm</a> can produce undesirable results when mixed            directional text contains spaces or punctuation. The concepts used in this technique are described in <a href="http://www.w3.org/International/articles/inline-bidi-markup/">What you need to know about the bidi algorithm and inline markup</a>.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Reading direction not specified on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054617">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 1.3.3 [Sensory Characteristics]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that all users can access instructions for using the content, even when they cannot perceive shape or size or use information about spatial location or orientation. 
+            Some content relies on knowledge of the shape or position of objects that are not available from the structure of the content (for example, "round button" or "button to the right"). 
+            Some users with disabilities are not able to perceive shape or position due to the nature of the assistive technologies they use. 
+            This Success Criterion requires that additional information be provided to clarify anything that is dependent on this kind of information.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F14.html">F14</a> Failure of Success Criterion 1.3.3 due to identifying content only by its sha...
+<ul>
+<div class="tooltip">The objective of this technique is to show how identifying content only by                        its shape or location makes content difficult to understand and operate.                        When only visual identification or location is used, users with visual                        disabilities may find it difficult to locate content since they cannot see                        the screen or may perceive only a small portion of the screen at one time.                        Also, location of content can vary if page layout varies due to variations                        in font, window, or screen size.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify page does not use shape or location to explain instructions
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054618">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 1.4.1 [Use of Color]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that all users can access information that is conveyed by color differences, that is, by the use of color where each color has a meaning assigned to it. If the information is conveyed through color differences in an image (or other non-text format), the color may not be seen by users with color deficiencies. In this case, providing the information conveyed with color through another visual means ensures users who cannot see color can still perceive the information.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G14">G14</a> Ensure that information conveyed by color differences is also available in text
+<ul>
+<div class="tooltip">The objective of this technique is to ensure that when color differences are used to convey information, such as required form fields, the information conveyed by the color differences are also conveyed explicitly in text.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Page references an external style-sheet. Visual check required.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054619">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 2.2.1 [Timing Adjustable]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that users with disabilities are given adequate time to interact with Web content whenever possible. People with disabilities such as blindness, <span>low vision,</span> dexterity impairments, and cognitive limitations may require more time to read content or to perform functions such as filling out on-line forms. If Web functions are time-dependent, it will be difficult for some users to perform the required action before a time limit occurs. This may render the service inaccessible to them. Designing functions that are not time-dependent will help people with disabilities succeed at completing these functions. Providing options to disable time limits, customize the length of time limits, or request more time before a time limit occurs helps those users who require more time than expected to successfully complete tasks. These options are listed in the order that will be most helpful for the user. Disabling time limits is better than customizing the length of time limits, which is better than requesting more time before a time limit occurs.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/SCR1.html">SCR1</a> Allow the user to extend the default time limit
+<ul>
+<div class="tooltip">The objective of this technique is to allow user to extend the default time limit by providing a mechanism to extend the time when s provide functionality that has default time limits. In order to allow the user to request a longer than default time limit, the  can provide a form (for example) allowing the user to enter a larger default time limit. Making this available as a preference setting allows users to indicate their requirements in advance. If warning the user a time limit is about to expire (see         <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/SCR16.html">SCR16: Providing a  that warns the user a time limit is about to expire</a>  (Scripting)			), this form can be made available from the warning dialog.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify that if timeout occurs, user has method to extend time
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054623">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 2.3.1 [Three Flashes or Below Threshold]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to allow users to access the full content of a site without inducing seizures due to photosensitivity.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G19">G19</a> Ensure that no component of the content flashes more than three times in any ...
+<ul>
+<div class="tooltip">The objective of this technique is to avoid flashing at rates that are known to cause seizures if the flashes are bright and large enough. Since some users may be using screen enlargers, this technique limits the flashing of any size content to no more than three flashes in any 1-second period.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Page may contain elements that cause flickering.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054625">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 2.4.3 [Focus Order]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, move through components in a table one row at a time or one column at a time both reflect the logical relationships in the content. Either order may satisfy this Success Criterion.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/C27.html">C27</a> Making the DOM order match the visual order
+<ul>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Elements displayed with absolute positioning may be out of logical DOM order
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054616">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;25,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;102,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;120,&nbsp;column&nbsp;6,&nbsp;h2&nbsp;element</li><li>	Line&nbsp;141,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;326,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H4.html">H4</a> Create a logical tab order through links, form controls, and objects
+<ul>
+<div class="tooltip">The objective of this technique is to provide a logical tab order when the default tab            order does not suffice. Often, <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/G59.html">G59: Placing the interactive elements in an order that follows sequences and relationships within the content</a> is sufficient and this technique is not necessary. It can be very easy            to introduce usability bugs when setting the tab order explicitly.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Ensure that content is in logical tab order.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054628">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 2.4.4 [Link Purpose (In Context)]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to help users understand the purpose of each link so they can decide whether they want to follow the link. Whenever possible, provide link text that identifies the purpose of the link without needing additional context.
+             Assistive technology has the ability to provide users with a list of links that are on the Web page. Link text that is as meaningful as possible will aid users who want to choose from this list of links. Meaningful link text also helps those who wish to tab from link to link. Meaningful links help users choose which links to follow without requiring complicated strategies to understand the page.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H30.html">H30</a> Providing link text that describes the purpose of a link for anchor elements
+<ul>
+<div class="tooltip">The objective of this technique is to describe the purpose of a link by providing deive text as the content of the a element. The deion lets a user distinguish this link from other links in the Web page and helps the user determine whether to follow the link. The URI of the destination is generally not sufficiently deive.
+
+When an image is the only content of a link, the text alternative for the image describes the unique function of the link.
+
+When the content of a link contains both text and one or more images, if the text is sufficient to describe the purpose of the link, the images may have an empty text alternative. (See Using null alt text and no title attribute on img elements for images that assistive technology should ignore.) When the images convey information beyond the purpose of the link, they must also have appropriate alt text.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Confirm anchor element text describes the purpose of the link.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054630">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;26,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;27,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;34,&nbsp;column&nbsp;47,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"https://www.google.co.uk/search?hotel_dates=2...lf_hd:-1,lrf:!3sIAE,lf:1,lf_ui:7"</li><li>	Line&nbsp;103,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;104,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;121,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;122,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;142,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;143,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;327,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;328,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H24.html">H24</a> Provide text alternatives for the area elements of image maps
+<ul>
+<div class="tooltip">The objective of this technique is to provide text alternatives that serve the same            purpose as the selectable regions of an image map. An image map is an image divided into            selectable regions defined by <code>area</code> elements. Each area is a link to another            Web page or another part of the current Web page. The <code>alt</code> attribute of each              <code>area</code> element serves the same purpose as the selectable area of the          image.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page has no AREA elements.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054586">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H33.html">H33</a> Supplement link text with the title attribute
+<ul>
+<div class="tooltip">The objective of this technique is to demonstrate how to use a <code>title</code>            attribute on an anchor element to provide additional text describing a link. The              <code>title</code> attribute is used to provide additional information to help clarify            or further describe the purpose of a link. If the supplementary information provided            through the <code>title</code> attribute is something the user should know before            following the link, such as a warning, then it should be provided in the link text            rather than in the <code>title</code> attribute.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page has no links with title attributes
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054629">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H79.html">H79</a> Identifying the purpose of a link in a data table using the link text combine...
+<ul>
+<div class="tooltip">The objective of this technique is to identify the purpose of a link from the link in its data table context. This context is the table cell enclosing the link and the cell's associated table header cells. The data table context provides the purpose for an otherwise unclear link when the table cell is the nearest enclosing block-level ancestor element. It lets a user distinguish this link from other links in the Web page that lead to other destinations and helps the user determine whether to follow the link. Note that simply providing the URI of the destination is not sufficiently deive for people with disabilities, especially those with cognitive disabilities.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not have TD or TH table elements with links.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054631">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 4.1.1 [Parsing]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that user agents, including assistive technologies, can accurately interpret and parse content. If the content cannot be parsed into a data structure, then different user agents may present it differently or be completely unable to parse it. Some user agents use "repair techniques" to render poorly coded content.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G134.html">G134</a> Validate Web pages
+<ul>
+<div class="tooltip">The objective of this technique is to avoid ambiguities in Web pages                        that often result from code that does not validate against formal                        specifications. Each technology's mechanism to specify the technology and                        technology version is used, and the Web page is validated against the                        formal specification of that technology. If a validator for that technology                        is available, the developer can use it.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify page has been run through W3C validator
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054639">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />Criterion 2.1.1 [Keyboard]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that, wherever possible, content can be operated through a keyboard or keyboard interface (so an alternate keyboard can be used). When content can be operated through a keyboard or alternate keyboard, it is operable by people with no vision (who cannot use devices such as mice that require eye-hand coordination) as well as by people who must use alternate keyboards or input devices that act as keyboard emulators. Keyboard emulators include speech input software, sip-and-puff software, on-screen keyboards, scanning software and a variety of assistive technologies and alternate keyboards. Individuals with low vision also may have trouble tracking a pointer and find the use of software much easier (or only possible) if they can control it from the keyboard.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/SCR2.html">SCR2</a> Using redundant keyboard and mouse event handlers
+<ul>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />No elements on page using mouse event handlers but no corresponding keyboard handlers
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054621">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />Criterion 2.4.2 [Page Titled]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to help users find content and orient themselves within it by ensuring that each Web page has a deive title. Titles identify the current location without requiring users to read or interpret page content. When titles appear in site maps or lists of search results, users can more quickly identify the content they need. User agents make the title of the page easily available to the user for identifying the page. For instance, a user agent may display the page title in the  window title bar or as the name of the tab containing the page.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H25.html">H25</a> Pages are required to use the TITLE element
+<ul>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />TITLE supplied for page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054627">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />Criterion 3.1.1 [Language of Page]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that content developers provide information in the Web page that user agents need to present text and other linguistic content correctly. Both assistive technologies and conventional user agents can render text more accurately when the language of the Web page is identified. Screen readers can load the correct pronunciation rules. Visual browsers can display characters and s correctly. Media players can show captions correctly. As a result, users with disabilities will be better able to understand the content.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H57.html">H57</a> Use language attributes on the html element 
+<ul>
+<div class="tooltip">The objective of this technique is to identify the default language of a document by            providing the <code>lang</code> and/or <code>xml:lang</code> attribute on the <code>html</code>            element.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />HTML element specifies the LANG attribute.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054632">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />Criterion 3.2.2 [On Input]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that entering data or selecting from a control has predictable effects. Changes in context can confuse users who do not easily perceive the change or are easily distracted by changes. Changes of context are appropriate only when it is clear that such a change will happen when a field is selected or a button is pressed.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H84.html">H84</a> Use a button with a select element to perform an action
+<ul>
+<div class="tooltip">The objective of this technique is to allow the user to control when an action is performed, rather than having the action occur as a side effect of choosing a value for the <code>select</code> element. The user may inspect the different values of the <code>select</code> element, or may accidentally choose the wrong value, without causing the action to occur. When the user is satisfied with their choice, they select the button to perform the action.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />Selection is controlled through other mechanism than onchange.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054635">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H32.html">H32</a> Provide submit buttons
+<ul>
+<div class="tooltip">The objective of this technique is to provide a mechanism that allows users to            explicitly request changes of context. The intended use of a submit button is to            generate an HTTP request that submits data entered in a form, so it is an appropriate            control to use for causing a change of context.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No forms on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054634">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />Criterion 3.3.2 [Labels or Instructions]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to help users avoid making mistakes when their input is required. To help avoid mistakes it is good user interface design to provide simple instructions and cues for entering information. Some users with disabilities may be more likely to make mistakes than users without disabilities or recovery from mistakes may be more difficult, making mistake avoidance an important strategy for users with disabilities. People with disabilities rely on well documented forms and procedures to interact with a page. Blind users need to know exactly what information should be entered into form fields and what the available choices are. Simple instructions visually connected to form controls can assist users with cognitive disabilities or those accessing a page using a screen magnifier.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H44.html">H44</a> Use label elements to associate text labels with form controls
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>label</code> element to explicitly            associate a form control with a label. A <code>label</code> is attached to a specific            form control through the use of the <code>for</code> attribute. The value of the              <code>for</code> attribute must be the same as the value of the <code>id</code>            attribute of the form control.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />LABEL element &#39;FOR&#39; attribute has unique ID&#39;s and matches all controls.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054591">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G89">G89</a> Provide expected data format and example
+<ul>
+<div class="tooltip">The objective of this technique is to help the user avoid input errors by informing them about restrictions on the format of data that they must enter. This can be done by describing characteristics of the format or providing a sample of the format the data should have.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No INPUT fields of type text on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054638">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H65.html">H65</a> Use the title attribute to identify form controls when the label element     ...
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>title</code> attribute to label            form controls when the visual design cannot accommodate the label (for example, if there            is no text on the screen that can be identified as a label) or where it might be            confusing to display a label. User agents, including assistive technology, can speak the              <code>title</code> attribute.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No controls found that require labels
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054595">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />Criterion 4.1.2 [Name, Role, Value]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that Assistive Technologies (AT) can gather information about, activate(or set) and keep up to date on the status of user interface controls in the content.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H44.html">H44</a> Use label elements to associate text labels with form controls
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>label</code> element to explicitly            associate a form control with a label. A <code>label</code> is attached to a specific            form control through the use of the <code>for</code> attribute. The value of the              <code>for</code> attribute must be the same as the value of the <code>id</code>            attribute of the form control.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />LABEL element &#39;FOR&#39; attribute has unique ID&#39;s and matches all controls.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054591">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H64">H64</a> Using the title attribute of the frame and iframe elements
+<ul>
+<div class="tooltip">The objective of this technique is to demonstrate the use of the title attribute of the frame or iframe element to describe the contents of each frame. This provides a label for the frame so users can determine which frame to enter and explore in detail. It does not label the individual page (frame) or inline frame (iframe) in the frameset.
+
+Note that the title attribute labels frames, and is different from the title element which labels documents. Both should be provided, since the first facilitates navigation among frames and the second clarifies the user's current 
+
+The title attribute is not interchangeable with the name attribute. The title labels the frame for users; the name labels it for ing and window targeting. The name is not presented to the user, only the title is.
+</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No FRAME elements found in document body.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054626">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H65.html">H65</a> Use the title attribute to identify form controls when the label element     ...
+<ul>
+<div class="tooltip">The objective of this technique is to use the <code>title</code> attribute to label            form controls when the visual design cannot accommodate the label (for example, if there            is no text on the screen that can be identified as a label) or where it might be            confusing to display a label. User agents, including assistive technology, can speak the              <code>title</code> attribute.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No controls found that require labels
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054595">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html">HS4</a> DEMO: Verifying compliant toolbar
+<ul>
+<div class="tooltip">For all user interface components (including but not limited to: form elements, links and components generated by s), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. </div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No toolbars on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054640">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 1.2.1 [Audio-only and Video-only (Prerecorded)]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to make information conveyed by prerecorded audio-only and prerecorded video-only content available to all users. Text alternatives used to make information accessible because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G158.html">G158</a> Provide a full text transcript for the audio
+<ul>
+<div class="tooltip">The purpose of this technique is to provide an accessible alternative way of presenting the information in an audio-only presentation.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain audio
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054600">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G159.html">G159</a> Provide a full text transcript of the video content
+<ul>
+<div class="tooltip">The purpose of this technique is to provide an accessible alternative way of presenting the information in an video-only presentation.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No videos on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054601">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/2015/NOTE-WCAG20-TECHS-20150226/H96">H96</a> Using the track element to provide audio descriptions
+<ul>
+<div class="tooltip">The objective of this technique is to use the HTML5 track element to specify a deions timed text track for a video element. Audio deion timed text tracks contain textual deions of the video component of the media resource, intended for audio synthesis when the visual component is obscured, unavailable, or not usable. The user agent makes the cues available to the user in a non-visual fashion, for instance, by synthesizing them into speech.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain video elements.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054602">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 1.2.2 [Captions (Prerecorded)]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to enable people who are deaf or hard of hearing to watch synchronized media presentations. Captions provide the part of the content available via the audio track. Captions not only include dialogue, but identify who is speaking and include non-speech information conveyed through sound, including meaningful sound effects.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G87.html">G87</a> Provide closed captions
+<ul>
+<div class="tooltip">The objective of this technique is to provide a way for people who have                        hearing impairments or otherwise have trouble hearing the dialog in                        synchronized media material to be able to view the material and see the dialog and                        sounds - without requiring people who are not deaf to watch the captions.                        With this technique all of the dialog and important sounds are embedded as                        text in a fashion that causes the text not to be visible unless the user                        requests it. As a result they are visible only when needed. This requires                        special support for captioning in the user agent.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No videos on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054603">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/2015/NOTE-WCAG20-TECHS-20150226/H95">H95</a> Using the track element to provide captions
+<ul>
+<div class="tooltip">The objective of this technique is to use the HTML5 track element to specify a captions timed text track for a video element. Caption timed text tracks contain tranion or translation of the dialogue, sound effects, relevant musical cues, and other relevant audio information, suitable for when sound is unavailable or not clearly audible.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain video elements.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054604">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 1.2.3 [Audio Description or Full Text Alternative]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to provide people who are blind or visually impaired access to the visual information in a synchronized media presentation. This Success Criterion describes two approaches, either of which can be used.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G69.html">G69</a> Provide a full synchronized media text alternative including any interaction
+<ul>
+<div class="tooltip">The purpose of this technique is to provide an accessible alternative way of presenting the information in a synchronized media presentation.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No videos on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054605">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G78.html">G78</a> Provide a sound track that includes audio description
+<ul>
+<div class="tooltip">The objective of this technique is to provide an audio (spoken) version of information that is provided visually so that it is possible for people who cannot see to be able to understand audio-visual material better.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No videos on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054607">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G8">G8</a> Create an extended audio description for the synchronized media content
+<ul>
+<div class="tooltip">The objective of this technique is to all additional audio deion to be
+                        inserted into a synchronized media presentation when there is not enough time in the
+                        gaps int the dialog. This is done by simply freezing the image so that
+                        additional audio deion of the video can be played. When the
+                        deion is finished, the synchronized media continues.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain video
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054606">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H53.html">H53</a> Use the body of the object element
+<ul>
+<div class="tooltip">The objective of this technique is to provide a text alternative for content rendered            using the object element. The body of the object element can be used to provide a            complete text alternative for the object or may contain additional non-text content with            text alternatives.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not have OBJECT elements.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054594">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 1.4.2 [Audio Control]
+<ul>
+<div class="tooltip">Individuals who use screen reading software can find it hard to <span>hear</span> the speech output if there is other audio playing at the same time. This difficulty is exacerbated when the screen reader's speech output is software based (as most are today) and is controlled via the same volume control as the sound. Therefore, it is important that the user be able to turn off the background sound. Note: Having control of the volume includes being able to reduce its volume to zero.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G60.html">G60</a> Ensure all autostart sounds turns off automatically within three seconds
+<ul>
+<div class="tooltip">The purpose of this technique is to allow authors to play a sound on their                        Web page but avoid the problem of users not being able to use their screen                        readers due to interference by the content sound. It also allows the author                        to avoid putting controls on the Web page to control the sound - and the problem                        faced by users with screen readers in finding the control (when unable                        to hear their screen reader).</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No audio on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054620">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 2.1.2 [No Keyboard Trap]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that that content does not "trap" keyboard focus within subsections of content on a Web page. This is a common problem when multiple formats are combined within a page and rendered using plug-ins or embedded applications.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F10">F10</a> Failure of Success Criterion 2.1.2 and Conformance Requirement 5 due to combi...
+<ul>
+<div class="tooltip">When content includes multiple formats, one or more user agents or plug-ins                        are often needed in order to successfully present the content to users. For                        example, a page that includes XHTML, SVG, SMIL and XForms may require a                        browser to load as many as three different plug-ins in order for a user to                        successfully interact with the content. Some plug-ins create a common                        situation in which the keyboard focus can become "stuck" in a                        plug-in, leaving a keyboard-only user with no way to return to the                        other content.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain keyboard handlers
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054622">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 2.2.2 [Pause, Stop, Hide]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to avoid distracting users during their interaction with a Web page.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F4">F4</a> Failure of Success Criterion 2.2.2 due to using text-decoration:blink without...
+<ul>
+<div class="tooltip">CSS defines the <code>blink</code> value for the <code>text-decoration</code>                        property. When used, it causes any text in elements with this property to                        blink at a predetermined rate. This cannot be interrupted by the user, nor                        can it be disabled as a user agent preference. The blinking continues as                        long as the page is displayed. Therefore, content that uses                            <code>text-decoration:blink</code> fails the Success Criterion because                        blinking can continue for more than three seconds.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No usages of text-decoration:blink found on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054624">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 2.4.1 [Bypass Blocks]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to allow people who navigate sequentially through content more direct access to the primary content of the Web page. Web pages and applications often have content that appears on other pages or screens. Examples of repeated blocks of content include but are not limited to navigation links, heading graphics, and advertising frames. Small repeated sections such as individual words, phrases or single links are not considered blocks for the purposes of this provision.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H64">H64</a> Using the title attribute of the frame and iframe elements
+<ul>
+<div class="tooltip">The objective of this technique is to demonstrate the use of the title attribute of the frame or iframe element to describe the contents of each frame. This provides a label for the frame so users can determine which frame to enter and explore in detail. It does not label the individual page (frame) or inline frame (iframe) in the frameset.
+
+Note that the title attribute labels frames, and is different from the title element which labels documents. Both should be provided, since the first facilitates navigation among frames and the second clarifies the user's current 
+
+The title attribute is not interchangeable with the name attribute. The title labels the frame for users; the name labels it for ing and window targeting. The name is not presented to the user, only the title is.
+</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No FRAME elements found in document body.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054626">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 3.2.1 [On Focus]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that functionality is predictable as visitors navigate their way through a  Any component that is able to trigger an event when it receives focus must not change the context.          Examples of changing context when a component receives focus include, but are not limited to:</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G107.html">G107</a> Use &quot;activate&quot; rather than &quot;focus&quot; as a trigger for changes of context
+<ul>
+<div class="tooltip">The objective of this technique is to provide a method for activating things that is predictable by the user. Users with cognitive disabilities and people using screen readers or screen magnifiers may be confused by an unexpected event such as automatic form submission or activation of a function that causes a change of context.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not use focus to activate content
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054633">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 3.3.1 [Error Identification]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. 
+             In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G83.html">G83</a> Provide text descriptions to identify required fields that were not completed
+<ul>
+<div class="tooltip">The objective of this technique is to notify the user when a field that must be completed has not been completed. When users fail to provide input for any mandatory form fields, information is provided in text to enable the users to identify which fields were omitted. One approach is to use client-side validation and provide an  dialog box identifying the mandatory fields which were omitted. Another approach, using server-side validation, is to re-display the form (including any  previously entered data), with either a text deion at the location of the omitted mandatory field, or a text deion that identifies the omitted mandatory fields.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No forms on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054636">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/SCR18.html">SCR18</a> Provide client-side validation and alert
+<ul>
+<div class="tooltip">The objective of this technique is to validate user input as values are entered for each field, by means of client-side ing. If errors are found, an  dialog describes the nature of the error in text. Once the user dismisses the  dialog, it is helpful if the  positions the keyboard focus on the field where the error occurred.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No inputs on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054637">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+<td class="total">0</td></tr>
+
+<tr>
+<td>
+<ul class="resultsTree">
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Compliance Level AA
+<ul>
+<div class="tooltip">The next level of conformance to the WCAG 2.0 guidelines.  To declare AA conformance with WCAG 2.0 all criteria in Level A must also be met. </div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 1.4.3 [Contrast (Minimum)]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to provide enough contrast between text and its background so that it can be read by people with moderately low vision (who do not use contrast-enhancing assistive technology). For people without color deficiencies, hue and saturation have minimal or no effect on legibility as assessed by reading performance (Knoblauch et al., 1991). Color deficiencies can affect luminance contrast somewhat. Therefore, in the recommendation, the contrast is calculated in such a way that color is not a key factor so that people who have a color vision deficit will also have adequate contrast between the text and the background.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G145.html">G145</a> Ensure that a contrast ratio of at least 3:1 exists between text (and images ...
+<ul>
+<div class="tooltip">The objective of this technique is to make sure that users can read text
+                        that is presented over a background. This technique relaxes the 5:1
+                        contrast ratio requirement for text that is at least 18 point (if not bold) or at least 14 point (if bold).</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Use inspection tools to verify that contrast ratio is valid
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054644">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G18.html">G18</a> Ensuring that a contrast ratio of at least 4.5:1 exists between text (and ima...
+<ul>
+<div class="tooltip">The objective of this technique is to make sure that users can read text that is presented over a background. For Success Criterion 1.4.3, this technique describes the minimum contrast ratio for text that is less than 18 point (if not bold) and less than 14 point (if bold). For Success Criterion 1.4.5, this technique relaxes the 7:1 contrast ratio requirement for text that is at least 18 point (if not bold) or at least 14 point (if bold).
+
+If the background is a solid color (or all black or all white) then the relative luminance of the text can be maintained by making sure that each of the text letters have 4.5:1 contrast ratio with the background. 
+
+If the background or the letters vary in relative luminance (or are patterned) then the background around the letters can be chosen or shaded so that the letters maintain a 4.5:1 contrast ratio with the background behind them even if they do not have that contrast ratio with the entire background. 
+
+The contrast ratio can sometimes be maintained by changing the relative luminance of the letters as the relative luminance of the background changes across the page. 
+
+Another method is to provide a halo around the text that provides the necessary contrast ratio if the background image or color would not normally be sufficiently different in relative luminance. 
+</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify content is using valid contrast ratio
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054643">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F24">F24</a> Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foregro...
+<ul>
+<div class="tooltip">Users with vision loss or cognitive challenges often require specific foreground (text) and background color combinations. For instance, many people with                        low vision find it much easier to see a Web page that has white text on a                        black background, so they may have set their user agent to create this                        contrast. If the author specifies that the text must be black, then it may                        override the settings of the user agent and render a page that has black                        text (specified by the author) on black background (that was set in the user                        agent). This principle also works in reverse. If the Webmaster forces the                        background to be white, then the white background specified by the author                        would be the same color as the white text (which was set in the user agent)                        rendering the page unusable to the user. Therefore, if the author specifies                        a foreground (text) color then they should also specify a background color                        which has sufficient contrast (link) with the foreground and vice versa.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />Page contain no elements that specific foreground color but no background color or vice versa
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054642">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 1.4.5 [Images of Text]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to encourage authors who are using technologies that are capable of achieving a specific visual presentation to enable people who require a particular visual presentation of text to be able to adjust the text presentation as required. This includes people who require the text in a particular font size, foreground and background color, font family, line spacing or alignment.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/C30">C30</a> Using CSS to replace text with images of text and providing user interface co...
+<ul>
+<div class="tooltip">The objective of this technique is to demonstrate how CSS can be used to replace structured HTML text with images of text in a way that makes it possible for users to view content according to their preferences. To use this technique, an author starts by creating an HTML page that uses semantic elements to mark up the structure of the page. The author then designs two or more stylesheets for that page. One stylesheet presents the HTML text as text and the second uses CSS features to replace some of the HTML text with images of text. Finally, through the use of server-side or client-side ing, the author provides a control that allows the user to switch between the available views. </div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify that if background information conveys information it supplies a text alternative
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054648">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;27,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;104,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;122,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;143,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;328,&nbsp;column&nbsp;7,&nbsp;a&nbsp;element,&nbsp;HREF&nbsp;=&nbsp;"#"</li><li>	Line&nbsp;402,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;403,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;404,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;405,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;406,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;407,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li><li>	Line&nbsp;408,&nbsp;column&nbsp;6,&nbsp;SPAN&nbsp;element</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html">HS2</a> Ensure images are not used instead of text except for specific cases
+<ul>
+<div class="tooltip">If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text </div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify if any images are of text. If so evaluate whether content should be exposed as text instead.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054647">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 2.4.6 [Headings and Labels]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to help users understand what information is contained in Web pages and how that information is organized. When headings are clear and deive, users can find the information they seek more easily, and they can understand the relationships between different parts of the content more easily. Deive labels help users identify specific components within the content.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G130.html">G130</a> Provide descriptive headings
+<ul>
+<div class="tooltip">The objective of this technique is to make section headings within Web content deive. Deive headings and titles (see <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/G88.html">G88: Providing deive titles for Web pages</a>) work together to give users an overview of the content and its organization. Deive headings identify sections of the content in relation both to the Web page as a whole and to other sections of the same Web page.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify header identifies its section of content
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054650">https://ianovenden.github.io/design-track-agenda/dist/index.html</a>
+<ul>
+<li>	Line&nbsp;21,&nbsp;column&nbsp;5,&nbsp;h1&nbsp;element</li><li>	Line&nbsp;25,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;31,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;39,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;47,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;55,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;60,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;68,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;76,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;84,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;92,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;102,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;108,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;113,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;120,&nbsp;column&nbsp;6,&nbsp;h2&nbsp;element</li><li>	Line&nbsp;126,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;131,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;141,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;161,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;169,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;177,&nbsp;column&nbsp;10,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;185,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;193,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;198,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;209,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;217,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;225,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;233,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;238,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;249,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;257,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;265,&nbsp;column&nbsp;10,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;276,&nbsp;column&nbsp;10,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;284,&nbsp;column&nbsp;10,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;295,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;300,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;308,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;316,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;326,&nbsp;column&nbsp;6,&nbsp;H2&nbsp;element</li><li>	Line&nbsp;332,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;337,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;345,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;350,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;358,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;363,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li><li>	Line&nbsp;371,&nbsp;column&nbsp;8,&nbsp;H3&nbsp;element</li><li>	Line&nbsp;379,&nbsp;column&nbsp;8,&nbsp;h3&nbsp;element</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 2.4.7 [Focus Visible]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that there is at least one mode of operation where the keyboard focus indicator can be visually located.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G149.html">G149</a> Using user interface components that are highlighted by the user agent when t...
+<ul>
+<div class="tooltip">The objective of this technique is to ensure that the focused component can be visually identified by the user by relying on user agent support. It is common for user agents to highlight standard controls in some way when they receive focus. UAAG-conformant user agents do so when they satisfy checkpoint 10.2 "Highlight selection, content focus, enabled elements, visited links". When authors use standard controls for which the user agent provides this support, users are informed of the focus location in a standard, predictable way.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Set focus to all interactive elements on this page and verify that focus can be discerned visually
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054651">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 3.1.2 [Language of Parts]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that user agents can correctly present content written in multiple languages and so that assistive technologies that helps users understand text use appropriate language-specific knowledge and resources.. This applies to graphical browsers as well as screen readers, braille displays, and other voice browsers.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H58.html">H58</a> Use language attributes to identify changes in the human language
+<ul>
+<div class="tooltip">The objective of this technique is to clearly identify any changes in language on a            page by using the <code>lang</code> or <code>xml:lang</code> attribute, as appropriate            for the HTML or XHTML version you use.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />If language can change on webpage ensure areas of content are marked up.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054652">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 3.2.3 [Consistent Navigation]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to encourage the use of consistent presentation and layout for users who interact with repeated content within 
+             a set of Web pages and need to locate specific information or functionality more than once.
+            Individuals with low vision who use screen magnification to display a small portion of the screen at a time often use visual cues and page boundaries to quickly locate repeated content.
+            Presenting repeated content in the same order is also important for visual users who use spatial memory or visual cues within the design to locate repeated content.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/F66">F66</a> Failure of Success Criterion 3.2.3 due to presenting navigation links in a di...
+<ul>
+<div class="tooltip">This describes a failure condition for  all techniques involving navigation mechanisms that are repeated on multiple Web pages within a set of Web pages (Success Criterion 3.2.3). If the mechanism presents the order of links in a different order on two or more pages, then the failure is triggered.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Verify that the page is consistent in the presentation of site navigation, position on page, link colours etc. between all pages on site
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054653">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Criterion 3.2.4 [Consistent Identification]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure consistent identification of functional components that appear repeatedly within a set of Web pages. A strategy that people who use screen readers use when operating a Web site is to rely heavily on their familiarity with functions that may appear on different Web pages. If identical functions have different labels on different Web pages, the site will be considerably more difficult to use. It may also be confusing and increase the cognitive load for people with cognitive limitations. Therefore, consistent labeling will help.</div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G197">G197</a> Using labels, names, and text alternatives consistently for content that has ...
+<ul>
+<div class="tooltip">The purpose of this technique is to help for users with cognitive disabilities, blindness and vision loss to understand what will happen when they interact with a function on a Web page. If there are different labels on user interface components (i.e., elements, links, JavaScript objects, etc.) that have the same function, the user will not know that they have encountered a component with the same function and will not know what to expect. This could lead to many unnecessary errors. It is also recommended that this approach to consistent labelling be applied across the Web site. </div><li>	<img src="images/iconVisual.png" height="15" alt="Visual check" />Ensure functionality is referred to with identical text alternatives on each page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054654">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconPass.png" height="15" alt="Passed" />Criterion 1.4.4 [Resize text]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that visually rendered text, including text-based controls (text characters that have been displayed so that they can be seen [vs. text characters that are still in data form such as ASCII]) can be scaled successfully so that it can be read directly by people with mild visual disabilities, without requiring the use of assistive technology such as a screen magnifier. Users may benefit from scaling all content on the Web page, but text is most critical.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/C12.html">C12</a> Use percent, em, or named font size for font sizes
+<ul>
+<div class="tooltip">The objective of this technique is to specify text font size proportionally so that user agents can scale content effectively. If a font-size is specified for the <code>body</code> element, all other elements inherit that value, unless overridden by a more specific selector.</div><li>	<img src="images/iconPass.png" height="15" alt="Passed" />No elements found with font size specified with pt/px.
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054645">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/C17.html">C17</a> Scaling form elements which contain text
+<ul>
+<div class="tooltip">The objective of this technique is to ensure text-based form controls resize when text size is changed in the user agent. This will allow users to enter text and read what they have entered in input boxes because the text is displayed at the size required by the user.Text-based form controls include input boxes (text and textarea) as well as buttons.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No input elements on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054646">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 1.2.4 [Captions (Live)]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to enable people who are deaf or hard of hearing to watch <strong><em>real-time</em></strong> presentations. Captions provide the part of the content available via the audio track. Captions not only include dialogue, but also identify who is speaking and notate sound effects and other significant audio.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G9.html">G9</a> Create captions for live synchronized media
+<ul>
+<div class="tooltip">The objective of this technique is to allow users who cannot hear to be able                        to access real-time synchronized media broadcasts. It is more difficult to create                        accurate real-time captions because there is little time to correct mistakes                        or to listen a second time or consult someone to be sure the words are                        accurately reproduced. It is also harder to simplify or paraphrase                        information if it is flowing too quickly.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No videos on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054641">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 1.2.5 [Audio Description]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to provide people who are blind or visually impaired access to the visual information in a synchronized media presentation. The audio deion augments the audio portion of the presentation with the information needed when the video portion is not available. During existing pauses in dialogue, audio deion provides information about actions, characters, scene changes, and on-screen text that are important and are not described or spoken in the main sound track.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G78.html">G78</a> Provide a sound track that includes audio description
+<ul>
+<div class="tooltip">The objective of this technique is to provide an audio (spoken) version of information that is provided visually so that it is possible for people who cannot see to be able to understand audio-visual material better.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No videos on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054607">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G8">G8</a> Create an extended audio description for the synchronized media content
+<ul>
+<div class="tooltip">The objective of this technique is to all additional audio deion to be
+                        inserted into a synchronized media presentation when there is not enough time in the
+                        gaps int the dialog. This is done by simply freezing the image so that
+                        additional audio deion of the video can be played. When the
+                        deion is finished, the synchronized media continues.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Page does not contain video
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054606">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 2.4.5 [Multiple Ways]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to make it possible for users to locate content in a manner that best meets their needs. Users may find one technique easier or more comprehensible to use than another.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/H59.html">H59</a> Use the link element and navigation tools
+<ul>
+<div class="tooltip">The objective of this technique is to describe how the <code>link</code> element can            provide metadata about the position of an HTML page within a set of Web pages or can            assist in locating content with a set of Web pages. The value of the <code>rel</code>            attributes indicates what type of relation is being described, and the <code>href</code>            attribute provides a link to the document having that relation. Multiple            <code>link</code> elements can provide multiple relationships. Several values of              <code>rel</code> are useful:</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />Link is not used for document navigation
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054649">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 3.3.3 [Error Suggestion]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/SCR18.html">SCR18</a> Provide client-side validation and alert
+<ul>
+<div class="tooltip">The objective of this technique is to validate user input as values are entered for each field, by means of client-side ing. If errors are found, an  dialog describes the nature of the error in text. Once the user dismisses the  dialog, it is helpful if the  positions the keyboard focus on the field where the error occurred.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No inputs on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054637">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" />Criterion 3.3.4 [Error Prevention (Legal, Financial, Data)]
+<ul>
+<div class="tooltip">The intent of this Success Criterion is to help users with disabilities avoid serious consequences as the result of a mistake when performing an action that cannot be reversed. For example, purchasing non-refundable airline tickets or submitting an order to purchase stock in a brokerage account are financial transactions with serious consequences. If a user has made a mistake on the date of air travel, he or she could end up with a ticket for the wrong day that cannot be exchanged. If the user made a mistake on the number of stock shares to be purchased, he or she could end up purchasing more stock than intended. Both of these types of mistakes involve transactions that take place immediately and cannot be altered afterwards, and can be very costly. Likewise, it may be an unrecoverable error if users unintentionally modify or delete data stored in a database that they later need to access, such as their travel profile in a travel services Web site. Test data is included in this provision because, in order for tests to be valid, users are not allowed to modify their answers once submitted; so users need to be able to ensure that their submission is correct.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/G98">G98</a> Provide the ability for the user to review and correct answers before submitting
+<ul>
+<div class="tooltip">The objective of this technique is to provide users with a way to ensure their input is correct before completing an irreversible transaction. Testing, financial, and legal applications permit transactions to occur which cannot be "undone". It is therefore important that there be no errors in the data submission, as the user will not have the opportunity to correct the error once the transaction has been committed.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No forms on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054655">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>	<img src="images/iconNA.png" height="15" alt="N/A" /><a target="_new" href="http://www.w3.org/TR/WCAG20-TECHS/SCR18.html">SCR18</a> Provide client-side validation and alert
+<ul>
+<div class="tooltip">The objective of this technique is to validate user input as values are entered for each field, by means of client-side ing. If errors are found, an  dialog describes the nature of the error in text. Once the user dismisses the  dialog, it is helpful if the  positions the keyboard focus on the field where the error occurred.</div><li>	<img src="images/iconNA.png" height="15" alt="N/A" />No inputs on page
+<ul>
+<li>	<a target="showpage" href="http://www.cynthiasays.com/ShowInstances.aspx?resultId=10054637">https://ianovenden.github.io/design-track-agenda/dist/index.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+<td class="total">0</td></tr>
+
+</tbody>
+<tfoot></tfoot>
+<tfoot>
+<tr>
+<th scope="col">Total</th>
+<th class="total" scope="col">0</th>
+</tr>
+</tfoot>
+</table>
+
+	    </body>
+</html>

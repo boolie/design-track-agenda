@@ -49,7 +49,6 @@ Very much list based:
 - Solid HTML structure (should each day be an "article"?
 - Service workers - offline support in case connections are unreliable.
 - Smooth transitions
-- [CSS only filters](https://csswizardry.com/2016/10/pure-css-content-filter/)
 - [CSS Grid](https://caniuse.com/#feat=css-grid)
 - Flexbox
 - BEM
@@ -78,3 +77,5 @@ Very much list based:
 - Push notifications - session reminders
 - Encorporate accessibility checking into build process
 - Split build process into dev and prod
+- [CSS only filters](https://csswizardry.com/2016/10/pure-css-content-filter/)
+- Store the multitrack selected value in session storage
