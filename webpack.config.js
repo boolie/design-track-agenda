@@ -34,6 +34,7 @@ module.exports = {
 		]
 	},
 	devServer: {
+		compress: true,
 		contentBase: path.join( __dirname, 'dist' ),
 		inline: true,
 		historyApiFallback: true
@@ -54,7 +55,7 @@ module.exports = {
 		new ExtractTextPlugin( '[name].[hash].styles.css' ),
 		new MinifyPlugin(),
 		new SWPrecacheWebpackPlugin({
-			cacheId: 'pegaworld',
+			cacheId: 'pegagclc',
 			dontCacheBustUrlsMatching: /\.\w{8}\./,
 			filename: 'sw.js',
 			mergeStaticsConfig: true,

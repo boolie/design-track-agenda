@@ -21,4 +21,3 @@ wrap.on( 'scroll', function( e ) {
 		}
 	});
 });
-

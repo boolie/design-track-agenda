@@ -33,6 +33,7 @@ a.day_header-link--close {
 .js-tuesday #tuesday,
 .js-wednesday #wednesday,
 .js-thursday #thursday {
+	background-color: #fefefe;
 	display: inline;
 }
 
@@ -90,7 +91,7 @@ a.day_header-link--close {
 @media ( --x-large-screen ) {
 
 	.js-dayview {
-		grid-template-columns: repeat( 4, 1fr );
+		grid-template-columns: repeat( 1, 1fr );
 	}
 
 	.js-sunday #sunday,
@@ -98,6 +99,6 @@ a.day_header-link--close {
 	.js-tuesday #tuesday,
 	.js-wednesday #wednesday,
 	.js-thursday #thursday {
-		width: 40%;
+		width: 80%;
 	}
 }

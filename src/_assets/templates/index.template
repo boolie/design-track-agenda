@@ -1,425 +1,1089 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Pegaworld Design Agenda</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#ffffff">
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/gfx/pwa/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/gfx/pwa/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/gfx/pwa/favicon-16x16.png">
-        <link rel="manifest" href="manifest.json">
-        <meta name="apple-mobile-web-app-title" content="Pegaworld">
-        <meta name="application-name" content="Pegaworld">
-        <meta name="msapplication-TileColor" content="#603cba">
-        <meta name="msapplication-TileImage" content="assets/pwa/favicons/mstile-144x144.png">
-		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-	</head>
-	<body>
-		<div id="wrap">
-			<header>
-				<img src="assets/gfx/pega-logo.svg" class="logo" alt="Pega Systems">
-				<h1 class="title">WORLD Design Track June 3-7 2018</h1>
-			</header>
-			<div class="agenda">
-				<article class="day" id="sunday">
-					<h2 class="day_header js-head-sunday">
-						<a href="#" class="day_header-link js-day-filter" data-day="sunday">Sunday 3rd June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Sunday Track">Close Sunday track</a>
-					</h2>
-					<ul class="day_sessions">
-						<li class="day_sessions-session day_sessions-session--travel">
-							<h3>
-								<time datetime="2018-06-03T12:00">12:00</time> Check-in &amp; Registration
-								<p>
-									Travel to PegaWorld - Registration @ <a href="https://www.google.co.uk/search?hotel_dates=2018-01-14%2C2018-01-15&rlla=0&tbm=lcl&ei=jGVTWvWOJevLgAbcq7r4Cw&q=marriott+orlando&oq=marriott+orlando&gs_l=psy-ab.3...0.0.0.39181.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.8kFGSK7bqqs#rlfi=hd:2018-01-14,2018-01-15;si:;mv:!1m3!1d146686.2668534686!2d-81.395594!3d28.4962645!2m3!1f0!2f0!3f0!3m2!1i382!2i502!4f13.1;tbs:lf_hd:-1,lrf:!3sIAE,lf:1,lf_ui:7" target="_blank" rel="noopener" class="link--darker">Marriot Orlando</a>
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--other">
-							<h3>
-								<time datetime="2018-06-03T13:00">1:00</time>-<time datetime="2018-06-03T13:30">1:30</time> Opening Remarks
-								<p>
-									Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--conf">
-							<h3>
-								<time datetime="2018-06-03T13:30">1:30</time>-<time datetime="2018-06-03T15:00">3:00</time> Strategic Applications and Competitive Intelligence
-								<p>
-									Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-03T15:00">3:00</time>-<time datetime="2018-06-03T15:30">3:30</time> Break
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--cust">
-							<h3>
-								<time datetime="2018-06-03T15:30">3:30</time>-<time datetime="2018-06-03T16:30">4:30</time> Customer Centricity &amp; Consulting
-								<p>
-									Customer Panel - Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--cust">
-							<h3>
-								<time datetime="2018-06-03T16:30">4:30</time>-<time datetime="2018-06-03T17:15">5:15</time> Customer Centricity &amp; Consulting
-								<p>
-									Key Messages - Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--conf">
-							<h3>
-								<time datetime="2018-06-03T17:15">5:15</time>-<time datetime="2018-06-03T17:45">5.45</time> Customer Experience
-								<p>
-									Don't Blow it! - Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--travel">
-							<h3>
-								30 Mins Travel Buses from Marriot
-								<p>
-									Registration for PegaWorld
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-03T18:30">6:30</time> PegaWORLD
-								<p>
-									Reception &amp; Dinner
-								</p>
-							</h3>
-						</li>
-					</ul>
-				</article>
-				<article class="day" id="monday">
-					<h2 class="day_header js-head-monday">
-						<a href="#" class="day_header-link js-day-filter" data-day="monday">Monday 4th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Monday Track">Close Monday Track</a>
-					</h2>
-					<ul class="day_sessions">
-						<li class="day_sessions-session day_sessions-session--other">
-							<h3>
-								<time datetime="2018-06-04T08:00">8:00</time> PegaWORLD
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--other">
-							<h3>
-								<time datetime="2018-06-04T18:00">6:00</time> Customer Appreciation Event - Universal Studios, Orlando
-							</h3>
-						</li>
-					</ul>
-				</article>
-				<article class="day" id="tuesday">
-					<h2 class="day_header js-head-tuesday">
-						<a href="#" class="day_header-link js-day-filter" data-day="tuesday">Tuesday 5th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Tuesday Track">Close Tuesday Track</a>
-					</h2>
-					<ul class="day_sessions">
-						<li class="day_sessions-session day_sessions-session--other">
-							<h3>
-								<time datetime="2018-06-05T08:00">8:00</time> PegaWORLD
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--other">
-							<h3>
-								<time datetime="2018-06-05T18:00">6:00</time> Design Track Event
-								<p>
-									Kayak Eco-Tour, Shingle Creek
-								</p>
-							</h3>
-						</li>
-					</ul>
-				</article>
-				<article class="day" id="wednesday">
-					<h2 class="day_header js-head-wednesday">
-						<a href="#" class="day_header-link js-day-filter" data-day="wednesday">Wednesday 6th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Wednesday Track">Close Wednesday Track</a>
-					</h2>
-					<ul class="day_sessions">
-						<li class="multi-container">
-							<ul class="day_sessions multi-track track-head-container">
-								<li class="track-head" data-track="1">
-									<p>Track 1</p>
-									<span class="arrow"></span>
-							  	</li>
-							</ul>
-							<ul class="day_sessions multi-track track-head-container">
-							  	<li class="track-head" data-track="2">
-									<p>Track 2</p>
-									<span class="arrow"></span>
-							  </li>
-							</ul>
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-06T07:00">7:00</time>-<time datetime="2018-06-06T08:00">8:00</time> Breakfast
-							</h3>
-						</li>
-						<li class="multi-container">
-				  			<!-- Track 1 -->
-							<ul class="day_sessions multi-track js-track-1">
-							  	<li class="day_sessions-session day_sessions-session--mobile">
-									<h3>
-										<time datetime="2018-06-06T08:15">8:15</time>-<time datetime="2018-06-06T08:45">8:45</time> Mobile
-										<p>
-											Overview - Crystal K
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--user">
-									<h3>
-										<time datetime="2018-06-06T08:45">8:45</time>-<time datetime="2018-06-06T09:15">9:15</time> User Centered Design
-										<p>
-											Overview - Crystal K
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--user">
-									<h3>
-										<time datetime="2018-06-06T09:15">9:15</time>-<time datetime="2018-06-06T10:35">10:35</time> User Centered Design
-										<p>
-											Implementations - Crystal K
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--break">
-									<h3>
-										<time datetime="2018-06-06T10:35">10:35</time>-<time datetime="2018-06-06T1050">10:50</time> Break
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--user">
-									<h3>
-										<time datetime="2018-06-06T10:50">10:50</time>-<time datetime="2018-06-06T12:20">12:20</time> User Centered Design
-										<p>
-											Nuts and Bolts - Crystal K
-										</p>
-									</h3>
-								</li>
-							</ul>
-							<!-- Track 2 -->
-							<ul class="day_sessions multi-track js-track-2">
-								<li class="day_sessions-session day_sessions-session--user">
-									<h3>
-										<time datetime="2018-06-06T08:15">8:15</time>-<time datetime="2018-06-06T08:45">8:45</time> User Centered Design
-										<p>
-											Overview - Crystal L
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--mobile">
-									<h3>
-										<time datetime="2018-06-06T08:45">8:45</time>-<time datetime="2018-06-06T09:15">9:15</time> Mobile
-										<p>
-											Overview - Crystal L
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--mobile">
-									<h3>
-										<time datetime="2018-06-06T09:15">9:15</time>-<time datetime="2018-06-06T10:45">10:45</time> Mobile
-										<p>
-											It's all about the User Experience - Crystal L
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--break">
-									<h3>
-										<time datetime="2018-06-06T10:45">10:45</time>-<time datetime="2018-06-06T11:00">11:00</time> Break
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--mobile">
-									<h3>
-										<time datetime="2018-06-06T11:00">11:00</time>-<time datetime="2018-06-06T12:20">12:20</time> Mobile
-										<p>
-											Publishing an App &amp; Offline Considerations - Crystal L
-										</p>
-									</h3>
-								</li>
-							</ul>
-							<!-- End Separate Tracks -->
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-06T12:20">12:20</time>-<time datetime="2018-06-06T13:05">1:05</time> Lunch
-							</h3>
-						</li>
-						<li class="multi-container">
-							<!-- Track 1 -->
-							<ul class="day_sessions multi-track js-track-1">
-								<li class="day_sessions-session day_sessions-session--mobile">
-									<h3>
-										<time datetime="2018-06-06T13:05">1:05</time>-<time datetime="2018-06-06T14:35">2:35</time> Mobile
-										<p>
-											It's all about the User Experience - Crystal K
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--mobile">
-									<h3>
-										<time datetime="2018-06-06T14:35">2:35</time>-<time datetime="2018-06-06T15:55">3:55</time> Mobile
-										<p>
-											Publishing an App &amp; Offline Considerations - Crystal K
-										</p>
-									</h3>
-								</li>
-							</ul>
-							<!-- Track 2 -->
-							<ul class="day_sessions multi-track js-track-2">
-								<li class="day_sessions-session day_sessions-session--user">
-									<h3>
-										<time datetime="2018-06-06T13:05">1:05</time>-<time datetime="2018-06-06T14:35">2:35</time> User Centered Design
-										<p>
-											Nuts and Bolts - Crystal L
-										</p>
-									</h3>
-								</li>
-								<li class="day_sessions-session day_sessions-session--user">
-									<h3>
-										<time datetime="2018-06-06T14:35">2:35</time>-<time datetime="2018-06-06T15:55">3:55</time> User Centered Design
-										<p>
-											Implementations - Crystal L
-										</p>
-									</h3>
-								</li>
-							</ul>
-							<!-- End Separate Tracks -->
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-06T15:55">3:55</time>-<time datetime="2018-06-06T16:15">4:15</time> Break
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--conf">
-							<h3>
-								<time datetime="2018-06-06T16:15">4:15</time>-<time datetime="2018-06-06T17:30">5:30</time> Upgrade Information
-								<p>
-									Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--cust">
-							<h3>
-								<time datetime="2018-06-06T17:30">5:30</time>-<time datetime="2018-06-06T18:30">6:30</time> Customer Centricity
-								<p>
-									Introduction/Q&amp;A - Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-06T19:30">7:30</time> Design Track Event
-								<p>
-									Dinner – Marriott Orlando World Center
-								</p>
-							</h3>
-						</li>
-					</ul>
-				</article>
-				<article class="day" id="thursday">
-					<h2 class="day_header js-head-thursday">
-						<a href="#" class="day_header-link js-day-filter" data-day="thursday">Thursday 7th June</a>
-						<a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Thursday Track">Close Thursday Track</a>
-					</h2>
-					<ul class="day_sessions">
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-07T07:00">7:00</time>-<time datetime="2018-06-07T08:00">8:00</time> Breakfast
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--cust">
-							<h3>
-								<time datetime="2018-06-07T08:15">8:15</time>-<time datetime="2018-06-07T10:15">10:15</time> Customer Centricity
-								<p>
-									Breakouts - Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-07T10:15">10:15</time>-<time datetime="2018-06-07T10:45">10:45</time> Break
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--cust">
-							<h3>
-								<time datetime="2018-06-07T10:45">10:45</time>-<time datetime="2018-06-07T12:45">12:45</time> Customer Centricity
-								<p>
-									Breakouts - Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--break">
-							<h3>
-								<time datetime="2018-06-07T12:45">12:45</time>-<time datetime="2018-06-07T13:45">1:45</time> Lunch
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--cust">
-							<h3>
-								<time datetime="2018-06-07T13:45">1:45</time>-<time datetime="2018-06-07T14:30">2:30</time> Customer Centricity
-								<p>
-									Action Planning Debrief - Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--other">
-							<h3>
-								<time datetime="2018-06-07T14:30">2:30</time>-<time datetime="2018-06-07T14:45">2:45</time> Closing Remarks
-								<p>
-									Crystal J1
-								</p>
-							</h3>
-						</li>
-						<li class="day_sessions-session day_sessions-session--travel">
-							<h3>
-								<From time datetime="2018-06-07T15:00">3:00</time> travel from PegaWorld
-								<p>
-									Bus service to airport
-								</p>
-							</h3>
-						</li>
-					</ul>
-				</article>
-			</div>
-			<div class="filter">
-				<div class="filter-day_selector">
-					<label for="js-day-selector">Day:</label>
-					<select id="js-day-selector" class="js-day-selector">
-						<option value="all">All</option>
-						<option value="sunday">Sunday</option>
-						<option value="monday">Monday</option>
-						<option value="tuesday">Tuesday</option>
-						<option value="wednesday">Wednesday</option>
-						<option value="thursday">Thursday</option>
-					</select>
-				</div>
-				<div class="filter-options">
-					<span role="button" aria-pressed="false" class="js-session-filter icon icon--conf" data-session="conf">Main Conference</span>
-					<span role="button" aria-pressed="false" class="js-session-filter icon icon--cust" data-session="cust">Customer</span>
-					<span role="button" aria-pressed="false" class="js-session-filter icon icon--mobile" data-session="mobile">Mobile</span>
-					<span role="button" aria-pressed="false" class="js-session-filter icon icon--user" data-session="user">User Centered Design</span>
-					<span role="button" aria-pressed="false" class="js-session-filter icon icon--break" data-session="break">Breaks and Meals</span>
-					<span role="button" aria-pressed="false" class="js-session-filter icon icon--travel" data-session="travel">Travel</span>
-					<span role="button" aria-pressed="false" class="js-session-filter icon icon--other" data-session="other">Other</span>
-				</div>
-			</div>
-		</div>
-		<noscript>
-            Please enable Javascript to view this page
-        </noscript>
-        <script>
-            if( 'serviceWorker' in navigator) {
-                navigator.serviceWorker
-                    .register( 'sw.js' )
-                    .then( function() { console.log( 'Service Worker Registered' ); });
-            }
-        </script>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-		<script>window.jQuery || document.write('<script src="assets/js/lib/jquery-3.2.1.min.js">\x3C/script>')</script>
-	</body>
+
+<head>
+  <title>Pegasystems GCLC 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/gfx/pwa/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/gfx/pwa/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/gfx/pwa/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Pega GCLC">
+  <meta name="application-name" content="Pega GCLC">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="assets/pwa/favicons/mstile-144x144.png">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <img src="assets/gfx/pega-gclc-logo.svg" class="logo" alt="Pega GCLC 2018">
+      <h1 class="title">GCLC 2018</h1>
+    </header>
+    <div class="agenda">
+      <!-- SUNDAY -->
+      <article class="day" id="sunday">
+        <h2 class="day_header js-head-sunday">
+          <a href="#" class="day_header-link js-day-filter" data-day="sunday">Sunday</a>
+          <a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Sunday Track">Close Sunday Track</a>
+        </h2>
+
+        <ul class="day_sessions">
+          <!-- track tabs -->
+          <li class="multi-container">
+            <ul class="day_sessions multi-track track-head-container js-track-shrink js-track-default">
+              <li id="track-default" class="track-head js-btn-track" data-track="1">
+                <p>Tech</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="2">
+                <p>BA</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="3">
+                <p>EL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="4">
+                <p>PL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="5">
+                <p>XD</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="6">
+                <p>Dec</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+          </li>
+          <!-- end track tabs -->
+
+          <!-- EVENT KICKOFF -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-28T013:00">1:00</time>-<time datetime="2018-10-28T13:30">1:30</time> Event Kickoff
+              <ul>
+                <li>
+                  Leon Trefler
+                </li>
+              </ul>
+            </h3>
+          </li>
+          <!-- EXECUTIVE KICKOFF -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-28T13:30">1:30</time>-<time datetime="2018-10-28T14:15">2:15</time> Executive Kickoff
+              <ul>
+                <li>
+                  Adam Kersivien
+                </li>
+                  <li>
+                    Eric Panepinto
+                  </li>
+                    <li>
+                      Walter Koehler
+                    </li>
+              </ul>
+            </h3>
+          </li>
+          <!-- DESIGN THINKING -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-28T014:15">2:15</time>-<time datetime="2018-10-28T15:45">3:45</time> Design Thinking
+              <ul>
+                <li>
+                  Baruch Sachs
+                </li>
+              </ul>
+            </h3>
+          </li>
+          <!-- AFTERNOON BREAK -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-28T015:45">3:45</time>-<time datetime="2018-10-28T016:15">4:15</time> Break
+            </h3>
+          </li>
+          <!-- WORKSHOP 1 -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-28T16:15">4:15</time>-<time datetime="2018-10-28T18:15">6:15</time> Methodology Workshop
+              <ul>
+                <li>
+                  Paul East
+                </li>
+              </ul>
+            </h3>
+          </li>
+          <!-- EVENING BREAK -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-28T18:15">6:15</time>-<time datetime="2018-10-28T19:00">7:00</time> Break
+            </h3>
+          </li>
+          <!-- DINNER -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-29T19:00">7:00</time>-<time datetime="2018-10-29T20:00">10:00</time> Off-site Dinner &amp; Team Building Event
+            </h3>
+          </li>
+        </ul>
+      </article>
+
+      <!-- MONDAY -->
+      <article class="day" id="monday">
+        <h2 class="day_header js-head-monday">
+          <a href="#" class="day_header-link js-day-filter" data-day="monday">Monday</a>
+          <a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Monday Track">Close Monday Track</a>
+        </h2>
+
+        <ul class="day_sessions">
+          <!-- track tabs -->
+          <li class="multi-container">
+            <ul class="day_sessions multi-track track-head-container js-track-shrink js-track-default">
+              <li class="track-head js-btn-track" data-track="1">
+                <p>Tech</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="2">
+                <p>BA</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="3">
+                <p>EL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="4">
+                <p>PL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="5">
+                <p>XD</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="6">
+                <p>Dec</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+          </li>
+          <!-- end track tabs -->
+
+          <!-- BREAKFAST -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-29T07:00">7:00</time>-<time datetime="2018-10-29T08:00">8:00</time> Breakfast
+            </h3>
+          </li>
+          <!-- KEYNOTE 1 -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-29T08:00">8:00</time>-<time datetime="2018-10-29T08:30">8:30</time> Alan Trefler Keynote
+            </h3>
+          </li>
+          <!-- KEYNOTE 2 -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-29T08:30">8:30</time>-<time datetime="2018-10-29T09:00">9:00</time> Kerim Keynote
+            </h3>
+          </li>
+          <!-- WORKSHOP 1 -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-29T09:00">9:00</time>-<time datetime="2018-10-29T11:00">11:00</time> Methodology Workshop
+              <ul>
+                <li>
+                  Paul East
+                </li>
+              </ul>
+            </h3>
+          </li>
+          <!-- MORNING BREAK -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-29T011:00">11:00</time>-<time datetime="2018-10-29T011:30">11:30</time> Break
+            </h3>
+          </li>
+          <!-- TRACK BREAKOUT 1 -->
+          <li class="multi-container">
+            <!-- Tech -->
+            <ul class="day_sessions multi-track js-track-1">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T11:30">11:30</time>-<time datetime="2018-10-29T12:30">12:30</time> Platform - Security
+                  <ul>
+                    <li>
+                      Marty Guyote
+                    </li>
+                    <li>
+                      Marty Solomon
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- BA -->
+            <ul class="day_sessions multi-track js-track-2">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T11:30">11:30</time>-<time datetime="2018-10-29T12:30">12:30</time> BA Skills
+                  <ul>
+                    <li>
+                      Gretel Valerio
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- EL -->
+            <ul class="day_sessions multi-track js-track-3">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T11:30">11:30</time>-<time datetime="2018-10-29T12:30">12:30</time> Managing the case type backlog – from MLP to detailed sizing
+                  <ul>
+                    <li>
+                      Paul East
+                    </li>
+                    <li>
+                      Josh Sultanik
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- PL -->
+            <ul class="day_sessions multi-track js-track-4">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T11:30">11:30</time>-<time datetime="2018-10-29T12:30">12:30</time> Managing the case type backlog – from MLP to detailed sizing
+                  <ul>
+                    <li>
+                      Paul East
+                    </li>
+                    <li>
+                      Josh Sultanik
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- XD -->
+            <ul class="day_sessions multi-track js-track-5">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T11:30">11:30</time>-<time datetime="2018-10-29T12:30">12:30</time> Establishing a Design Language &amp; building a Co-production strategy for UI
+                  <ul>
+                    <li>
+                      Tim Joseph
+                    </li>
+                    <li>
+                      Andras Bakos
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- Dec -->
+            <ul class="day_sessions multi-track js-track-6">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T11:30">11:30</time>-<time datetime="2018-10-29T12:30">12:30</time> Pega Marketing
+                  <ul>
+                    <li>
+                      (Audience- CLSA's and DA's from Roger Scham and Kevin Hart's team)
+                    </br/>
+                    </li>
+                    <li>
+                      Shoel
+                    </li>
+                    <li>
+                      Saleem
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- End Separate Tracks -->
+          </li>
+          <!-- LUNCH -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-29T12:30">12:30</time>-<time datetime="2018-10-29T13:30">1:30</time> Lunch
+            </h3>
+          </li>
+          <!-- TRACK BREAKOUT 2 -->
+          <li class="multi-container">
+            <!-- Tech -->
+            <ul class="day_sessions multi-track js-track-1">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T13:30">1:30</time>-<time datetime="2018-10-29T15:30">3:30</time> Robotics
+                  <ul>
+                    <li>
+                      Chris Wolfe
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- BA -->
+            <ul class="day_sessions multi-track js-track-2">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T13:30">1:30</time>-<time datetime="2018-10-29T15:30">3:30</time> Soft-Skills: Effective Presentation &amp; Influencing
+                  <ul>
+                    <li>
+                      Tori Hollingworth
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- EL -->
+            <ul class="day_sessions multi-track js-track-3">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T13:30">1:30</time>-<time datetime="2018-10-29T15:30">3:30</time> Rapid Delivery with more confidence: Lean usability testing
+                  <ul>
+                    <li>
+                      Glen Finch
+                    </li>
+                    <li>
+                      Shanta Raj
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- PL -->
+            <ul class="day_sessions multi-track js-track-4">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T13:30">1:30</time>-<time datetime="2018-10-29T15:30">3:30</time> Selling and positioning to our customers
+                  <ul>
+                    <li>
+                      Tony Castelli
+                    </li>
+                    <li>
+                      Volker Herrmann
+                    </li>
+                    <li>
+                      Steve Dietz
+                    </li>
+                    <li>
+                      Paul Barnes
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- XD -->
+            <ul class="day_sessions multi-track js-track-5">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T13:30">1:30</time>-<time datetime="2018-10-29T15:30">3:30</time> Soft-Skills: Effective Presentation &amp; Influencing
+                  <ul>
+                    <li>
+                      Tori Hollingworth
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- Dec -->
+            <ul class="day_sessions multi-track js-track-6">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T13:30">1:30</time>-<time datetime="2018-10-29T15:30">3:30</time> Paid Media - Best practice highlights
+                  <ul>
+                    <li>
+                      (Participants: PM product team and Decision Architects)
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- End Separate Tracks -->
+          </li>
+          <!-- AFTERNOON BREAK -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-29T15:30">3:30</time>-<time datetime="2018-10-29T16:00">4:00</time> Break
+            </h3>
+          </li>
+          <!-- TRACK BREAKOUT 3 -->
+          <li class="multi-container">
+            <!-- Tech -->
+            <ul class="day_sessions multi-track js-track-1">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T16:00">4:00</time>-<time datetime="2018-10-29T18:00">6:00</time> Devops
+                  <ul>
+                    <li>
+                      Linoy Alex
+                    </li>
+                    <li>
+                      Mary Ann Belarmino
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- BA -->
+            <ul class="day_sessions multi-track js-track-2">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T16:00">4:00</time>-<time datetime="2018-10-29T18:00">6:00</time> Customer Journey Mapping
+                  <ul>
+                    <li>
+                      Glen Finch
+                    </li>
+                    <li>
+                      Shanta Raj
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- EL -->
+            <ul class="day_sessions multi-track js-track-3">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T16:00">4:00</time>-<time datetime="2018-10-29T18:00">6:00</time> Customer Journey Mapping
+                  <ul>
+                    <li>
+                      Glen Finch
+                    </li>
+                    <li>
+                      Shanta Raj
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- PL -->
+            <ul class="day_sessions multi-track js-track-4">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T16:00">4:00</time>-<time datetime="2018-10-29T18:00">6:00</time> Managing Constructive Conflict with Fierce Conversations
+                  <ul>
+                    <li>
+                      Ken Hirshkind
+                    </li>
+                    <li>
+                      Ben Cornish
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- XD -->
+            <ul class="day_sessions multi-track js-track-5">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T16:00">4:00</time>-<time datetime="2018-10-29T18:00">6:00</time> Customer Journey Mapping
+                  <ul>
+                    <li>
+                      Glen Finch
+                    </li>
+                    <li>
+                      Shanta Raj
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- Dec -->
+            <ul class="day_sessions multi-track js-track-6">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-29T16:00">4:00</time>-<time datetime="2018-10-29T18:00">6:00</time> Key trends / Product direction to be mindful NBA Designer
+                  <ul>
+                    <li>
+                      (Participants: PM product team and Decision Architects)
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- End Separate Tracks -->
+          </li>
+          <!-- EVENING BREAK -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-29T18:00">6:00</time>-<time datetime="2018-10-29T19:00">7:00</time> Break
+            </h3>
+          </li>
+          <!-- DINNER -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-29T19:00">7:00</time>-<time datetime="2018-10-29T20:00">10:00</time> RDD Dinner &amp; Reception
+            </h3>
+          </li>
+        </ul>
+      </article>
+
+      <!-- TUESDAY -->
+      <article class="day" id="tuesday">
+        <h2 class="day_header js-head-tuesday">
+          <a href="#" class="day_header-link js-day-filter" data-day="tuesday">Tuesday</a>
+          <a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Tuesday Track">Close Tuesday Track</a>
+        </h2>
+
+        <ul class="day_sessions">
+          <!-- track tabs -->
+          <li class="multi-container">
+            <ul class="day_sessions multi-track track-head-container js-track-shrink js-track-default">
+              <li class="track-head js-btn-track" data-track="1">
+                <p>Tech</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="2">
+                <p>BA</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="3">
+                <p>EL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="4">
+                <p>PL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="5">
+                <p>XD</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="6">
+                <p>Dec</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+          </li>
+          <!-- end track tabs -->
+
+          <!-- BREAKFAST -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-30T07:00">7:00</time>-<time datetime="2018-10-30T07:30">7:30</time> Breakfast
+            </h3>
+          </li>
+
+          <!-- TRACK BREAKOUT 1 -->
+          <li class="multi-container">
+            <!-- Tech -->
+            <ul class="day_sessions multi-track js-track-1">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T07:30">7:30</time>-<time datetime="2018-10-30T08:30">8:30</time> Platform - Core Engine
+                  <ul>
+                    <li>
+                      Frank Apap
+                    </li>
+                    <li>
+                      Tim Miranda
+                    </li>
+                    <li>
+                      Jim Samuelson
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+                <li class="day_sessions-session day_sessions-session--mobile">
+                  <h3>
+                    <time datetime="2018-10-30T08:30">8:30</time>-<time datetime="2018-10-30T09:30">9:30</time> Platform - Performance
+                    <ul>
+                      <li>
+                        Andy Werden
+                      </li>
+                    </ul>
+                  </h3>
+                </li>
+            </ul>
+            <!-- BA -->
+            <ul class="day_sessions multi-track js-track-2">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T07:30">7:30</time>-<time datetime="2018-10-30T09:30">9:30</time> DCO
+                  <ul>
+                    <li>
+                      Amey Thombre
+                    </li>
+                    <li>
+                      Marc Cheong
+                    </li>
+                    <li>
+                      Shubi Cheong
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- EL -->
+            <ul class="day_sessions multi-track js-track-3">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T07:30">7:30</time>-<time datetime="2018-10-30T08:00">8:00</time> [OPEN]
+                  <ul>
+                    <li>
+                      [OPEN]
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+              <li class="day_sessions-session day_sessions-session--cust">
+                <h3>
+                  <time datetime="2018-10-30T08:00">8:00</time>-<time datetime="2018-10-30T09:30">9:30</time> Advanced Scrum
+                  <ul>
+                    <li>
+                      Patricia Kong
+                    </li>
+                      <li>
+                        Benjamin Day
+                      </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- PL -->
+            <ul class="day_sessions multi-track js-track-4">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T07:30">7:30</time>-<time datetime="2018-10-30T09:30">9:30</time> Customer Journey Mapping
+                  <ul>
+                    <li>
+                      Glen Finch
+                    </li>
+                    <li>
+                      Shanta Raj
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- XD -->
+            <ul class="day_sessions multi-track js-track-5">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T07:30">7:30</time>-<time datetime="2018-10-30T09:30">9:30</time> Customer Journey Mapping
+                  <ul>
+                    <li>
+                      Glen Finch
+                    </li>
+                    <li>
+                      Shanta Raj
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- Dec -->
+            <ul class="day_sessions multi-track js-track-6">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T07:30">7:30</time>-<time datetime="2018-10-30T08:00">8:00</time> [OPEN]
+                  <ul>
+                    <li>
+                      [OPEN]
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T08:00">8:00</time>-<time datetime="2018-10-30T09:30">9:30</time> Roundtable discussion
+                  <ul>
+                    <li>
+                      Project pain points
+                      - Offer configuration &amp; debugging
+                      - Volume constraints
+                      - Dedup
+                      - Waterfall report / counts by eligibility
+                      - ESP integration options
+                    </li>
+                    <li>
+                      (Participants: PM product team and Decision Architects)
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- End Separate Tracks -->
+          </li>
+
+          <!-- MORNING BREAK -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-30T09:30">9:30</time>-<time datetime="2018-10-30T10:00">10:00</time> Break
+            </h3>
+          </li>
+
+          <!-- TRACK BREAKOUT 2 -->
+          <li class="multi-container">
+            <!-- Tech -->
+            <ul class="day_sessions multi-track js-track-1">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T10:00">10:00</time>-<time datetime="2018-10-30T10:30">10:30</time> Platform - User Interface
+                  <ul>
+                    <li>
+                      Bob Taylor
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+                <li class="day_sessions-session day_sessions-session--mobile">
+                  <h3>
+                    <time datetime="2018-10-30T10:30">10:30</time>-<time datetime="2018-10-30T11:00">11:00</time> Platform - Integration
+                    <ul>
+                      <li>
+                        Mayran Snir Barak
+                      </li>
+                    </ul>
+                  </h3>
+                </li>
+                  <li class="day_sessions-session day_sessions-session--mobile">
+                    <h3>
+                      <time datetime="2018-10-30T11:00">11:00</time>-<time datetime="2018-10-30T11:30">11:30</time> Descisioning/Marketing
+                      <ul>
+                        <li>
+                          Maarten Keijzer
+                        </li>
+                        <li>
+                          (Participants: All CLSA's and Decision Architects)
+                        </li>
+                      </ul>
+                    </h3>
+                  </li>
+            </ul>
+            <!-- BA -->
+            <ul class="day_sessions multi-track js-track-2">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T10:00">10:00</time>-<time datetime="2018-10-30T11:00">11:00</time> Enterprise Tools: Visualization for BA's
+                  <ul>
+                    <li>
+                      Emek Ozer Gulyaz
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+                <li class="day_sessions-session day_sessions-session--mobile">
+                  <h3>
+                    <time datetime="2018-10-30T11:00">11:00</time>-<time datetime="2018-10-30T12:00">12:00</time> Gap Analysis
+                    <ul>
+                      <li>
+                        Jo Warne
+                      </li>
+                    </ul>
+                  </h3>
+                </li>
+            </ul>
+            <!-- EL -->
+            <ul class="day_sessions multi-track js-track-3">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T10:00">10:00</time>-<time datetime="2018-10-30T11:00">11:00</time> Challenger Delivery for ELs
+                  <ul>
+                    <li>
+                      Clive Thompson
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+                <li class="day_sessions-session day_sessions-session--mobile">
+                  <h3>
+                    <time datetime="2018-10-30T11:00">11:00</time>-<time datetime="2018-10-30T11:30">11:30</time> Challenges To Delivery
+                    <ul>
+                      <li>
+                        Tiffany Veder
+                      </li>
+                    </ul>
+                  </h3>
+                </li>
+                  <li class="day_sessions-session day_sessions-session--mobile">
+                    <h3>
+                      <time datetime="2018-10-30T11:30">11:30</time>-<time datetime="2018-10-30T12:00">12:00</time> Building effective Pega teams with remote resources
+                      <ul>
+                        <li>
+                          Ralph Booth
+                        </li>
+                      </ul>
+                    </h3>
+                  </li>
+            </ul>
+            <!-- PL -->
+            <ul class="day_sessions multi-track js-track-4">
+              <li class="day_sessions-session day_sessions-session--cust">
+                <h3>
+                  <time datetime="2018-10-30T10:00">10:00</time>-<time datetime="2018-10-30T12:00">12:00</time> Working with Partners
+                  <ul>
+                    <li>
+                      Kevin Swanson
+                    </li>
+                    <li>
+                      David Sharpe
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- XD -->
+            <ul class="day_sessions multi-track js-track-5">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T10:00">10:00</time>-<time datetime="2018-10-30T11:00">10:30</time> Platform - User Interface
+                  <ul>
+                    <li>
+                      Bob Taylor
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+                <li class="day_sessions-session day_sessions-session--mobile">
+                  <h3>
+                    <time datetime="2018-10-30T10:30">10:30</time>-<time datetime="2018-10-30T11:15">11:15</time> Pega UI playbook: Pega portal, Mashup, API - understanding each approach and when to use
+                    <ul>
+                      <li>
+                        Mark Hurd
+                      </li>
+                        <li>
+                          Tim Joseph
+                        </li>
+                    </ul>
+                  </h3>
+                </li>
+                  <li class="day_sessions-session day_sessions-session--mobile">
+                    <h3>
+                      <time datetime="2018-10-30T11:15">11:15</time>-<time datetime="2018-10-30T12:00">12:00</time> Pega Digital Experience API front-end UI frameworks: Angular, React & Vue JS
+                      <ul>
+                        <li>
+                          Mark Hurd
+                        </li>
+                          <li>
+                            Tim Joseph
+                          </li>
+                      </ul>
+                    </h3>
+                  </li>
+            </ul>
+            <!-- Dec -->
+            <ul class="day_sessions multi-track js-track-6">
+              <li class="day_sessions-session day_sessions-session--conf">
+                <h3>
+                  <time datetime="2018-10-30T10:00">10:00</time>-<time datetime="2018-10-30T12:00">12:00</time> Round table discussion (contd)
+                  <ul>
+                    <li>
+                      On the ground best practices/experiences
+                      - Sprint, move to 1:1 in outbound [Chris]
+                      - Adobe digital integration [Philip]
+                      - Agile Marketing [Philip]
+                      - Paul Magic [Paul]
+                    </li>
+                      <li>
+                        (Participants: PM product team and Decision Architects)
+                      </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- End Separate Tracks -->
+          </li>
+
+          <!-- LUNCH -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-30T12:00">12:00</time>-<time datetime="2018-10-30T12:30">12:30</time> Lunch
+            </h3>
+          </li>
+
+          <!-- TRACK BREAKOUT 3 -->
+          <li class="multi-container">
+            <!-- Tech -->
+            <ul class="day_sessions multi-track js-track-1">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T12:30">12:30</time>-<time datetime="2018-10-30T13:30">1:30</time> Decisioning/Marketing
+                  <ul>
+                    <li>
+                      Maarten Keijzer
+                    </li>
+                    <li>
+                      (Participants: All CLSA's and Decision Architects)
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- BA -->
+            <ul class="day_sessions multi-track js-track-2">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T12:30">12:30</time>-<time datetime="2018-10-30T13:30">1:30</time> User Story Management
+                  <ul>
+                    <li>
+                      Adina Handrau
+                    </li>
+                    <li>
+                      Marcia Lucenta
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- EL -->
+            <ul class="day_sessions multi-track js-track-3">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T12:30">12:30</time>-<time datetime="2018-10-30T13:30">1:30</time> Devops
+                  <ul>
+                    <li>
+                      Naveta Dhall
+                    </li>
+                    <li>
+                      Colleen Pearce
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- PL -->
+            <ul class="day_sessions multi-track js-track-4">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T12:30">12:30</time>-<time datetime="2018-10-30T13:30">1:30</time> Governance
+                  <ul>
+                    <li>
+                      Naveta Dhall
+                    </li>
+                    <li>
+                      Colleen Pearce
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- XD -->
+            <ul class="day_sessions multi-track js-track-5">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T12:30">12:30</time>-<time datetime="2018-10-30T13:30">1:30</time> The Solution is Digital, The User is Human
+                  <ul>
+                    <li>
+                      Jiri Brezovsky
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- Dec -->
+            <ul class="day_sessions multi-track js-track-6">
+              <li class="day_sessions-session day_sessions-session--mobile">
+                <h3>
+                  <time datetime="2018-10-30T12:30">12:30</time>-<time datetime="2018-10-30T13:30">1:30</time> [OPEN]]
+                  <ul>
+                    <li>
+                      [OPEN]]
+                    </li>
+                  </ul>
+                </h3>
+              </li>
+            </ul>
+            <!-- End Separate Tracks -->
+          </li>
+
+          <!-- AFTERNOON BREAK -->
+          <li class="day_sessions-session day_sessions-session--break">
+            <h3>
+              <time datetime="2018-10-30T13:30">1:30</time>-<time datetime="2018-10-30T13:45">1:45</time> Break
+              <ul>
+                <li>
+                  (Travel to Ballroom for Q&amp;A Roundtable)
+                </li>
+              </ul>
+            </h3>
+          </li>
+
+          <!-- QA ROUNDTABLE -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-30T13:45">1:45</time>-<time datetime="2018-10-30T14:30">2:30</time> Q&amp;A Roundtable
+              <ul>
+                <li>
+                  w/ Consulting Leadership
+                </li>
+              </ul>
+            </h3>
+          </li>
+
+          <!-- WRAP UP -->
+          <li class="day_sessions-session day_sessions-session--user">
+            <h3>
+              <time datetime="2018-10-30T14:30">2:30</time>-<time datetime="2018-10-30T15:00">3:00</time> Wrap Up
+              <ul>
+                <li>
+                  Doug Kra
+                </li>
+                <li>
+                  Leon Trefler
+                </li>
+              </ul>
+            </h3>
+          </li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+  <noscript>
+    Please enable Javascript to view this page
+  </noscript>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('sw.js')
+        .then(function() {
+          console.log('Service Worker Registered');
+        });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="assets/js/lib/jquery-3.2.1.min.js">\x3C/script>')
+  </script>
+</body>
+
 </html>

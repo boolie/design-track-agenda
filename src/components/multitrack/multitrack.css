@@ -1,8 +1,8 @@
 /* Multi track */
 
 .track-head {
-	background-color: #005c9c;
-	color: #ffffff;
+	background-color: #f2f3f4;
+	color: #0092f8;
 	cursor: pointer;
 	padding: 10px;
 	position: relative;
@@ -14,7 +14,7 @@
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	width: 50%;
+	width: 0; /* 50%; */
 }
 
 @media ( min-width: 420px ) {
@@ -45,12 +45,12 @@
 }
 
 .multi-container .day_sessions:first-child {
-	border-right: 1px solid #cccccc;
+	border-right: 1px solid #8fcde5;
 }
 
 .js-track-grow {
 	transition: all 0.5s;
-	width: 80%;
+	width: 100%;
 }
 
 .js-track-shrink {

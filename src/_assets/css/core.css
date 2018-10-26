@@ -18,6 +18,12 @@ p, label, time {
 	background-color: inherit;
 }
 
+time {
+	color: #295ed9;
+	font-weight: 100;
+	padding: 3px;
+}
+
 p, label {
 	font-size: 1.3rem;
 	margin-top: 5px;
@@ -28,12 +34,16 @@ label {
 }
 
 .logo {
-	height: 100%;
+	height: 50%;
+	padding: 12px 10px;
 }
 
 .title {
-	display: inline-block;
-	margin-left: 5px;
+	color: #ffffff;
+	display: none;
+	font-weight: 900;
+	margin: 10px auto;
+	text-align: center;
 }
 
 /* Headers */
@@ -105,14 +115,14 @@ h6 {
 	background-color: #ffffff;
 	display: inline-block;
 	margin-top: 0;
-	padding: 5px 0;
+	padding: 5px 10px;
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
 
 .day_sessions {
-	border: 1px solid #cccccc;
+	border: 1px solid #cacdd6;
 	display: flex;
 	flex: auto;
 	flex-direction: column;
@@ -120,6 +130,10 @@ h6 {
 	margin-bottom: 15px;
 	margin-top: 35px;
 	padding: 0;
+}
+
+.day_sessions li {
+	font-size: 84%;
 }
 
 @media ( --small-screen ) {

@@ -6,12 +6,22 @@ $.fn.highlightTrack = function( track ) {
 var trackFilter = $( '.track-head' );
 
 trackFilter.on( 'click', function( e ) {
+
 	if ( $( this ).hasClass( 'js-btn-track--active' ) ) {
-		$( '.track-head' ).removeClass( 'js-btn-track--active' );
-		$( '.multi-track' ).removeClass( 'js-track-grow' ).removeClass( 'js-track-shrink' );
+		/* $( '.track-head' ).removeClass( 'js-btn-track--active' );
+		$( '.multi-track' ).removeClass( 'js-track-grow' ).removeClass( 'js-track-shrink' ); */
 	} else {
-		$( this ).highlightTrack( $( this ).data( 'track' ) );
+		var selTrack = $( this ).data( 'track' );
+		$( this ).highlightTrack( selTrack );
 		$( '.track-head' ).removeClass( 'js-btn-track--active' );
-		$( this ).addClass( 'js-btn-track--active' );
+
+		var activeTrack = $(".track-head[data-track='" + selTrack +"']");
+		activeTrack.each(function(){
+			$( this ).addClass( 'js-btn-track--active' );
+		});
 	}
 });
+
+/* init default track filter */
+var defaultFilter = $( '#track-default' );
+defaultFilter.click();
